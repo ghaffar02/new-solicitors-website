@@ -6,11 +6,7 @@ import {
   ToggleButtonGroup,
   Typography,
 } from "@mui/material";
-import {
-  globalFontSize,
-  localFontSize,
-  sectionPadding,
-} from "@/app/utils/themes";
+import { localFontSize, sectionPadding } from "@/app/utils/themes";
 
 function WhatWeOffer() {
   const [selectedTab, setSelectedTab] = useState("personal");
