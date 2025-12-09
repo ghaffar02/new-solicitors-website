@@ -74,6 +74,7 @@ const HeroHome: React.FC = () => {
               fontSize: globalFontSize.p2,
               fontWeight: "400",
               marginBottom: { xs: "16px", md: "24px" },
+              textTransform: "uppercase",
             }}
           >
             We Stand For You

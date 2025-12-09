@@ -11,6 +11,7 @@ import CommitedToJustice from "./_sections/CommitedToJustice";
 import LegalServicesTabs from "./_sections/LegalServicesTabs";
 import InfoSection from "@/_components/InfoSection";
 import pngs from "@/_assets/webp";
+import WhatWeOffer from "./_sections/WhatWeOffer";
 // import { Box } from "@mui/material";
 
 export default function HomePage() {
@@ -34,6 +35,8 @@ export default function HomePage() {
         reverse={true}
         image={pngs.Suit}
       />
+      <WhatWeOffer />
+      {/* above this   */}
       <CoreValues />
       {/* <AboutUs /> */}
       <CommitedToJustice />
