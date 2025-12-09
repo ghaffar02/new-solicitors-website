@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.conquestlaw.co.uk
+
+# Sitemaps
+Sitemap: https://www.conquestlaw.co.uk/sitemap.xml

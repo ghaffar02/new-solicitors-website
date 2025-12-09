@@ -1,0 +1,334 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=League+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Reddit+Mono:wght@200..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"); */
+
+/* new fonts */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Playfair Display Local Fonts */
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/PlayfairDisplay-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+html,
+body {
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  /* font-family: "Roboto serif", serif !important; */
+  /* fontFamily: "EB Garamond", */
+
+  /* new font  */
+  font-family: "Poppins", sans-serif;
+}
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  gap: 8px;
+}
+
+.slick-dots li {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50%;
+  background: #56565680;
+  transition: all 0.3s ease-in-out;
+}
+
+.slick-dots li.slick-active {
+  background: #074592;
+}
+
+@media (max-width: 600px) {
+  .slick-dots li {
+    width: 10px !important;
+    height: 10px !important;
+  }
+}
+
+.slick-dots li button:before {
+  display: none;
+}
+
+.slider-container .slick-row:not(:last-child) {
+  margin-bottom: 20px;
+}
+.slick-dots {
+  margin-top: 20px;
+}
+
+.animation {
+  background-color: var(--dark-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  font-size: 60px;
+  color: #70abaf;
+  height: 100vh;
+  z-index: 1;
+
+  font-family: "Merriweather", serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideUp 4s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100vh;
+  }
+}
+
+/* globals.css */
+video::-webkit-media-controls {
+  display: none !important;
+}
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+/* Cookie banner styling */
+/* —— Cookie card (KOTA-style) —— */
+/* Floating cookie card — polished */
+.ckc-card {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  max-width: 360px;
+  width: calc(100vw - 32px);
+  z-index: 10050;
+  border-radius: 18px;
+  background: #171a23; /* dark neutral */
+  color: #fff;
+  padding: 16px 16px 12px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.06); /* subtle inner border */
+  backdrop-filter: blur(8px);
+  transform: translateY(8px);
+  opacity: 0;
+  animation: ckc-in 0.35s ease forwards;
+}
+
+@keyframes ckc-in {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .ckc-card {
+    right: 14px;
+    bottom: 14px;
+    border-radius: 16px;
+    padding: 14px 14px 10px;
+    max-width: 92vw;
+  }
+}
+
+.ckc-card-content {
+  display: grid;
+  gap: 10px;
+}
+
+.ckc-card-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  opacity: 0.95;
+}
+
+.ckc-card-text {
+  font-size: 13px;
+  line-height: 1.55;
+  opacity: 0.92;
+}
+
+.ckc-card-link {
+  color: #7fb0ff; /* matches your blue scheme */
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.ckc-card-accept,
+.ckc-card-decline {
+  font-size: 13px !important;
+  border-radius: 999px !important;
+  padding: 8px 14px !important;
+  line-height: 1 !important;
+  transition: transform 0.15s ease, border-color 0.2s ease,
+    background-color 0.2s ease, opacity 0.2s ease;
+  outline: none !important;
+}
+
+/* Use your brand blue for focus ring */
+.ckc-card-accept:focus-visible,
+.ckc-card-decline:focus-visible,
+.ckc-card-link:focus-visible {
+  box-shadow: 0 0 0 3px rgba(58, 131, 255, 0.35) !important;
+  border-color: rgba(58, 131, 255, 0.6) !important;
+}
+
+/* Primary = outline pill, cleaner next to dark card */
+.ckc-card-accept {
+  background: transparent !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.38) !important;
+}
+.ckc-card-accept:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.65) !important;
+}
+.ckc-card-accept:active {
+  transform: translateY(0);
+}
+
+.ckc-card-decline {
+  background: transparent !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  opacity: 0.85;
+  margin-right: 8px !important;
+}
+.ckc-card-decline:hover {
+  transform: translateY(-1px);
+  opacity: 1;
+  border-color: rgba(255, 255, 255, 0.35) !important;
+}
+.ckc-card-decline:active {
+  transform: translateY(0);
+}
+
+/* Base stays as you have it */
+
+/* --- Mobile fix (<= 640px) --- */
+@media (max-width: 640px) {
+  .ckc-card {
+    /* center horizontally */
+    left: 12px;
+    right: 12px;
+    margin: 0 auto;
+
+    /* width + rounding */
+    max-width: 340px;
+    width: auto; /* was 92vw; margin with left/right keeps it fluid */
+    border-radius: 16px;
+
+    /* keep off the iOS home-indicator */
+    bottom: calc(14px + env(safe-area-inset-bottom));
+
+    /* spacing & subtle scale-in */
+    padding: 14px 14px 10px;
+    transform: translateY(8px); /* only Y so no horizontal shift */
+  }
+
+  .ckc-card-content {
+    gap: 10px;
+  }
+
+  /* Buttons: keep side-by-side and readable */
+  .ckc-card-accept,
+  .ckc-card-decline {
+    padding: 10px 14px !important;
+    font-size: 13px !important;
+  }
+
+  /* If buttons wrap on very small devices, let them stack nicely */
+  .ckc-card-content > div:last-child {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}

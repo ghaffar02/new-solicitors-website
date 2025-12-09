@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- =========================
+       CORE PAGES (high cadence)
+       ========================= -->
+  <url>
+    <loc>https://www.conquestlaw.co.uk/</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1</priority>
+  </url>
+
+  <url>
+    <loc>https://www.conquestlaw.co.uk/news</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.conquestlaw.co.uk/about-us</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/contact-us</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/privacy-policy</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- =========================
+       SERVICE / PRACTICE AREAS
+       (generally stable content)
+       ========================= -->
+  <url>
+    <loc>https://www.conquestlaw.co.uk/commercial-law</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/criminal-law</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/immigration-law</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/employment-law</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/dispute-resolution-commercial</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/dispute-resolution-civil</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/commercial-conveyancing</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/residential-conveyancing</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/succession-and-estate-planning</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/probate-and-estate-administration</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/actions-against-public-bodies</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/family-law</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/business-mergers-and-acquisitions</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/shariah-compliant-financing</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- =========================
+       BLOG / NEWS POSTS
+       (requested: monthly)
+       ========================= -->
+  <url>
+    <loc>https://www.conquestlaw.co.uk/dubai-courts-opens-first-overseas-hub-in-london</loc>
+    <lastmod>2025-08-21T08:29:13.444Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/taxi-licence-appeal-win</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/beneficial-interest-proprietary-estoppel</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/a-victim-entrapment-in-yorkshire</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>
+      https://www.conquestlaw.co.uk/successful-return-of-cash-following-seizure-and-detention-under-poca-2002</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conquestlaw.co.uk/bankruptcy-order-annulled</loc>
+    <lastmod>2025-08-21T08:29:13.445Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
