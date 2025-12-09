@@ -1,53 +1,53 @@
-import Logo from "./logo.svg";
-import Hamburger from "./hamburger.svg";
+import Logo from "./oldimages/logo.svg";
+import Hamburger from "./oldimages/hamburger.svg";
 
-import Handshake from "./handshake.svg";
-import Clipboard from "./clipboard.svg";
-import Searchfile from "./searchfile.svg";
-import HandshakeWhite from "./handshakeWhite.svg";
-import ClipboardWhite from "./clipboardWhite.svg";
-import SearchfileWhite from "./searchfileWhite.svg";
+import Handshake from "./oldimages/handshake.svg";
+import Clipboard from "./oldimages/clipboard.svg";
+import Searchfile from "./oldimages/searchfile.svg";
+import HandshakeWhite from "./oldimages/handshakeWhite.svg";
+import ClipboardWhite from "./oldimages/clipboardWhite.svg";
+import SearchfileWhite from "./oldimages/searchfileWhite.svg";
 
-import BlueArrow from "./blueArrow.svg";
-import Profile from "./profile.svg";
-import ButtonArrow from "./buttonArrow.svg";
-import BlueButtonArrow from "./blueButtonArrow.svg";
-import Cross from "./cross.svg";
+import BlueArrow from "./oldimages/blueArrow.svg";
+import Profile from "./oldimages/profile.svg";
+import ButtonArrow from "./oldimages/buttonArrow.svg";
+import BlueButtonArrow from "./oldimages/blueButtonArrow.svg";
+import Cross from "./oldimages/cross.svg";
 // fieldsOfLaw images
-import FamilyLaw from "./fieldsOfLaw/familyLaw.svg";
-import ImmigrationLaw from "./fieldsOfLaw/immigrationLaw.svg";
-import EmploymentLaw from "./fieldsOfLaw/employmentLaw.svg";
-import CommercialLaw from "./fieldsOfLaw/commercialLaw.svg";
+import FamilyLaw from "./oldimages/fieldsOfLaw/familyLaw.svg";
+import ImmigrationLaw from "./oldimages/fieldsOfLaw/immigrationLaw.svg";
+import EmploymentLaw from "./oldimages/fieldsOfLaw/employmentLaw.svg";
+import CommercialLaw from "./oldimages/fieldsOfLaw/commercialLaw.svg";
 
-import SliderArrow from "./sliderArrow.svg";
-import BlueSliderArrow from "./blueSliderArrow.svg";
-import QuotationImage from "./quotationImage.svg";
+import SliderArrow from "./oldimages/sliderArrow.svg";
+import BlueSliderArrow from "./oldimages/blueSliderArrow.svg";
+import QuotationImage from "./oldimages/quotationImage.svg";
 // media links
-import LinkedIn from "./linkedin.svg";
-import Facebook from "./facebook.svg";
-import Youtube from "./youtube.svg";
-import Instagram from "./instagram.svg";
-import Location from "./location.svg";
-import Mail from "./mail.svg";
-import Phone from "./phone.svg";
-import Issue from "./issue.svg";
-import Law from "./lawscale.svg";
-import CheckList from "./checkmark.svg";
-import Search from "./search.svg";
+import LinkedIn from "./oldimages/linkedin.svg";
+import Facebook from "./oldimages/facebook.svg";
+import Youtube from "./oldimages/youtube.svg";
+import Instagram from "./oldimages/instagram.svg";
+import Location from "./oldimages/location.svg";
+import Mail from "./oldimages/mail.svg";
+import Phone from "./oldimages/phone.svg";
+import Issue from "./oldimages/issue.svg";
+import Law from "./oldimages/lawscale.svg";
+import CheckList from "./oldimages/checkmark.svg";
+import Search from "./oldimages/search.svg";
 
 // dropdownIcons
-import homeBlueIcon from "./dropdownIcons/homeBlueIcon.svg";
-import HomeWhiteIcon from "./dropdownIcons/homeWhiteIcon.svg";
-import aboutBlueIcon from "./dropdownIcons/aboutBlueIcon.svg";
-import newsBlueIcon from "./dropdownIcons/newsBlueIcon.svg";
-import contactBlueIcon from "./dropdownIcons/contactBlueIcon.svg";
-import aboutWhiteIcon from "./dropdownIcons/aboutWhiteIcon.svg";
-import newsWhiteIcon from "./dropdownIcons/newsWhiteIcon.svg";
-import contactWhiteIcon from "./dropdownIcons/contactWhiteIcon.svg";
+import homeBlueIcon from "./oldimages/dropdownIcons/homeBlueIcon.svg";
+import HomeWhiteIcon from "./oldimages/dropdownIcons/homeWhiteIcon.svg";
+import aboutBlueIcon from "./oldimages/dropdownIcons/aboutBlueIcon.svg";
+import newsBlueIcon from "./oldimages/dropdownIcons/newsBlueIcon.svg";
+import contactBlueIcon from "./oldimages/dropdownIcons/contactBlueIcon.svg";
+import aboutWhiteIcon from "./oldimages/dropdownIcons/aboutWhiteIcon.svg";
+import newsWhiteIcon from "./oldimages/dropdownIcons/newsWhiteIcon.svg";
+import contactWhiteIcon from "./oldimages/dropdownIcons/contactWhiteIcon.svg";
 
-import blackIcon from "./blackIcon.svg";
-import whiteIcon from "./whiteIcon.svg";
-import info from "./info.svg";
+import blackIcon from "./oldimages/blackIcon.svg";
+import whiteIcon from "./oldimages/whiteIcon.svg";
+import info from "./oldimages/info.svg";
 
 const svgs = {
   Logo,

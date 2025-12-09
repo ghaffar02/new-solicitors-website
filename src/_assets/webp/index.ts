@@ -1,15 +1,15 @@
 // import image from "./path";
-import Suit from "./Suit.webp";
-import Client1 from "./client1.webp";
-import Client2 from "./client2.webp";
-import Client3 from "./client3.webp";
-import Mission from "./Mission.webp";
-import ImmigrationLaw from "./immigrationLaw.webp";
-import Passport from "./passport.webp";
-import CommitedToJustice from "./commitedToJustice.webp";
-import CommercialLaw from "./commercialLaw.webp";
-import LegalServicesTab1 from "./legalServicesTab1.webp";
-import LegalServicesTab2 from "./legalServicesTab2.webp";
+import Suit from "./oldimages/Suit.webp";
+import Client1 from "./oldimages/client1.webp";
+import Client2 from "./oldimages/client2.webp";
+import Client3 from "./oldimages/client3.webp";
+import Mission from "./oldimages/Mission.webp";
+import ImmigrationLaw from "./oldimages/immigrationLaw.webp";
+import Passport from "./oldimages/passport.webp";
+import CommitedToJustice from "./oldimages/commitedToJustice.webp";
+import CommercialLaw from "./oldimages/commercialLaw.webp";
+import LegalServicesTab1 from "./oldimages/legalServicesTab1.webp";
+import LegalServicesTab2 from "./oldimages/legalServicesTab2.webp";
 const pngs = {
   Suit,
   Client1,
