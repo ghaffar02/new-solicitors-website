@@ -99,22 +99,22 @@ export const globalFontSize = {
 };
 
 export const sectionPadding = {
-  xs: "16px 60px",
-  sm: "40px 60px",
+  xs: "40px 16px",
+  sm: "60px 40px",
   md: "60px 80px",
   lg: "100px",
 };
 
 export const sectionPaddingX = {
-  xs: "60px",
-  sm: "60px",
+  xs: "16px",
+  sm: "40px",
   md: "80px",
   lg: "100px",
 };
 
 export const sectionPaddingY = {
-  xs: "16px",
-  sm: "40px",
+  xs: "60px",
+  sm: "60px",
   md: "60px",
   lg: "100px",
 };

@@ -9,6 +9,8 @@ import ContactUs from "@/_components/ContactUs";
 import Footer from "@/_components/Footer";
 import CommitedToJustice from "./_sections/CommitedToJustice";
 import LegalServicesTabs from "./_sections/LegalServicesTabs";
+import InfoSection from "@/_components/InfoSection";
+import pngs from "@/_assets/webp";
 // import { Box } from "@mui/material";
 
 export default function HomePage() {
@@ -24,6 +26,14 @@ export default function HomePage() {
           backgroundColor: "#ffffff",
         }}
       > */}
+      <InfoSection
+        banner="lets get to"
+        heading="know about us"
+        description="At Conquest Law we aim to provide first class legal services to our clients, both individuals and businesses, at competitive rates. We will do whatever it takes in order to achieve our clients’ desired outcome."
+        buttonText="Learn More"
+        reverse={true}
+        image={pngs.Suit}
+      />
       <CoreValues />
       {/* <AboutUs /> */}
       <CommitedToJustice />
