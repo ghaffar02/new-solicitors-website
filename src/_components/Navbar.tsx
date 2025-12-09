@@ -3,7 +3,11 @@ import React, { useState, useEffect } from "react";
 import { Box, Button, Typography, Grid } from "@mui/material";
 import svgs from "@/_assets/svgs";
 import Image from "next/image";
-import { globalFontSize, sectionPaddingX } from "@/app/utils/themes";
+import {
+  localFontSize,
+  sectionPaddingX,
+  globalFontSize,
+} from "@/app/utils/themes";
 import { useRouter, usePathname } from "next/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -132,12 +136,13 @@ const Navbar: React.FC = () => {
           zIndex: "100",
           width: "100%",
           left: "0",
+          backgroundColor: "#1A1A1AE5",
         }}
       >
         <Box
           sx={{
             position: "relative",
-            paddingY: "10px",
+            // paddingTop: "10px",
             paddingX: sectionPaddingX,
           }}
         >
@@ -147,11 +152,12 @@ const Navbar: React.FC = () => {
               justifyContent: "space-between",
               alignItems: "center",
               flexDirection: { xs: "row-reverse", md: "row" },
-              height: { xs: "auto", md: "100px" },
+              height: { xs: "80px", md: "90px" },
 
               maxWidth: "1440px",
               margin: "auto",
               width: "100%",
+              borderBottom: { md: "1px solid #FFFFFF" },
             }}
           >
             <Box
@@ -190,7 +196,7 @@ const Navbar: React.FC = () => {
                 backgroundColor: "#074592",
                 padding: { xs: "10px", md: "15px 20px" },
                 textTransform: "capitalize",
-                fontSize: globalFontSize.p3,
+                fontSize: localFontSize.p3,
                 fontWeight: "500",
                 fontFamily: "inherit",
                 display: { xs: "none", md: "flex" },

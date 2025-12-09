@@ -20,43 +20,30 @@ const HeroHome: React.FC = () => {
   return (
     <Box
       sx={{
-        display: "flex",
-        flexDirection: "column",
+        display: { xs: "flex", lg: "block" },
+        alignItems: { xs: "center", lg: "unset" },
         width: "100%",
-        height: { xs: "900px" },
-        // marginTop: {
-        //   xs: "77.81px",
-        //   sm: "87.81px",
-        //   md: "90px",
-        //   lg: "93.5px",
-        // },
-        backgroundImage: "url(/heroAboutUS.webp)",
+        height: { xs: "100vh", md: "1050px" },
+        paddingTop: {
+          sm: "80px",
+          md: "120px",
+        },
+        backgroundImage: "url(/bgHeroHome.png)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        position: "relative",
       }}
     >
       <Navbar />
-
       {/* Hero Section */}
       <Box
         sx={{
           position: "relative",
           width: "100%",
-          height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          "&::before": {
-            content: '""',
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: "#1A1A1AE5",
-            zIndex: 1,
-          },
         }}
       >
         {/* Content Container */}
@@ -64,7 +51,6 @@ const HeroHome: React.FC = () => {
           data-aos="fade-up"
           data-aos-duration="700"
           sx={{
-            position: "relative",
             zIndex: 2,
             display: "flex",
             flexDirection: "column",
@@ -77,7 +63,6 @@ const HeroHome: React.FC = () => {
               md: "60px 80px",
               lg: "80px 100px",
             },
-            maxWidth: "1000px",
           }}
         >
           {/* Tagline */}
@@ -101,8 +86,10 @@ const HeroHome: React.FC = () => {
             sx={{
               color: "#FFFFFF",
               fontSize: localFontSize.h1,
-              fontWeight: "400",
+              fontWeight: "700",
               marginBottom: { xs: "20px", md: "32px" },
+              fontFamily: "'PlayfairDisplay', serif",
+              maxWidth: "1000px",
             }}
           >
             Compassionate Lawyers, Powerful Advocates
@@ -114,11 +101,11 @@ const HeroHome: React.FC = () => {
             data-aos-delay="300"
             sx={{
               color: "rgba(255, 255, 255, 0.75)",
-              fontSize: globalFontSize.p2,
+              fontSize: localFontSize.p2,
               fontWeight: "400",
               lineHeight: 1.7,
-              maxWidth: "800px",
               marginBottom: { xs: "28px", md: "40px" },
+              maxWidth: "1000px",
             }}
           >
             Our team combines compassion with unmatched legal expertise to stand
@@ -152,7 +139,7 @@ const HeroHome: React.FC = () => {
                 padding: { xs: "14px 28px", md: "16px 36px" },
                 fontSize: globalFontSize.p3,
                 fontWeight: "500",
-                borderRadius: "6px",
+                borderRadius: "0px",
                 width: "auto",
                 textTransform: "none",
                 transition: "all 0.3s ease",
@@ -166,6 +153,18 @@ const HeroHome: React.FC = () => {
           </Box>
         </Box>
       </Box>
+      <Box
+        sx={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: "#1A1A1AE5",
+        }}
+      />
+
+      {/* bac color   */}
     </Box>
   );
 };
