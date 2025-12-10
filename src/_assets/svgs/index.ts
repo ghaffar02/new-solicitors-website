@@ -49,6 +49,11 @@ import blackIcon from "./oldimages/blackIcon.svg";
 import whiteIcon from "./oldimages/whiteIcon.svg";
 import info from "./oldimages/info.svg";
 
+// all the above images at the prev imag
+import criminalLaw from "./criminalLaw.svg";
+import employmentLaw from "./employmentLaw.svg";
+import familyLaw from "./familyLaw.svg";
+import immigrationLaw from "./immigrationLaw.svg";
 const svgs = {
   Logo,
   Hamburger,
@@ -95,6 +100,11 @@ const svgs = {
   blackIcon,
   whiteIcon,
   info,
+  // all the above image are the prev images
+  criminalLaw,
+  employmentLaw,
+  familyLaw,
+  immigrationLaw,
 };
 
 export default svgs;
