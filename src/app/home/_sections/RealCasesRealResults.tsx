@@ -1,9 +1,13 @@
 "use client";
-import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import React, { useRef } from "react";
+import { Box, Typography } from "@mui/material";
 import { localFontSize, sectionPadding } from "@/app/utils/themes";
 import pngs from "@/_assets/webp";
 import Image, { StaticImageData } from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import CustomArrow from "@/_components/CustomArrow";
 
 // Card props interface
 interface CaseCardProps {
@@ -18,9 +22,11 @@ const CaseCard: React.FC<CaseCardProps> = ({ image, heading, description }) => {
     <Box
       sx={{
         position: "relative",
-        width: "100%",
+        // width: "100%",
         height: { xs: "350px", sm: "400px", md: "450px" },
         borderRadius: "0px",
+        marginX: { xs: "5px", sm: "10px", md: "15px" },
+        marginTop: { xs: "10px", sm: "0px" },
       }}
     >
       {/* Background Image */}
@@ -58,6 +64,7 @@ const CaseCard: React.FC<CaseCardProps> = ({ image, heading, description }) => {
           flexDirection: "column",
           gap: "8px",
           width: { xs: "calc(100% - 20px)", md: "calc(100% - 30px)" },
+          height: { xs: "156px", sm: "159px", md: "179px", lg: "185px" },
         }}
       >
         <Typography
@@ -66,6 +73,12 @@ const CaseCard: React.FC<CaseCardProps> = ({ image, heading, description }) => {
             fontSize: localFontSize.h3,
             fontWeight: "600",
             fontFamily: "'PlayfairDisplay', serif",
+            // elipsis
+            display: "-webkit-box",
+            WebkitLineClamp: 1,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
           }}
         >
           {heading}
@@ -74,6 +87,12 @@ const CaseCard: React.FC<CaseCardProps> = ({ image, heading, description }) => {
           sx={{
             color: "#9A9A9A",
             fontSize: localFontSize.p2,
+            // elipsis
+            display: "-webkit-box",
+            WebkitLineClamp: 3,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
           }}
         >
           {description}
@@ -103,9 +122,70 @@ const casesData = [
     description:
       "Achieved case dismissal by presenting strong evidence and strategic defense.",
   },
+  {
+    image: pngs.businessDispute,
+    heading: "Business Dispute",
+    description:
+      "Resolved a complex partnership conflict through skilled negotiation and legal precision.",
+  },
+  {
+    image: pngs.immigrationAppeal,
+    heading: "Immigration Appeal",
+    description:
+      "Successfully secured residency after an initial visa refusal.",
+  },
+  {
+    image: pngs.criminalDefense,
+    heading: "Criminal Defense",
+    description:
+      "Achieved case dismissal by presenting strong evidence and strategic defense.",
+  },
 ];
 
 export default function RealCasesRealResults() {
+  const sliderRef = useRef<Slider>(null);
+
+  const handlePrev = () => {
+    sliderRef.current?.slickPrev();
+  };
+
+  const handleNext = () => {
+    sliderRef.current?.slickNext();
+  };
+
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1350,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 2,
+        },
+      },
+    ],
+  };
   return (
     <Box
       sx={{
@@ -154,20 +234,45 @@ export default function RealCasesRealResults() {
               complex challenges and achieve favorable results.
             </Typography>
           </Box>
+
+          {/* Right Side - Arrow Buttons */}
+          <Box
+            sx={{
+              display: "flex",
+              gap: "12px",
+            }}
+          >
+            <CustomArrow
+              onClick={handlePrev}
+              sx={{
+                position: "relative",
+                bottom: "unset",
+                transform: "rotate(180deg)",
+              }}
+            />
+            <CustomArrow
+              onClick={handleNext}
+              sx={{
+                position: "relative",
+                bottom: "unset",
+              }}
+            />
+          </Box>
         </Box>
 
         {/* Cards Grid */}
-        <Grid container spacing={{ xs: 2.5, md: 3.75 }}>
+
+        <Slider ref={sliderRef} {...settings}>
           {casesData.map((caseItem, index) => (
-            <Grid item xs={12} sm={6} lg={4} key={index}>
+            <Box key={index}>
               <CaseCard
                 image={caseItem.image}
                 heading={caseItem.heading}
                 description={caseItem.description}
               />
-            </Grid>
+            </Box>
           ))}
-        </Grid>
+        </Slider>
       </Box>
     </Box>
   );
