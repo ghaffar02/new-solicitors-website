@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { Box, Typography } from "@mui/material";
+import Button from "@/_components/Button";
 import { localFontSize, sectionPadding } from "@/app/utils/themes";
 import pngs from "@/_assets/webp";
 import Image, { StaticImageData } from "next/image";
@@ -8,6 +9,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CustomArrow from "@/_components/CustomArrow";
+import svgs from "@/_assets/svgs";
 
 // Card props interface
 interface InsightCardProps {
@@ -188,7 +190,6 @@ export default function InsightsAndLegalGuidance() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          rows: 2,
         },
       },
     ],
@@ -283,6 +284,44 @@ export default function InsightsAndLegalGuidance() {
             }}
           />
         </Box>
+
+        <Button
+          text={
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+              }}
+            >
+              See more
+              <Image
+                src={svgs.arrowWhite}
+                alt="arrow"
+                style={{ width: "18px" }}
+              />
+            </Box>
+          }
+          sx={{
+            backgroundColor: "#074592",
+            color: "#FFFFFF",
+            border: "none",
+            padding: { xs: "14px 28px", md: "16px 36px" },
+            fontSize: localFontSize.p3,
+            fontWeight: "500",
+            borderRadius: "0px",
+            width: "180px",
+            textTransform: "none",
+            transition: "all 0.3s ease",
+            margin: "auto",
+            marginTop: { xs: "30px", md: "40px", lg: "60px" },
+            "&:hover": {
+              backgroundColor: "#053a7a",
+              transform: "translateY(-2px)",
+              boxShadow: "0 4px 20px rgba(7, 69, 146, 0.4)",
+            },
+          }}
+        />
       </Box>
     </Box>
   );
