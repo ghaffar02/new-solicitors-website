@@ -14,6 +14,9 @@ import LegalServicesTab2 from "./oldimages/legalServicesTab2.webp";
 import businessDispute from "./businessDispute.png";
 import criminalDefense from "./criminalDefense.png";
 import immigrationAppeal from "./immigrationAppeal.png";
+import insightsAndLegalGuidance1 from "./insightsAndLegalGuidance1.png";
+import insightsAndLegalGuidance2 from "./insightsAndLegalGuidance2.png";
+import insightsAndLegalGuidance3 from "./insightsAndLegalGuidance3.png";
 
 const pngs = {
   Suit,
@@ -31,6 +34,9 @@ const pngs = {
   businessDispute,
   criminalDefense,
   immigrationAppeal,
+  insightsAndLegalGuidance1,
+  insightsAndLegalGuidance2,
+  insightsAndLegalGuidance3,
 };
 
 export default pngs;
