@@ -10,6 +10,11 @@ import CommitedToJustice from "./oldimages/commitedToJustice.webp";
 import CommercialLaw from "./oldimages/commercialLaw.webp";
 import LegalServicesTab1 from "./oldimages/legalServicesTab1.webp";
 import LegalServicesTab2 from "./oldimages/legalServicesTab2.webp";
+// above images are from old images folder
+import businessDispute from "./businessDispute.png";
+import criminalDefense from "./criminalDefense.png";
+import immigrationAppeal from "./immigrationAppeal.png";
+
 const pngs = {
   Suit,
   Client1,
@@ -22,6 +27,10 @@ const pngs = {
   CommercialLaw,
   LegalServicesTab1,
   LegalServicesTab2,
+  // above images are from old images folder
+  businessDispute,
+  criminalDefense,
+  immigrationAppeal,
 };
 
 export default pngs;

@@ -12,21 +12,13 @@ import LegalServicesTabs from "./_sections/LegalServicesTabs";
 import InfoSection from "@/_components/InfoSection";
 import pngs from "@/_assets/webp";
 import WhatWeOffer from "./_sections/WhatWeOffer";
+import RealCasesRealResults from "./_sections/RealCasesRealResults";
 // import { Box } from "@mui/material";
 
 export default function HomePage() {
   return (
     <>
       <HeroHome />
-      {/* <Box
-        sx={{
-          // paddingX: { xl: "60px", xxl: "none" },
-          maxWidth: { xs: "1536px", xxl: "80vw" },
-          width: "100%",
-          margin: "auto",
-          backgroundColor: "#ffffff",
-        }}
-      > */}
       <InfoSection
         banner="lets get to"
         heading="know about us"
@@ -36,6 +28,8 @@ export default function HomePage() {
         image={pngs.Suit}
       />
       <WhatWeOffer />
+      <RealCasesRealResults />
+
       {/* above this   */}
       <CoreValues />
       {/* <AboutUs /> */}

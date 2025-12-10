@@ -54,6 +54,7 @@ import criminalLaw from "./criminalLaw.svg";
 import employmentLaw from "./employmentLaw.svg";
 import familyLaw from "./familyLaw.svg";
 import immigrationLaw from "./immigrationLaw.svg";
+import arrowBlue from "./arrowBlue.svg";
 const svgs = {
   Logo,
   Hamburger,
@@ -105,6 +106,7 @@ const svgs = {
   employmentLaw,
   familyLaw,
   immigrationLaw,
+  arrowBlue,
 };
 
 export default svgs;
