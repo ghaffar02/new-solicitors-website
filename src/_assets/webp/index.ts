@@ -17,6 +17,9 @@ import immigrationAppeal from "./immigrationAppeal.png";
 import insightsAndLegalGuidance1 from "./insightsAndLegalGuidance1.png";
 import insightsAndLegalGuidance2 from "./insightsAndLegalGuidance2.png";
 import insightsAndLegalGuidance3 from "./insightsAndLegalGuidance3.png";
+import customer1 from "./customer1.png";
+import customer2 from "./customer2.png";
+import customer3 from "./customer3.png";
 
 const pngs = {
   Suit,
@@ -37,6 +40,9 @@ const pngs = {
   insightsAndLegalGuidance1,
   insightsAndLegalGuidance2,
   insightsAndLegalGuidance3,
+  customer1,
+  customer2,
+  customer3,
 };
 
 export default pngs;

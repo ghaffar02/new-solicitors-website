@@ -14,6 +14,7 @@ import pngs from "@/_assets/webp";
 import WhatWeOffer from "./_sections/WhatWeOffer";
 import RealCasesRealResults from "./_sections/RealCasesRealResults";
 import InsightsAndLegalGuidance from "./_sections/InsightsAndLegalGuidance";
+import WhatOurCustomersSay from "./_sections/WhatOurCustomersSay";
 // import { Box } from "@mui/material";
 
 export default function HomePage() {
@@ -31,6 +32,7 @@ export default function HomePage() {
       <WhatWeOffer />
       <RealCasesRealResults />
       <InsightsAndLegalGuidance />
+      <WhatOurCustomersSay />
 
       {/* above this   */}
       <CoreValues />
