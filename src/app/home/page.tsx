@@ -15,6 +15,7 @@ import WhatWeOffer from "./_sections/WhatWeOffer";
 import RealCasesRealResults from "./_sections/RealCasesRealResults";
 import InsightsAndLegalGuidance from "./_sections/InsightsAndLegalGuidance";
 import WhatOurCustomersSay from "./_sections/WhatOurCustomersSay";
+import { Box } from "@mui/material";
 // import { Box } from "@mui/material";
 
 export default function HomePage() {
@@ -35,6 +36,9 @@ export default function HomePage() {
       <WhatOurCustomersSay />
       <ContactUs />
       <Footer />
+      <Box
+        sx={{ height: "100px", width: "100%", backgroundColor: "red" }}
+      ></Box>
       {/* above this   */}
       <CoreValues />
       {/* <AboutUs /> */}

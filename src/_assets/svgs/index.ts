@@ -66,6 +66,7 @@ import twitter from "./twitter.svg";
 import phoneBlue from "./phoneBlue.svg";
 import emailBlue from "./emailBlue.svg";
 import locationBlue from "./locationBlue.svg";
+import logoBlack from "./logoBlack.svg";
 
 const svgs = {
   Logo,
@@ -130,6 +131,7 @@ const svgs = {
   phoneBlue,
   emailBlue,
   locationBlue,
+  logoBlack,
 };
 
 export default svgs;
