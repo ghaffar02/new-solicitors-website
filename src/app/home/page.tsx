@@ -22,6 +22,21 @@ export default function HomePage() {
   return (
     <>
       <HeroHome />
+      <Box
+        sx={{
+          height: "200px",
+          width: "100%",
+          backgroundColor: "#fff",
+          display: { xs: "none", md: "block" },
+        }}
+      ></Box>
+      <Box
+        sx={{
+          display: { md: "none" },
+        }}
+      >
+        <CoreValues />
+      </Box>
       <InfoSection
         banner="lets get to"
         heading="know about us"
@@ -36,9 +51,7 @@ export default function HomePage() {
       <WhatOurCustomersSay />
       <ContactUs />
       <Footer />
-      <Box
-        sx={{ height: "100px", width: "100%", backgroundColor: "red" }}
-      ></Box>
+
       {/* above this   */}
       <CoreValues />
       {/* <AboutUs /> */}

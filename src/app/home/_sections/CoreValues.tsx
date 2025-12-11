@@ -7,28 +7,37 @@ import { globalFontSize } from "@/app/utils/themes";
 
 const coreValuesData = [
   {
-    icon: svgs.Handshake,
-    lightIcon: svgs.HandshakeWhite,
+    icon: svgs.expertLawyers,
+    lightIcon: svgs.expertLawyers,
+
     alt: "handshake",
-    title: "We Value Our Clients",
+    title: "expert lawyers",
     description:
-      "We understand the unique challenges of each case and find flexible solutions to deal with them, ensuring the best possible outcomes for our clients.",
+      "Our team brings years of experience, expertise, and dedication to every case.",
   },
   {
-    icon: svgs.Clipboard,
-    lightIcon: svgs.ClipboardWhite,
+    icon: svgs.allTimeSupport,
+    lightIcon: svgs.allTimeSupport,
     alt: "clipboard",
-    title: "Result-Driven Approach",
+    title: "all time support",
     description:
-      "We tailor solutions that suit our client’s needs and use our deep industry knowledge and result-driven approach to deliver desired results.",
+      "We’re here for you whenever you need us — offering reliable legal support.",
   },
   {
-    icon: svgs.Searchfile,
-    lightIcon: svgs.SearchfileWhite,
+    icon: svgs.successRate,
+    lightIcon: svgs.successRate,
     alt: "searchfile",
-    title: "Track Record",
+    title: "success rate",
     description:
-      "We are proud to maintain an impeccable track record continuously striving to provide the best legal practices with accuracy, expertise, and efficiency.",
+      "Our firm has a proven track record of achieving successful outcomes for our clients.",
+  },
+  {
+    icon: svgs.clientTrust,
+    lightIcon: svgs.clientTrust,
+    alt: "searchfile",
+    title: "Client’s trust",
+    description:
+      "We build lasting relationships through integrity, transparency, and results.",
   },
 ];
 
@@ -37,91 +46,84 @@ function CoreValues() {
 
   return (
     <Box
+      data-aos="zoom-in"
+      data-aos-duration="500"
       sx={{
-        background: "#5656561A",
+        maxWidth: "1150px",
+        width: "100%",
+        background: "#074592",
+        borderRadius: { md: "30px" },
         padding: {
-          xs: "25px 20px",
-          sm: "50px 30px",
-          md: "75px 50px",
-          lg: "100px 100px",
+          xs: "40px 16px",
+          sm: "60px 30px",
+          md: "40px",
         },
-        borderBottomLeftRadius: "80px",
-        borderBottomRightRadius: "80px",
+        display: "flex",
+        flexDirection: { xs: "column", md: "row" },
+        alignItems: { xs: "center", md: "initial" },
+        justifyContent: { xs: "initial", md: "center" },
+        gap: { xs: "40px", sm: "60px", md: "10px" },
+        boxShadow: "0px 0px 75px rgba(86, 86, 86, 0.3)",
       }}
     >
-      <Box
-        data-aos="zoom-in"
-        data-aos-duration="500"
-        sx={{
-          maxWidth: { sm: "600px", md: "1440px", xxl: "1536px" },
-          width: "100%",
-          margin: "auto",
-          background: "#fff",
-          borderRadius: "50px",
-          padding: {
-            xs: "30px 20px",
-            sm: "50px 30px",
-            md: "75px 50px",
-            lg: "50px 60px",
-          },
-          display: "flex",
-          flexDirection: { xs: "column", md: "row" },
-          alignItems: { xs: "center", md: "initial" },
-          justifyContent: { xs: "initial", md: "center" },
-          gap: { xs: "20px", sm: "40px", md: "55px" },
-          boxShadow: "0px 0px 75px rgba(86, 86, 86, 0.3)",
-        }}
-      >
-        {coreValuesData.map((value, index) => (
-          <Box
-            key={index}
-            sx={{
-              maxWidth: { xs: "339px", xxl: "380px" },
-              width: "100%",
-              padding: "25px 20px",
-              textAlign: "center",
-              borderRadius: "30px",
-              transition: "all .4s ease-in-out",
-              backgroundColor:
-                hoveredIndex === index ? "#084592" : "transparent",
-              boxShadow:
-                hoveredIndex === index ? "0px 4px 20px 0px #07459280" : "none",
+      {coreValuesData.map((value, index) => (
+        <Box
+          key={index}
+          sx={{
+            maxWidth: { xs: "270px" },
+            width: "100%",
+            padding: { lg: "20px" },
+            textAlign: "center",
+            borderRadius: "30px",
+            transition: "all .4s ease-in-out",
+            backgroundColor: hoveredIndex === index ? "#084592" : "transparent",
+            boxShadow:
+              hoveredIndex === index ? "0px 4px 20px 0px #07459280" : "none",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(null)}
+        >
+          {/* Image changes on hover */}
+          <Image
+            src={hoveredIndex === index ? value.lightIcon : value.icon}
+            alt={value.alt}
+            height={40}
+            width={40}
+            style={{
+              transition: "opacity 0.3s ease-in-out",
+              marginBottom: "20px",
             }}
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
+          />
+          {/* Title text changes color on hover */}
+          <Typography
+            sx={{
+              fontSize: globalFontSize.h3,
+              color: hoveredIndex === index ? "#ffffff" : "#fff",
+              fontWeight: "500",
+              transition: "color 0.3s ease-in-out",
+              textTransform: "capitalize",
+              fontFamily: "'PlayfairDisplay', serif !important",
+              maxWidth: "180px",
+            }}
           >
-            {/* Image changes on hover */}
-            <Image
-              src={hoveredIndex === index ? value.lightIcon : value.icon}
-              alt={value.alt}
-              height={64}
-              width={64}
-              style={{ transition: "opacity 0.3s ease-in-out" }}
-            />
-            {/* Title text changes color on hover */}
-            <Typography
-              sx={{
-                fontSize: globalFontSize.h3,
-                color: hoveredIndex === index ? "#ffffff" : "#074592",
-                fontWeight: "500",
-                transition: "color 0.3s ease-in-out",
-              }}
-            >
-              {value.title}
-            </Typography>
-            <Typography
-              sx={{
-                fontSize: globalFontSize.p2,
-                color: hoveredIndex === index ? "#ffffff80" : "#00000080",
-                fontWeight: "400",
-                transition: "color 0.3s ease-in-out",
-              }}
-            >
-              {value.description}
-            </Typography>
-          </Box>
-        ))}
-      </Box>
+            {value.title}
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: globalFontSize.p2,
+              color: hoveredIndex === index ? "#FFFFFF80" : "#FFFFFF80",
+              fontWeight: "400",
+              transition: "color 0.3s ease-in-out",
+            }}
+          >
+            {value.description}
+          </Typography>
+        </Box>
+      ))}
     </Box>
   );
 }

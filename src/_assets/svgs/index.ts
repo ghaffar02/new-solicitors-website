@@ -67,6 +67,10 @@ import phoneBlue from "./phoneBlue.svg";
 import emailBlue from "./emailBlue.svg";
 import locationBlue from "./locationBlue.svg";
 import logoBlack from "./logoBlack.svg";
+import allTimeSupport from "./allTimeSupport.svg";
+import clientTrust from "./clientTrust.svg";
+import expertLawyers from "./expertLawyers.svg";
+import successRate from "./successRate.svg";
 
 const svgs = {
   Logo,
@@ -132,6 +136,10 @@ const svgs = {
   emailBlue,
   locationBlue,
   logoBlack,
+  allTimeSupport,
+  clientTrust,
+  expertLawyers,
+  successRate,
 };
 
 export default svgs;

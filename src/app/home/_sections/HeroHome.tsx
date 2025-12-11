@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import Navbar from "@/_components/Navbar";
 import { useRouter } from "next/navigation";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import CoreValues from "./CoreValues";
 
 const HeroHome: React.FC = () => {
   const router = useRouter();
@@ -164,8 +165,20 @@ const HeroHome: React.FC = () => {
           backgroundColor: "#1A1A1AE5",
         }}
       />
-
       {/* bac color   */}
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: 0,
+          left: "50%",
+          transform: "translate(-50%,50%)",
+          width: { md: "calc(100% - 80px)", lg: "100%" },
+          maxWidth: "1150px",
+          display: { xs: "none", md: "block" },
+        }}
+      >
+        <CoreValues />
+      </Box>
     </Box>
   );
 };
