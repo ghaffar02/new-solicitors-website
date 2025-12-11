@@ -71,6 +71,10 @@ import allTimeSupport from "./allTimeSupport.svg";
 import clientTrust from "./clientTrust.svg";
 import expertLawyers from "./expertLawyers.svg";
 import successRate from "./successRate.svg";
+import clarity from "./clarity.svg";
+import commitment from "./commitment.svg";
+import integrity from "./integrity.svg";
+import professionalism from "./professionalism.svg";
 
 const svgs = {
   Logo,
@@ -140,6 +144,10 @@ const svgs = {
   clientTrust,
   expertLawyers,
   successRate,
+  clarity,
+  commitment,
+  integrity,
+  professionalism,
 };
 
 export default svgs;
