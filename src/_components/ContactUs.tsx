@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
-import { globalFontSize } from "@/app/utils/themes";
+import { Box, Typography } from "@mui/material";
+import { sectionPadding, localFontSize } from "@/app/utils/themes";
 import svgs from "@/_assets/svgs";
 import ContactUsForm from "./ContactUsForm";
 import { ContactInfoBox } from "./ContactInfoBox";
@@ -9,17 +9,17 @@ import { ContactInfoBox } from "./ContactInfoBox";
 export default function ContactUs() {
   const contactInfoData = [
     {
-      icon: svgs.Phone,
+      icon: svgs.phone,
       title: "Phone",
       subtitle: ["01709458786", "0208 226 5786"],
     },
     {
-      icon: svgs.Mail,
+      icon: svgs.email,
       title: "Mail",
       subtitle: "info@conquestlaw.co.uk",
     },
     {
-      icon: svgs.Location,
+      icon: svgs.location,
       title: "Address",
       subtitle: [
         "139 Wellgate, Rotherham, S60 2NN",
@@ -31,102 +31,84 @@ export default function ContactUs() {
   return (
     <Box
       sx={{
-        background: "#5656561A",
-        padding: {
-          xs: "40px 20px",
-          sm: "60px 30px",
-          md: "80px 50px",
-          lg: "100px 100px",
-        },
-        borderRadius: { xs: "40px", md: "80px" },
-        // marginTop: { xxl: "60px" },
+        background: "#FFFFFF",
+        padding: sectionPadding,
       }}
     >
       <Box
         sx={{
-          maxWidth: { xs: "1440px", xxl: "80vw" },
+          maxWidth: "1440px",
           width: "100%",
           margin: "auto",
+          // gap: { xs: "40px", md: "60px" },
+          "& > :not(:last-child)": {
+            marginBottom: {
+              xs: "20px",
+              sm: "30px",
+              md: "50px",
+              lg: "60px",
+              xl: "80px",
+            },
+          },
         }}
       >
-        <Grid sx={{ rowGap: "40px" }} container>
-          <Grid
-            data-aos="fade-right"
-            data-aos-duration="500"
+        {/* Form Section */}
+        {/* GET STARTED Label */}
+        <Box>
+          <Typography
             sx={{
-              borderRight: { md: "3px solid #074592" },
-              paddingRight: { md: "20px", lg: "35px" },
+              color: "#9A9A9A",
+              fontSize: localFontSize.p4,
+              textTransform: "uppercase",
+              fontWeight: "500",
             }}
-            item
-            xs={12}
-            md={7}
-            // xxl={8}
           >
-            <ContactUsForm />
-          </Grid>
-          <Grid
-            data-aos="fade-left"
-            data-aos-duration="500"
+            GET STARTED
+          </Typography>
+
+          {/* Main Heading */}
+          <Typography
             sx={{
-              paddingLeft: { md: "20px", lg: "35px" },
+              color: "#1A1A1A",
+              fontSize: localFontSize.h2,
+              fontWeight: "600",
+              fontFamily: "'PlayfairDisplay', serif",
+              marginBottom: { xs: "20px", md: "30px" },
+              maxWidth: { xs: "330px", sm: "430px", md: "560px" },
             }}
-            item
-            xs={12}
-            md={5}
-            // xxl={4}
           >
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: { xs: "20px", md: "40px" },
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  rowGap: { xs: "10px", md: "20px" },
-                }}
-              >
-                <Typography
-                  sx={{
-                    color: "#565656",
-                    fontSize: globalFontSize.h2,
-                    fontWeight: "700",
-                  }}
-                >
-                  Get the Legal Support You Need
-                </Typography>
-                <Typography
-                  sx={{
-                    color: "#00000080",
-                    fontSize: globalFontSize.p2,
-                  }}
-                >
-                  Have legal questions or need expert advice? Our team of
-                  experienced solicitors is here to help you.
-                </Typography>
-              </Box>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "20px",
-                }}
-              >
-                {contactInfoData.map((info, index) => (
-                  <ContactInfoBox
-                    key={index}
-                    icon={info.icon}
-                    title={info.title}
-                    subtitle={info.subtitle}
-                  />
-                ))}
-              </Box>
-            </Box>
-          </Grid>
-        </Grid>
+            {` Get In Touch With Us. We're Here To Assist You.`}
+          </Typography>
+        </Box>
+
+        <Box
+          sx={{
+            // maxWidth: { xs: "100%", md: "800px" },
+            width: "100%",
+          }}
+        >
+          <ContactUsForm />
+        </Box>
+
+        {/* Contact Info Footer */}
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            gap: { xs: "20px", md: "40px" },
+            justifyContent: { md: "center" },
+            alignItems: { xs: "flex-start", md: "center" },
+          }}
+        >
+          {contactInfoData.map((info, index) => (
+            <ContactInfoBox
+              key={index}
+              icon={info.icon}
+              title={info.title}
+              subtitle={info.subtitle}
+            />
+          ))}
+        </Box>
       </Box>
     </Box>
   );

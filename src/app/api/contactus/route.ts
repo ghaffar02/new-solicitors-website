@@ -17,9 +17,11 @@ export const POST = async (request: Request) => {
     const mailOptions = {
       from: "marsad11223@gmail.com",
       to: "info@conquestlaw.co.uk",
-      subject: subject ?? "Contact Form Submission",
+      subject: subject || "Contact Form Submission",
       text: message,
-      html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Phone:</strong> ${phone}</p><p><strong>Message:</strong> ${message}</p>`,
+      html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Phone:</strong> ${phone}</p><p><strong>Subject:</strong> ${
+        subject || "N/A"
+      }</p><p><strong>Message:</strong> ${message}</p>`,
     };
 
     await transporter.sendMail(mailOptions);

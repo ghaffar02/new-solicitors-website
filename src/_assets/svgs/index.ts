@@ -56,6 +56,9 @@ import familyLaw from "./familyLaw.svg";
 import immigrationLaw from "./immigrationLaw.svg";
 import arrowBlue from "./arrowBlue.svg";
 import arrowWhite from "./arrowWhite.svg";
+import email from "./email.svg";
+import phone from "./phone.svg";
+import location from "./location.svg";
 
 const svgs = {
   Logo,
@@ -110,6 +113,9 @@ const svgs = {
   immigrationLaw,
   arrowBlue,
   arrowWhite,
+  email,
+  phone,
+  location,
 };
 
 export default svgs;

@@ -1,11 +1,11 @@
 "use client";
 import React, { forwardRef } from "react";
-import { Box, TextField, FormLabel } from "@mui/material";
+import { TextField, Box, FormLabel } from "@mui/material";
 import { globalFontSize } from "@/app/utils/themes";
 
 interface CustomInputFieldProps {
-  label: string;
-  inputLabel: string;
+  label?: string;
+  inputLabel?: string;
   inputType?: string;
   multiline?: boolean;
   rows?: number;
@@ -32,56 +32,73 @@ const CustomInputField = forwardRef<
   ) => {
     return (
       <Box sx={{ width: "100%" }}>
-        <FormLabel
-          sx={{
-            color: "#074592",
-            fontSize: globalFontSize.p2,
-            mb: { xs: "10px", md: "15px" },
-            display: "block",
-          }}
-        >
-          {label}
-        </FormLabel>
-
+        {label && (
+          <FormLabel
+            sx={{
+              color: "#9A9A9A",
+              fontSize: globalFontSize.p1,
+              mb: "8px",
+              display: "block",
+            }}
+          >
+            {label}
+          </FormLabel>
+        )}
         <TextField
           fullWidth
           type={inputType}
-          label={inputLabel}
-          variant="outlined"
+          placeholder={inputLabel}
+          variant="standard"
           multiline={multiline}
           rows={rows}
           error={error}
           helperText={helperText}
-          InputLabelProps={{
+          InputProps={{
             sx: {
-              color: "#00000080",
-              fontSize: globalFontSize.p3,
+              color: "#9A9A9A",
+              fontSize: globalFontSize.p1,
+              "&::placeholder": {
+                color: "#9A9A9A",
+                opacity: 1,
+              },
             },
           }}
           inputProps={{
             sx: {
-              color: "#00000080",
-              fontSize: globalFontSize.p3,
+              color: "#9A9A9A",
+              fontSize: globalFontSize.p1,
+              "&::placeholder": {
+                color: "#9A9A9A",
+                opacity: 1,
+              },
             },
           }}
           sx={{
-            // fallback: target the input element as well
             "& .MuiInputBase-input": {
-              fontSize: globalFontSize.p3,
+              fontSize: globalFontSize.p1,
+              color: "#9A9A9A",
+              padding: { xs: "0 0 20px 10px", md: "0 0 30px 10px" }, // top right bottom left
+              "&::placeholder": {
+                color: "#9A9A9A",
+                opacity: 1,
+              },
+            },
+            "& .MuiInputBase-inputMultiline": {
+              paddingTop: { xs: "0px", md: "0px" },
+              paddingBottom: { xs: "20px", md: "30px" },
             },
             "& .MuiFormHelperText-root": {
               fontSize: globalFontSize.p4,
             },
-            "& .MuiOutlinedInput-root": {
-              "& fieldset": {
-                borderColor: "#0D3B7A",
-                borderRadius: "8px",
+            "& .MuiInput-underline": {
+              "&:before": {
+                borderBottom: "1px solid #1A1A1A",
               },
-              "&:hover fieldset": {
-                borderColor: "#0A2D5E",
+              "&:after": {
+                borderBottom: "1px solid #1A1A1A",
               },
-              "&.Mui-focused fieldset": {
-                borderColor: "#074592",
+              "&:hover:not(.Mui-disabled):before": {
+                borderBottom: "1px solid #1A1A1A",
               },
             },
           }}

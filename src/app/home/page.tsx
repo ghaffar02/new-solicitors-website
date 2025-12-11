@@ -33,7 +33,7 @@ export default function HomePage() {
       <RealCasesRealResults />
       <InsightsAndLegalGuidance />
       <WhatOurCustomersSay />
-
+      <ContactUs />
       {/* above this   */}
       <CoreValues />
       {/* <AboutUs /> */}

@@ -15,18 +15,16 @@ export function ContactInfoBox({ icon, title, subtitle }: ContactInfoBoxProps) {
     <Box
       sx={{
         display: "flex",
-        gap: "20px",
-        padding: { xs: "10px", xxl: "30px" },
-        justifyContent: "flex-start",
-        alignItems: "center",
-        bgcolor: "#074592",
-        borderRadius: "20px",
+        gap: "16px",
+        alignItems: "flex-start",
+        justifyContent: "space-between !important",
       }}
     >
+      {/* Blue Square Icon */}
       <Box
         sx={{
-          height: { xs: "30px", md: "50px" },
-          width: { xs: "30px", md: "50px" },
+          height: { xs: "40px", md: "50px" },
+          width: { xs: "40px", md: "50px" },
         }}
       >
         <Image
@@ -39,16 +37,9 @@ export function ContactInfoBox({ icon, title, subtitle }: ContactInfoBoxProps) {
           alt={title}
         />
       </Box>
+
+      {/* Content */}
       <Box>
-        <Typography
-          sx={{
-            color: "#FFFFFF",
-            fontSize: globalFontSize.p1,
-            fontWeight: "500",
-          }}
-        >
-          {title}
-        </Typography>
         {Array.isArray(subtitle) ? (
           <Box component="ul" sx={{ paddingLeft: "20px", margin: 0 }}>
             {subtitle.map((item, index) => (
@@ -56,8 +47,8 @@ export function ContactInfoBox({ icon, title, subtitle }: ContactInfoBoxProps) {
                 key={index}
                 component="li"
                 sx={{
-                  color: "#FFFFFF80",
-                  fontSize: globalFontSize.p2, // This will now work with breakpoints
+                  color: "#9A9A9A",
+                  fontSize: globalFontSize.p2,
                   listStyle: "disc",
                 }}
               >
@@ -68,7 +59,7 @@ export function ContactInfoBox({ icon, title, subtitle }: ContactInfoBoxProps) {
         ) : (
           <Typography
             sx={{
-              color: "#FFFFFF80",
+              color: "#9A9A9A",
               fontSize: globalFontSize.p2,
             }}
           >
