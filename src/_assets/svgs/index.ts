@@ -59,6 +59,13 @@ import arrowWhite from "./arrowWhite.svg";
 import email from "./email.svg";
 import phone from "./phone.svg";
 import location from "./location.svg";
+import facebook from "./facebook.svg";
+import instagram from "./instagram.svg";
+import linkedin from "./linkedin.svg";
+import twitter from "./twitter.svg";
+import phoneBlue from "./phoneBlue.svg";
+import emailBlue from "./emailBlue.svg";
+import locationBlue from "./locationBlue.svg";
 
 const svgs = {
   Logo,
@@ -116,6 +123,13 @@ const svgs = {
   email,
   phone,
   location,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  phoneBlue,
+  emailBlue,
+  locationBlue,
 };
 
 export default svgs;

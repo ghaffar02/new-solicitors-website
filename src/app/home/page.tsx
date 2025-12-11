@@ -34,6 +34,7 @@ export default function HomePage() {
       <InsightsAndLegalGuidance />
       <WhatOurCustomersSay />
       <ContactUs />
+      <Footer />
       {/* above this   */}
       <CoreValues />
       {/* <AboutUs /> */}
