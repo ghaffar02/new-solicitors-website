@@ -114,7 +114,7 @@ function CoreValues() {
           </Typography>
           <Typography
             sx={{
-              fontSize: globalFontSize.p2,
+              fontSize: globalFontSize.p3,
               color: hoveredIndex === index ? "#FFFFFF80" : "#FFFFFF80",
               fontWeight: "400",
               transition: "color 0.3s ease-in-out",
