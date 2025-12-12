@@ -16,7 +16,7 @@ export function ContactInfoBox({ icon, title, subtitle }: ContactInfoBoxProps) {
       sx={{
         display: "flex",
         gap: "16px",
-        alignItems: "flex-start",
+        alignItems: "center",
         justifyContent: "space-between !important",
       }}
     >

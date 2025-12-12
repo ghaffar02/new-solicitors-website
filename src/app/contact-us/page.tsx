@@ -17,9 +17,8 @@ export default function ContactUsScreen() {
         }}
       > */}
       <Hero
-        text="Get In Touch "
-        text2="With Us"
-        backgroundImage="bgContactUs.webp"
+        banner="Stronger With Us"
+        heading="Expert Legal Support When You Need It Most"
       />
       <ContactUs />
       <Footer />

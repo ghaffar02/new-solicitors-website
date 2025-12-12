@@ -96,7 +96,7 @@ export default function ContactUs() {
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             gap: { xs: "20px", md: "40px" },
-            justifyContent: { md: "center" },
+            justifyContent: { md: "space-between" },
             alignItems: { xs: "flex-start", md: "center" },
           }}
         >
