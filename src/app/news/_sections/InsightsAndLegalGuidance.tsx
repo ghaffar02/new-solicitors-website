@@ -1,15 +1,12 @@
 "use client";
 import React, { useRef } from "react";
 import { Box, Typography } from "@mui/material";
-import Button from "@/_components/Button";
 import { localFontSize, sectionPadding } from "@/app/utils/themes";
 import pngs from "@/_assets/webp";
-import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CustomArrow from "@/_components/CustomArrow";
-import svgs from "@/_assets/svgs";
 import InsightCard from "@/_components/InsightCard";
 
 // Insights data
@@ -70,6 +67,7 @@ export default function InsightsAndLegalGuidance() {
     speed: 600,
     slidesToShow: 3,
     slidesToScroll: 1,
+    rows: 2,
     responsive: [
       {
         breakpoint: 1350,
@@ -117,31 +115,36 @@ export default function InsightsAndLegalGuidance() {
             justifyContent: "space-between",
             alignItems: { xs: "flex-start", md: "flex-end" },
             marginBottom: { xs: "30px", md: "50px" },
-            gap: { xs: "20px", md: "40px" },
+            gap: { xs: "40px", md: "60px", lg: "80px" },
           }}
         >
           {/* Left Side - Heading and Description */}
-          <Box sx={{ maxWidth: "700px", margin: "auto", textAlign: "center" }}>
+          <Box
+            sx={{
+              maxWidth: { xs: "300px", sm: "400px", md: "580px" },
+              margin: "auto",
+              textAlign: "center",
+            }}
+          >
+            <Typography
+              sx={{
+                color: "#9A9A9A",
+                fontSize: localFontSize.p2,
+                marginBottom: { xs: "12px", md: "16px" },
+                textTransform: "uppercase",
+              }}
+            >
+              Expert Legal Insights
+            </Typography>
             <Typography
               sx={{
                 color: "#1A1A1A",
                 fontSize: localFontSize.h2,
                 fontWeight: "600",
                 fontFamily: "'PlayfairDisplay', serif",
-                marginBottom: { xs: "12px", md: "16px" },
               }}
             >
-              Insights & Legal Guidance
-            </Typography>
-            <Typography
-              sx={{
-                color: "#9A9A9A",
-                fontSize: localFontSize.p2,
-              }}
-            >
-              Stay informed with expert articles on law, rights, and justice.
-              Our blogs cover real cases, practical advice, and legal insights
-              to help you make confident decisions.{" "}
+              Clear insights on legal matters{" "}
             </Typography>
           </Box>
         </Box>
@@ -184,44 +187,6 @@ export default function InsightsAndLegalGuidance() {
             }}
           />
         </Box>
-
-        <Button
-          text={
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                gap: "10px",
-              }}
-            >
-              See more
-              <Image
-                src={svgs.arrowWhite}
-                alt="arrow"
-                style={{ width: "18px" }}
-              />
-            </Box>
-          }
-          sx={{
-            backgroundColor: "#074592",
-            color: "#FFFFFF",
-            border: "none",
-            padding: { xs: "14px 28px", md: "16px 36px" },
-            fontSize: localFontSize.p3,
-            fontWeight: "500",
-            borderRadius: "0px",
-            width: "180px",
-            textTransform: "none",
-            transition: "all 0.3s ease",
-            margin: "auto",
-            marginTop: { xs: "30px", md: "40px", lg: "60px" },
-            "&:hover": {
-              backgroundColor: "#053a7a",
-              transform: "translateY(-2px)",
-              boxShadow: "0 4px 20px rgba(7, 69, 146, 0.4)",
-            },
-          }}
-        />
       </Box>
     </Box>
   );
