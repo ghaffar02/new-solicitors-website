@@ -10,8 +10,6 @@ export default function AboutPage() {
       <Hero
         banner="Stronger With Us"
         heading="Expert Legal Support When You Need It Most"
-        backgroundImage="heroAboutUS.webp"
-        text={""}
       />
       <InfoSection
         banner="Committed to Your Case"

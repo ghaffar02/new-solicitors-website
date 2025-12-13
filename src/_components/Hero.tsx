@@ -10,20 +10,9 @@ import Navbar from "./Navbar";
 interface HeroProps {
   heading: string;
   banner?: string;
-  text?: string;
-  text2?: string;
-  description?: string;
-  backgroundImage?: string;
 }
 
-export default function Hero({
-  heading,
-  banner,
-  text,
-  text2,
-  description,
-  backgroundImage = "./heroAboutUS.webp",
-}: HeroProps) {
+export default function Hero({ heading, banner }: HeroProps) {
   useEffect(() => {
     AOS.init({ duration: 500, once: true });
     AOS.refresh();
