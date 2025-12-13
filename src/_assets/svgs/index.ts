@@ -73,7 +73,7 @@ import expertLawyers from "./expertLawyers.svg";
 import successRate from "./successRate.svg";
 import clarity from "./clarity.svg";
 import commitment from "./commitment.svg";
-import integrity from "./integrity.svg";
+import integrity from "./Integrity.svg";
 import professionalism from "./professionalism.svg";
 
 const svgs = {
