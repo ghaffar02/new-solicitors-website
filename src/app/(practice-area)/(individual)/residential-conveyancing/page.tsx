@@ -35,12 +35,7 @@ export default function ResidentialConveyancing() {
           backgroundColor: "#ffffff",
         }}
       > */}
-      <Hero
-        text="Residential Conveyancing"
-        text2=""
-        backgroundImage="bgImmigrationLaw.webp"
-        description="Legal process of transferring residential property ownership rights."
-      />
+      <Hero banner="" heading="" />
       <ImmigrationSupport data={accordionData} />
       {/* <ImmigrationGuidance /> */}
       {/* <ImmigrationTeam /> */}

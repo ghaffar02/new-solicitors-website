@@ -46,12 +46,7 @@ export default function BusinessMergersAndAcquisitions() {
           backgroundColor: "#ffffff",
         }}
       > */}
-      <Hero
-        text="Business Mergers "
-        text2="& Acquisitions"
-        backgroundImage="commercialLaw.webp"
-        description="We provide expert legal support to protect your business interests, ensuring seamless transactions, compliance, and risk management."
-      />
+      <Hero banner="" heading="" />
       <ImmigrationSupport
         reverseOrder={true}
         image={pngs.CommercialLaw}

@@ -46,12 +46,7 @@ export default function DisputeResolutionCommercial() {
           backgroundColor: "#ffffff",
         }}
       > */}
-      <Hero
-        text="Dispute Resolution "
-        text2="Commercial"
-        backgroundImage="commercialLaw.webp"
-        description="We provide expert legal support to protect your business interests, ensuring seamless transactions, compliance, and risk management."
-      />
+      <Hero banner="" heading="" />
       <ImmigrationSupport
         reverseOrder={true}
         image={pngs.CommercialLaw}

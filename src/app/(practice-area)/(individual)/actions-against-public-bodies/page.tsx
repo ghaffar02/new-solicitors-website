@@ -45,12 +45,7 @@ export default function ActionsAgainstPublicBodies() {
           backgroundColor: "#ffffff",
         }}
       > */}
-      <Hero
-        text="actions against "
-        text2=" public bodies"
-        backgroundImage="bgImmigrationLaw.webp"
-        description="Moving abroad is challenging, but our expert team ensures a strong case for a smooth and successful immigration process."
-      />
+      <Hero banner="" heading="" />
       <ImmigrationSupport data={accordionData} />
       <ContactUs />
       <Footer />

@@ -45,12 +45,7 @@ export default function ProbateAndEstateAdministration() {
       //     backgroundColor: "#ffffff",
       //   }}
       // >*/}
-      <Hero
-        text="Probate And Estate "
-        text2="Administration"
-        backgroundImage="bgImmigrationLaw.webp"
-        description="Moving abroad is challenging, but our expert team ensures a strong case for a smooth and successful immigration process."
-      />
+      <Hero banner="" heading="" />
       <ImmigrationSupport data={accordionData} />
       <ContactUs />
       <Footer />

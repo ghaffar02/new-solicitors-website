@@ -45,12 +45,7 @@ export default function EmploymentLaw() {
           backgroundColor: "#ffffff",
         }}
       > */}
-      <Hero
-        text="Employment Law"
-        text2=""
-        backgroundImage="bgImmigrationLaw.webp"
-        description="Moving abroad is challenging, but our expert team ensures a strong case for a smooth and successful immigration process."
-      />
+      <Hero banner="" heading="" />
       <ImmigrationSupport data={accordionData} />
       <ContactUs />
       <Footer />

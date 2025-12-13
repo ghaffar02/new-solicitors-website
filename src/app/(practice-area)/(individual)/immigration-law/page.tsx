@@ -45,12 +45,7 @@ export default function ImmigrationLaw() {
           backgroundColor: "#ffffff",
         }}
       > */}
-      <Hero
-        text="Immigration law"
-        text2=""
-        backgroundImage="bgImmigrationLaw.webp"
-        description="Moving abroad is challenging, but our expert team ensures a strong case for a smooth and successful immigration process."
-      />
+      <Hero banner="" heading="" />
       <ImmigrationSupport data={accordionData} />
       {/* <ImmigrationGuidance /> */}
       {/* <ImmigrationTeam /> */}
