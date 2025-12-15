@@ -1,7 +1,6 @@
 import Navbar from "@/_components/Navbar";
 import Hero from "@/_components/Hero";
 import ImmigrationSupport from "@/_components/ImmigrationSupport";
-import ContactUs from "@/_components/ContactUs";
 import Footer from "@/_components/Footer";
 import pngs from "@/_assets/webp";
 
@@ -46,7 +45,6 @@ export default function DisputeResolutionCivil() {
         image={pngs.CommercialLaw}
         data={accordionData}
       />
-      <ContactUs />
       <Footer />
     </>
   );

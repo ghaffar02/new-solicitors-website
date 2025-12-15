@@ -1,7 +1,6 @@
 import Navbar from "@/_components/Navbar";
 import Hero from "@/_components/Hero";
 import ImmigrationSupport from "@/_components/ImmigrationSupport";
-import ContactUs from "@/_components/ContactUs";
 import Footer from "@/_components/Footer";
 
 export default function ResidentialConveyancing() {
@@ -31,7 +30,6 @@ export default function ResidentialConveyancing() {
         heading="Helping You Build Your Future Abroad"
       />
       <ImmigrationSupport data={accordionData} />
-      <ContactUs />
       <Footer />
     </>
   );
