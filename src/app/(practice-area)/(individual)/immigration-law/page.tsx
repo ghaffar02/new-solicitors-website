@@ -3,7 +3,7 @@ import Hero from "@/_components/Hero";
 import ImmigrationSupport from "@/_components/ImmigrationSupport";
 import ContactUs from "@/_components/ContactUs";
 import Footer from "@/_components/Footer";
-// import { Box } from "@mui/material";
+
 export default function ImmigrationLaw() {
   const accordionData = [
     {
@@ -36,22 +36,13 @@ export default function ImmigrationLaw() {
   return (
     <>
       <Navbar />
-      {/* <Box
-        sx={{
-          paddingX: { xl: "60px", xxl: "none" },
-          maxWidth: { xs: "1536px", xxl: "80vw" },
-          width: "100%",
-          margin: "auto",
-          backgroundColor: "#ffffff",
-        }}
-      > */}
-      <Hero banner="" heading="" />
+      <Hero
+        banner="Trust You Can Count On"
+        heading="Helping You Build Your Future Abroad"
+      />
       <ImmigrationSupport data={accordionData} />
-      {/* <ImmigrationGuidance /> */}
-      {/* <ImmigrationTeam /> */}
       <ContactUs />
       <Footer />
-      {/* </Box> */}
     </>
   );
 }

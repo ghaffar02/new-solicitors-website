@@ -4,7 +4,7 @@ import ImmigrationSupport from "@/_components/ImmigrationSupport";
 import ContactUs from "@/_components/ContactUs";
 import Footer from "@/_components/Footer";
 import pngs from "@/_assets/webp";
-// import { Box } from "@mui/material";
+
 export default function DisputeResolutionCivil() {
   const accordionData = [
     {
@@ -37,16 +37,10 @@ export default function DisputeResolutionCivil() {
   return (
     <>
       <Navbar />
-      {/* <Box
-        sx={{
-          paddingX: { xl: "60px", xxl: "none" },
-          maxWidth: { xs: "1536px", xxl: "80vw" },
-          width: "100%",
-          margin: "auto",
-          backgroundColor: "#ffffff",
-        }}
-      > */}
-      <Hero banner="" heading="" />
+      <Hero
+        banner="Trust You Can Count On"
+        heading="Helping You Build Your Future Abroad"
+      />
       <ImmigrationSupport
         reverseOrder={true}
         image={pngs.CommercialLaw}
@@ -54,7 +48,6 @@ export default function DisputeResolutionCivil() {
       />
       <ContactUs />
       <Footer />
-      {/* </Box> */}
     </>
   );
 }
