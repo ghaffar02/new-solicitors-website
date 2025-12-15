@@ -17,10 +17,14 @@ body {
   margin: 0;
   font-weight: 400;
   /* font-family: "Roboto serif", serif !important; */
-  /* fontFamily: "EB Garamond", */
+  /* fontFamily: "EB Garamond !important", */
 
   /* new font  */
   font-family: "Lato", sans-serif !important;
+}
+
+.eb-garamond {
+  font-family: "EB Garamond" !important;
 }
 
 /* Lato Local Fonts */
