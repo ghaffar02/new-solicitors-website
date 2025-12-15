@@ -1,10 +1,9 @@
 import Navbar from "@/_components/Navbar";
 import Hero from "@/_components/Hero";
 import ImmigrationSupport from "@/_components/ImmigrationSupport";
-import ContactUs from "@/_components/ContactUs";
 import Footer from "@/_components/Footer";
 import pngs from "@/_assets/webp";
-// import { Box } from "@mui/material";
+
 export default function BusinessMergersAndAcquisitions() {
   const accordionData = [
     {
@@ -37,24 +36,16 @@ export default function BusinessMergersAndAcquisitions() {
   return (
     <>
       <Navbar />
-      {/* <Box
-        sx={{
-          paddingX: { xl: "60px", xxl: "none" },
-          maxWidth: { xs: "1536px", xxl: "80vw" },
-          width: "100%",
-          margin: "auto",
-          backgroundColor: "#ffffff",
-        }}
-      > */}
-      <Hero banner="" heading="" />
+      <Hero
+        banner="Clarity. Strategy. Results."
+        heading="Your Trusted Commercial Law Partners"
+      />
       <ImmigrationSupport
         reverseOrder={true}
         image={pngs.CommercialLaw}
         data={accordionData}
       />
-      <ContactUs />
       <Footer />
-      {/* </Box> */}
     </>
   );
 }
