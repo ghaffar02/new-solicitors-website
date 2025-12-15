@@ -10,6 +10,7 @@ export default function AboutPage() {
       <Hero
         banner="Stronger With Us"
         heading="Expert Legal Support When You Need It Most"
+        backgroundImage="bgAbout.png"
       />
       <InfoSection
         banner="Committed to Your Case"

@@ -10,9 +10,10 @@ import Navbar from "./Navbar";
 interface HeroProps {
   heading: string;
   banner?: string;
+  backgroundImage?: string;
 }
 
-export default function Hero({ heading, banner }: HeroProps) {
+export default function Hero({ heading, banner, backgroundImage }: HeroProps) {
   useEffect(() => {
     AOS.init({ duration: 500, once: true });
     AOS.refresh();
@@ -30,7 +31,9 @@ export default function Hero({ heading, banner }: HeroProps) {
             sm: "80px",
             md: "120px",
           },
-          backgroundImage: "url(/bgHeroHome.png)",
+          backgroundImage: backgroundImage
+            ? `url(${backgroundImage})`
+            : "url(/bgHeroHome.png)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

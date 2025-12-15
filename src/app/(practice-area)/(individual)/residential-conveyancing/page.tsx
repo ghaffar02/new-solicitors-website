@@ -28,6 +28,7 @@ export default function ResidentialConveyancing() {
       <Hero
         banner="Trust You Can Count On"
         heading="Helping You Build Your Future Abroad"
+        backgroundImage="bgIndividual.png"
       />
       <ImmigrationSupport data={accordionData} />
       <Footer />

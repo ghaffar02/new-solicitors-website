@@ -138,7 +138,6 @@ const Navbar: React.FC = () => {
         <Box
           sx={{
             position: "relative",
-            // paddingTop: "10px",
             paddingX: sectionPaddingX,
           }}
         >

@@ -39,6 +39,7 @@ export default function DisputeResolutionCivil() {
       <Hero
         banner="Trust You Can Count On"
         heading="Helping You Build Your Future Abroad"
+        backgroundImage="bgIndividual.png"
       />
       <ImmigrationSupport
         reverseOrder={true}

@@ -39,6 +39,7 @@ export default function CommercialLaw() {
       <Hero
         banner="Clarity. Strategy. Results."
         heading="Your Trusted Commercial Law Partners"
+        backgroundImage="bgBusiness.png"
       />
       <ImmigrationSupport
         reverseOrder={true}

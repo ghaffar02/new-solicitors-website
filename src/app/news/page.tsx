@@ -11,6 +11,7 @@ export default function NewsPage() {
       <Hero
         banner="Stay Informed"
         heading="Your source for trusted legal updates"
+        backgroundImage="bgNews.png"
       />
       <InsightsAndLegalGuidance />
       <Footer />
