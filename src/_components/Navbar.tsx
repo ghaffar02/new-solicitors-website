@@ -3,11 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Box, Button, Typography, Grid } from "@mui/material";
 import svgs from "@/_assets/svgs";
 import Image from "next/image";
-import {
-  localFontSize,
-  sectionPaddingX,
-  globalFontSize,
-} from "@/app/utils/themes";
+import { localFontSize, sectionPaddingX } from "@/app/utils/themes";
 import { useRouter, usePathname } from "next/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,28 +28,28 @@ const Navbar: React.FC = () => {
   const pagesData = [
     {
       title: "Home",
-      icon: svgs.homeBlueIcon,
+      icon: svgs.HomeWhiteIcon,
       whiteIcon: svgs.HomeWhiteIcon,
       path: "/",
       getColor: getBgColor,
     },
     {
       title: "About Us",
-      icon: svgs.aboutBlueIcon,
+      icon: svgs.aboutWhiteIcon,
       whiteIcon: svgs.aboutWhiteIcon,
       path: "/about-us",
       getColor: getBgColor,
     },
     {
       title: "News",
-      icon: svgs.newsBlueIcon,
+      icon: svgs.newsWhiteIcon,
       whiteIcon: svgs.newsWhiteIcon,
       path: "/news",
       getColor: getBgColor,
     },
     {
       title: "Contact",
-      icon: svgs.contactBlueIcon,
+      icon: svgs.contactWhiteIcon,
       whiteIcon: svgs.contactWhiteIcon,
       path: "/contact-us",
       getColor: getBgColor,
@@ -245,7 +241,7 @@ const Navbar: React.FC = () => {
       {/* Drawer Navigation */}
       <Box
         sx={{
-          backgroundImage: "url(./bgModal.webp)",
+          backgroundImage: "url(./bgModal.png)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           position: "fixed",
@@ -256,151 +252,165 @@ const Navbar: React.FC = () => {
           overflowX: "hidden",
           transition: "all .5s ease-out",
           zIndex: "999",
-          padding: isDrawerOpen ? { xs: "40px 20px", md: "50px" } : "0",
+
           transform: isDrawerOpen ? "translateX(0)" : "translateX(-150%)",
         }}
       >
-        <Box onClick={() => toggleDrawer(false)}>
-          <Image
-            style={{ cursor: "pointer", height: "20px", width: "22px" }}
-            src={svgs.Cross}
-            alt="Cross"
-          />
-        </Box>
         <Box
           sx={{
-            display: "flex",
-            gap: { xs: "40px", sm: "60", md: "80px", xl: "100px" },
-            padding: {
-              xs: "20px 0",
-              sm: "20px",
-              md: "20px 50px",
-              lg: "10px 50px",
-            },
-            width: "100%",
-            maxWidth: { xs: "1200px", xxl: "1536px" },
-            margin: "auto",
-            flexWrap: "wrap",
-            justifyContent: { xs: "flex-start", sm: "center" },
-            flexDirection: { xs: "column", sm: "row" },
+            backgroundColor: "#000000CC",
+            backdropFilter: "blur(10px)",
+            padding: isDrawerOpen ? { xs: "40px 20px", md: "50px" } : "0",
+            height: "100%",
+            width: "100vw",
           }}
         >
-          <Grid sx={{ rowGap: "30px" }} container spacing={2}>
-            <Grid item xs={12} sm={4}>
-              <Box>
-                <Typography
-                  sx={{
-                    color: "#074592",
-                    fontSize: globalFontSize.p3,
-                    fontWeight: "700",
-                    paddingBottom: { xs: "15px", md: "20px" },
-                  }}
-                >
-                  Pages
-                </Typography>
-
-                {pagesData.map((page, index) => (
-                  <Box
-                    onClick={() => router.push(page.path)}
-                    key={index}
-                    sx={{
-                      width: "100%",
-                      display: "flex",
-                      gap: { xs: "15px", md: "20px" },
-                      padding: { xs: "15px", md: "20px" },
-                      borderRadius: "20px",
-                      alignItems: "center",
-                      cursor: "pointer",
-                      // route specific bgcolor
-                      backgroundColor:
-                        pathname === page.path ? "#074592" : "transparent",
-                      transition: "background-color 0.4s ease-in-out",
-                      "&:hover": {
-                        backgroundColor: "#ffffff",
-                      },
-                    }}
-                  >
-                    <Image
-                      style={{
-                        height: "33px",
-                        width: "33px",
-                        objectFit: "contain",
-                      }}
-                      src={pathname === page.path ? page.whiteIcon : page.icon}
-                      alt={page.title}
-                    />
-                    <Typography
-                      sx={{
-                        color: pathname === page.path ? "#FFFFFF" : "#074592",
-                        fontSize: globalFontSize.p1,
-                        textWrap: "nowrap",
-                      }}
-                    >
-                      {page.title}
-                    </Typography>
-                  </Box>
-                ))}
-              </Box>
-            </Grid>
-            {practiceAreasData.map((area, index) => (
-              <Grid item xs={12} sm={4} key={index}>
+          <Box onClick={() => toggleDrawer(false)}>
+            <Image
+              style={{ cursor: "pointer", height: "20px", width: "22px" }}
+              src={svgs.Cross}
+              alt="Cross"
+            />
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              gap: { xs: "40px", sm: "60", md: "80px", xl: "100px" },
+              padding: {
+                xs: "20px 0",
+                sm: "20px",
+                md: "20px 50px",
+                lg: "10px 50px",
+              },
+              width: "100%",
+              maxWidth: { xs: "1200px", xxl: "1536px" },
+              margin: "auto",
+              flexWrap: "wrap",
+              justifyContent: { xs: "flex-start", sm: "center" },
+              flexDirection: { xs: "column", sm: "row" },
+            }}
+          >
+            <Grid sx={{ rowGap: "30px" }} container spacing={4}>
+              <Grid item xs={12} sm={4}>
                 <Box>
-                  {/* Heading */}
                   <Typography
                     sx={{
                       color: "#074592",
-                      fontSize: globalFontSize.p3,
+                      fontSize: localFontSize.p1,
                       fontWeight: "700",
-                      paddingBottom: "40px",
+                      paddingBottom: { xs: "15px", md: "20px" },
                     }}
                   >
-                    {area.heading}
+                    Pages
                   </Typography>
 
-                  {/* List of Practice Areas */}
-                  <Box
-                    sx={{
-                      fontSize: { xs: "16px", md: "18px", lg: "20px" },
-                      color: "#00000080",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "flex-start",
-                    }}
-                  >
-                    {area.items.map((item, idx) => (
-                      <Typography
-                        onClick={() => router.push(item.path)}
-                        sx={{
-                          padding: { xs: "10px", md: "20px" },
-                          cursor: "pointer",
-                          backgroundColor:
-                            pathname === item.path ? "#074592" : "none",
-                          color:
-                            pathname === item.path ? "#ffffff" : "#00000080",
-                          borderRadius: "15px",
-                          maxWidth: {
-                            sm: "200px",
-                            md: "250px",
-                            lg: "300px",
-                            xl: "350px",
-                            xxl: "400px",
-                          },
-                          transition: "all 0.4s ease-in-out",
-                          "&:hover": {
-                            color: "#084592",
-                            backgroundColor: "#ffffff",
-                          },
+                  {pagesData.map((page, index) => (
+                    <Box
+                      onClick={() => router.push(page.path)}
+                      key={index}
+                      sx={{
+                        width: "100%",
+                        display: "flex",
+                        gap: { xs: "15px", md: "20px" },
+                        padding: { xs: "15px", md: "20px" },
+                        borderRadius: "20px",
+                        alignItems: "center",
+                        cursor: "pointer",
+                        // route specific bgcolor
+                        backgroundColor:
+                          pathname === page.path ? "#074592" : "transparent",
+                        transition: "background-color 0.4s ease-in-out",
+                        "&:hover": {
+                          backgroundColor: "#074592",
+                        },
+                        marginBottom: "5px",
+                      }}
+                    >
+                      <Image
+                        style={{
+                          height: "33px",
+                          width: "33px",
+                          objectFit: "contain",
                         }}
-                        key={idx}
+                        src={
+                          pathname === page.path ? page.whiteIcon : page.icon
+                        }
+                        alt={page.title}
+                      />
+                      <Typography
+                        sx={{
+                          color: pathname === page.path ? "#FFFFFF" : "#FFFFFF",
+                          fontSize: localFontSize.p3,
+                          textWrap: "nowrap",
+                        }}
                       >
-                        {item.label}
+                        {page.title}
                       </Typography>
-                    ))}
-                  </Box>
+                    </Box>
+                  ))}
                 </Box>
               </Grid>
-            ))}
-          </Grid>
+              {practiceAreasData.map((area, index) => (
+                <Grid item xs={12} sm={4} key={index}>
+                  <Box>
+                    {/* Heading */}
+                    <Typography
+                      sx={{
+                        color: "#074592",
+                        fontSize: localFontSize.p1,
+                        fontWeight: "700",
+                        paddingBottom: "40px",
+                      }}
+                    >
+                      {area.heading}
+                    </Typography>
+
+                    {/* List of Practice Areas */}
+                    <Box
+                      sx={{
+                        fontSize: localFontSize.p2,
+                        color: "#00000080",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "flex-start",
+                        gap: "5px",
+                      }}
+                    >
+                      {area.items.map((item, idx) => (
+                        <Typography
+                          onClick={() => router.push(item.path)}
+                          sx={{
+                            padding: { xs: "10px", md: "20px" },
+                            cursor: "pointer",
+                            backgroundColor:
+                              pathname === item.path ? "#074592" : "none",
+                            color:
+                              pathname === item.path ? "#ffffff" : "#FFFFFF80",
+                            borderRadius: "15px",
+                            maxWidth: {
+                              sm: "200px",
+                              md: "250px",
+                              lg: "300px",
+                              xl: "350px",
+                              xxl: "400px",
+                            },
+                            transition: "all 0.4s ease-in-out",
+                            "&:hover": {
+                              color: "#084592",
+                              backgroundColor: "#ffffff",
+                            },
+                          }}
+                          key={idx}
+                        >
+                          {item.label}
+                        </Typography>
+                      ))}
+                    </Box>
+                  </Box>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
         </Box>
       </Box>
     </>
