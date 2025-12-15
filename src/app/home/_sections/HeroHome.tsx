@@ -90,7 +90,7 @@ const HeroHome: React.FC = () => {
               fontSize: localFontSize.h1,
               fontWeight: "700",
               marginBottom: { xs: "20px", md: "32px" },
-              fontFamily: "'PlayfairDisplay', serif",
+              fontFamily: "'PlayfairDisplay', serif !important",
               maxWidth: "1000px",
             }}
           >

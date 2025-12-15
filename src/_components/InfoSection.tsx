@@ -93,7 +93,7 @@ const InfoSection: React.FC<InfoSectionProps> = ({
                   color: "#1A1A1A",
                   fontSize: localFontSize.h2,
                   fontWeight: "600",
-                  fontFamily: "'PlayfairDisplay', serif",
+                  fontFamily: "'PlayfairDisplay', serif !important",
                   textTransform: "capitalize",
                 }}
               >

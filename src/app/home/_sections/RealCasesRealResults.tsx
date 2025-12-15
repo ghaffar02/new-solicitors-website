@@ -72,7 +72,7 @@ const CaseCard: React.FC<CaseCardProps> = ({ image, heading, description }) => {
             color: "#FFFFFF",
             fontSize: localFontSize.h3,
             fontWeight: "600",
-            fontFamily: "'PlayfairDisplay', serif",
+            fontFamily: "'PlayfairDisplay', serif !important",
             // elipsis
             display: "-webkit-box",
             WebkitLineClamp: 1,
@@ -218,7 +218,7 @@ export default function RealCasesRealResults() {
                 color: "#1A1A1A",
                 fontSize: localFontSize.h2,
                 fontWeight: "600",
-                fontFamily: "'PlayfairDisplay', serif",
+                fontFamily: "'PlayfairDisplay', serif !important",
                 marginBottom: { xs: "12px", md: "16px" },
               }}
             >

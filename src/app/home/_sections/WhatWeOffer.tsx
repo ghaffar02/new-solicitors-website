@@ -48,7 +48,7 @@ const OfferCard: React.FC<OfferCardProps> = ({
           color: "#1A1A1A",
           fontSize: localFontSize.h3,
           fontWeight: "600",
-          fontFamily: "'PlayfairDisplay', serif",
+          fontFamily: "'PlayfairDisplay', serif !important",
         }}
       >
         {heading}
@@ -158,7 +158,7 @@ function WhatWeOffer() {
             fontSize: localFontSize.h2,
             fontWeight: "600",
             marginBottom: { xs: "10px", md: "20px" },
-            fontFamily: "'PlayfairDisplay', serif",
+            fontFamily: "'PlayfairDisplay', serif !important",
           }}
         >
           What We Offer

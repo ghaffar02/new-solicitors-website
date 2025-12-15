@@ -72,7 +72,7 @@ export default function ContactUs() {
               color: "#1A1A1A",
               fontSize: localFontSize.h2,
               fontWeight: "600",
-              fontFamily: "'PlayfairDisplay', serif",
+              fontFamily: "'PlayfairDisplay', serif !important",
               marginBottom: { xs: "20px", md: "30px" },
               maxWidth: { xs: "330px", sm: "430px", md: "560px" },
             }}

@@ -7,7 +7,6 @@ export default function NewsPage() {
   return (
     <>
       <Navbar />
-
       <Hero
         banner="Stay Informed"
         heading="Your source for trusted legal updates"
