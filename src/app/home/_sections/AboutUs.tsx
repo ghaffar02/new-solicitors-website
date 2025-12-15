@@ -62,7 +62,7 @@ function AboutUs() {
               fontSize: globalFontSize.p1,
               color: "#074592",
               fontWeight: "500",
-              fontFamily: "EB Garamond",
+              fontFamily: "Playfair Display !important",
             }}
           >
             About Us
@@ -72,7 +72,7 @@ function AboutUs() {
               fontSize: globalFontSize.h2,
               color: "#565656",
               fontWeight: "600",
-              fontFamily: "EB Garamond",
+              fontFamily: "Playfair Display !important",
             }}
           >
             Committed to Justice,{" "}

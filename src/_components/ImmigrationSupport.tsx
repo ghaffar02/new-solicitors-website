@@ -129,7 +129,7 @@ function ImmigrationSupport({
               color: "#1A1A1A",
               fontSize: localFontSize.h2,
               fontWeight: "600",
-              fontFamily: "EB Garamond !important",
+              fontFamily: "Playfair Display !important",
               textTransform: "capitalize",
               paddingTop: { xs: "10px", md: "20px", lg: "30px" },
             }}
@@ -182,8 +182,7 @@ function ImmigrationSupport({
                         <Add sx={{ color: "#074592" }} />
                       )
                     }
-                    className="eb-garamond"
-                    style={{ fontFamily: "EB Garamond !important" }}
+                    style={{ fontFamily: "Playfair Display !important" }}
                     sx={{
                       color: "#1A1A1A",
                       fontSize: localFontSize.h3,
@@ -191,7 +190,7 @@ function ImmigrationSupport({
                       paddingX: "0",
                       borderRadius: "0",
                       "& .MuiAccordionSummary-content": {
-                        fontFamily: "EB Garamond !important",
+                        fontFamily: "Playfair Display !important",
                       },
                     }}
                   >

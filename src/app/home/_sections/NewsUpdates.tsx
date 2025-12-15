@@ -46,7 +46,7 @@ function NewsUpdates() {
               fontSize: globalFontSize.h2,
               fontWeight: "600",
               textAlign: "center",
-              fontFamily: "EB Garamond",
+              fontFamily: "Playfair Display !important",
             }}
           >
             Stay Informed with Latest{" "}
@@ -128,7 +128,7 @@ function NewsUpdates() {
                       fontWeight: "500",
                       fontSize: globalFontSize.p1,
                       color: "#fff",
-                      fontFamily: "EB Garamond",
+                      fontFamily: "Playfair Display !important",
                     }}
                   >
                     {data.heading}
