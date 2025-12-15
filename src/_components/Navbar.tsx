@@ -132,7 +132,7 @@ const Navbar: React.FC = () => {
           zIndex: "100",
           width: "100%",
           left: "0",
-          backgroundColor: "#1A1A1AE5",
+          backgroundColor: "rgba(26, 26, 26, 0.4)",
         }}
       >
         <Box
