@@ -10,12 +10,15 @@ import {
 import { localFontSize, sectionPadding } from "@/app/utils/themes";
 import svgs from "@/_assets/svgs";
 import Image, { StaticImageData } from "next/image";
+import { useRouter } from "next/navigation";
 
 // Card component props interface
 interface OfferCardProps {
   icon: StaticImageData;
   heading: string;
   description: string;
+  route: string;
+  onClick: () => void;
 }
 
 // Separate OfferCard component
@@ -23,9 +26,11 @@ const OfferCard: React.FC<OfferCardProps> = ({
   icon,
   heading,
   description,
+  onClick,
 }) => {
   return (
     <Box
+      onClick={onClick}
       sx={{
         border: "2px solid #9A9A9A",
         borderRadius: { xs: "10px", md: "20px" },
@@ -36,9 +41,11 @@ const OfferCard: React.FC<OfferCardProps> = ({
         textAlign: "center",
         gap: "16px",
         height: "100%",
+        cursor: "pointer",
         transition: "all 0.3s ease-in-out",
         "&:hover": {
           borderColor: "#074592",
+          transform: "scale(1.05)",
         },
       }}
     >
@@ -72,57 +79,66 @@ const personalCardsData = [
     heading: "Family Law",
     description:
       "We handle family matters with care, protecting your rights and your family",
+    route: "/family-law",
   },
   {
     icon: svgs.immigrationLaw,
     heading: "Immigration Law",
     description:
       "We simplify complex immigration cases, helping you achieve legal status and peace of mind.",
+    route: "/immigration-law",
   },
   {
     icon: svgs.employmentLaw,
     heading: "Employment Law",
     description:
       "We defend your workplace rights and ensure fair treatment for everyone.",
+    route: "/employment-law",
   },
   {
     icon: svgs.criminalLaw,
     heading: "Criminal Law",
     description:
       "We provide strong legal defense to protect your freedom, privacy and reputation.",
+    route: "/criminal-law",
   },
 ];
 
 // Business tab cards data
 const businessCardsData = [
   {
-    icon: svgs.employmentLaw,
-    heading: "Employment Law",
+    icon: svgs.CommercialLaw,
+    heading: "Commercial Law",
     description:
-      "We defend your workplace rights and ensure fair treatment for everyone.",
+      "We provide comprehensive legal support for business transactions and commercial property matters.",
+    route: "/commercial-law",
   },
   {
-    icon: svgs.criminalLaw,
-    heading: "Criminal Law",
+    icon: svgs.Handshake,
+    heading: "Business Mergers and Acquisitions",
     description:
-      "We provide strong legal defense to protect your freedom, privacy and reputation.",
+      "Expert guidance through complex business sales, purchases, and merger transactions.",
+    route: "/business-mergers-and-acquisitions",
   },
   {
-    icon: svgs.familyLaw,
-    heading: "Family Law",
+    icon: svgs.Searchfile,
+    heading: "Commercial Conveyancing",
     description:
-      "We handle family matters with care, protecting your rights and your family",
+      "Professional assistance with commercial property purchases, sales, and lease agreements.",
+    route: "/commercial-conveyancing",
   },
   {
-    icon: svgs.immigrationLaw,
-    heading: "Immigration Law",
+    icon: svgs.Law,
+    heading: "Dispute Resolution (Commercial)",
     description:
-      "We simplify complex immigration cases, helping you achieve legal status and peace of mind.",
+      "Strategic legal representation for business disputes and commercial litigation matters.",
+    route: "/dispute-resolution-commercial",
   },
 ];
 
 function WhatWeOffer() {
   const [selectedTab, setSelectedTab] = useState("personal");
+  const router = useRouter();
 
   const handleChange = (
     _event: React.MouseEvent<HTMLElement>,
@@ -131,6 +147,10 @@ function WhatWeOffer() {
     if (newTab !== null) {
       setSelectedTab(newTab);
     }
+  };
+
+  const handleCardClick = (route: string) => {
+    router.push(route);
   };
 
   const cardsData =
@@ -263,6 +283,8 @@ function WhatWeOffer() {
                   icon={card.icon}
                   heading={card.heading}
                   description={card.description}
+                  route={card.route}
+                  onClick={() => handleCardClick(card.route)}
                 />
               </Grid>
             ))}
