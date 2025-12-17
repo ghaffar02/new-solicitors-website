@@ -64,28 +64,84 @@ function ImmigrationSupport({
 
   const accordionsToRender = data && data.length > 0 ? data : accordionData;
 
-  // Determine heading based on route
-  // Business routes: commercial-law, commercial-conveyancing, business-mergers-and-acquisitions,
-  // dispute-resolution-commercial, shariah-compliant-financing, succession-and-estate-planning
-  const businessRoutes = [
-    "commercial-law",
-    "commercial-conveyancing",
-    "business-mergers-and-acquisitions",
-    "dispute-resolution-commercial",
-    "shariah-compliant-financing",
-    "succession-and-estate-planning",
-  ];
+  // Comprehensive mapping for all practice areas - complementary content (not duplicating Hero)
+  const practiceAreaContent: Record<
+    string,
+    { banner: string; heading: string }
+  > = {
+    // Individual Practice Areas
+    "actions-against-public-bodies": {
+      banner: "Expert Legal Representation",
+      heading: "Challenging Unlawful Decisions and Actions",
+    },
+    "criminal-law": {
+      banner: "Experienced Criminal Defence",
+      heading: "Protecting Your Future and Reputation",
+    },
+    "dispute-resolution-civil": {
+      banner: "Effective Legal Solutions",
+      heading: "Resolving Disputes with Expertise",
+    },
+    "employment-law": {
+      banner: "Professional Employment Advice",
+      heading: "Ensuring Fair Treatment at Work",
+    },
+    "family-law": {
+      banner: "Sensitive Legal Support",
+      heading: "Guiding You Through Family Matters",
+    },
+    "immigration-law": {
+      banner: "Simplifying Immigration",
+      heading: "Building Your Future in the UK",
+    },
+    "probate-and-estate-administration": {
+      banner: "Expert Probate Services",
+      heading: "Managing Estates with Care and Precision",
+    },
+    "residential-conveyancing": {
+      banner: "CQS Accredited Conveyancing",
+      heading: "Your Trusted Property Law Experts",
+    },
+    // Business Practice Areas
+    "business-mergers-and-acquisitions": {
+      banner: "Transaction Excellence",
+      heading: "Navigating Complex Business Deals",
+    },
+    "commercial-conveyancing": {
+      banner: "Commercial Property Expertise",
+      heading: "Streamlining Your Property Transactions",
+    },
+    "commercial-law": {
+      banner: "Business Legal Solutions",
+      heading: "Supporting Your Commercial Success",
+    },
+    "dispute-resolution-commercial": {
+      banner: "Commercial Litigation Excellence",
+      heading: "Protecting Your Business Interests",
+    },
+    "shariah-compliant-financing": {
+      banner: "Islamic Finance Specialists",
+      heading: "Aligning Your Finances with Faith",
+    },
+    "succession-and-estate-planning": {
+      banner: "Business Continuity Planning",
+      heading: "Safeguarding Your Commercial Legacy",
+    },
+  };
 
-  const isBusinessRoute = businessRoutes.some((route) =>
-    pathname?.includes(route)
-  );
-  const heading = isBusinessRoute
-    ? "Commercial Legal Expertise"
-    : "Your Pathway to Legal Residency";
+  // Determine content based on current route
+  let heading = "Your Pathway to Legal Residency";
+  let banner = "Simplifying Immigration";
 
-  const banner = isBusinessRoute
-    ? "Clear. Strong. Commercial."
-    : "Simplifying Immigration";
+  if (pathname) {
+    const matchedRoute = Object.keys(practiceAreaContent).find((route) =>
+      pathname.includes(route)
+    );
+    if (matchedRoute) {
+      heading = practiceAreaContent[matchedRoute].heading;
+      banner = practiceAreaContent[matchedRoute].banner;
+    }
+  }
 
   return (
     <Box

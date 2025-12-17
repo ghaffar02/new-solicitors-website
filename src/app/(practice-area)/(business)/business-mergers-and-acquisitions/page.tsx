@@ -37,8 +37,8 @@ export default function BusinessMergersAndAcquisitions() {
     <>
       <Navbar />
       <Hero
-        banner="Clarity. Strategy. Results."
-        heading="Your Trusted Commercial Law Partners"
+        banner="Strategic. Efficient. Seamless."
+        heading="Expert M&A Legal Guidance"
         backgroundImage="bgBusiness.png"
       />
       <ImmigrationSupport

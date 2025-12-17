@@ -36,8 +36,8 @@ export default function ActionsAgainstPublicBodies() {
     <>
       <Navbar />
       <Hero
-        banner="Trust You Can Count On"
-        heading="Helping You Build Your Future Abroad"
+        banner="Justice. Accountability. Rights."
+        heading="Holding Public Bodies Accountable"
         backgroundImage="bgIndividual.png"
       />
       <ImmigrationSupport data={accordionData} />

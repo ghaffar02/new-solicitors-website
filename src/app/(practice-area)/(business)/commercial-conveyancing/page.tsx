@@ -37,8 +37,8 @@ export default function CommercialConveyancing() {
     <>
       <Navbar />
       <Hero
-        banner="Clarity. Strategy. Results."
-        heading="Your Trusted Commercial Law Partners"
+        banner="Professional. Reliable. Efficient."
+        heading="Your Commercial Property Partners"
         backgroundImage="bgBusiness.png"
       />
       <ImmigrationSupport

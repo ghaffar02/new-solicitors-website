@@ -38,7 +38,7 @@ export default function CommercialLaw() {
       <Navbar />
       <Hero
         banner="Clarity. Strategy. Results."
-        heading="Your Trusted Commercial Law Partners"
+        heading="Comprehensive Commercial Legal Solutions"
         backgroundImage="bgBusiness.png"
       />
       <ImmigrationSupport

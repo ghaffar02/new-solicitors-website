@@ -37,8 +37,8 @@ export default function ShariahCompliantFinancing() {
     <>
       <Navbar />
       <Hero
-        banner="Clarity. Strategy. Results."
-        heading="Your Trusted Commercial Law Partners"
+        banner="Ethical. Compliant. Trusted."
+        heading="Shariah-Compliant Financial Solutions"
         backgroundImage="bgBusiness.png"
       />
       <ImmigrationSupport

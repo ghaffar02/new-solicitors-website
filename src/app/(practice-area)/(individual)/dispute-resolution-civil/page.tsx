@@ -37,8 +37,8 @@ export default function DisputeResolutionCivil() {
     <>
       <Navbar />
       <Hero
-        banner="Trust You Can Count On"
-        heading="Helping You Build Your Future Abroad"
+        banner="Resolution. Strategy. Success."
+        heading="Expert Civil Dispute Resolution"
         backgroundImage="bgIndividual.png"
       />
       <ImmigrationSupport

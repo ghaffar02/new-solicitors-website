@@ -36,8 +36,8 @@ export default function ProbateAndEstateAdministration() {
     <>
       <Navbar />
       <Hero
-        banner="Trust You Can Count On"
-        heading="Helping You Build Your Future Abroad"
+        banner="Guidance. Care. Clarity."
+        heading="Simplifying Probate and Estate Matters"
         backgroundImage="bgIndividual.png"
       />
       <ImmigrationSupport data={accordionData} />

@@ -36,8 +36,8 @@ export default function EmploymentLaw() {
     <>
       <Navbar />
       <Hero
-        banner="Trust You Can Count On"
-        heading="Helping You Build Your Future Abroad"
+        banner="Fairness. Rights. Protection."
+        heading="Protecting Your Workplace Rights"
         backgroundImage="bgIndividual.png"
       />
       <ImmigrationSupport data={accordionData} />

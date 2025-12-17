@@ -37,8 +37,8 @@ export default function DisputeResolutionCommercial() {
     <>
       <Navbar />
       <Hero
-        banner="Clarity. Strategy. Results."
-        heading="Your Trusted Commercial Law Partners"
+        banner="Resolution. Strength. Success."
+        heading="Strategic Commercial Dispute Resolution"
         backgroundImage="bgBusiness.png"
       />
       <ImmigrationSupport

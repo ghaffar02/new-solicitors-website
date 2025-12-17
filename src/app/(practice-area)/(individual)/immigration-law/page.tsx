@@ -37,7 +37,7 @@ export default function ImmigrationLaw() {
       <Navbar />
       <Hero
         banner="Trust You Can Count On"
-        heading="Helping You Build Your Future Abroad"
+        heading="Your Pathway to Legal Residency"
         backgroundImage="bgIndividual.png"
       />
       <ImmigrationSupport data={accordionData} />

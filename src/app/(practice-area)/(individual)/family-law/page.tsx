@@ -36,8 +36,8 @@ export default function FamilyLaw() {
     <>
       <Navbar />
       <Hero
-        banner="Trust You Can Count On"
-        heading="Helping You Build Your Future Abroad"
+        banner="Compassion. Care. Protection."
+        heading="Supporting Families Through Legal Challenges"
         backgroundImage="bgIndividual.png"
       />
       <ImmigrationSupport data={accordionData} />

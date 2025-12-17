@@ -37,8 +37,8 @@ export default function SuccessionAndEstatePlanning() {
     <>
       <Navbar />
       <Hero
-        banner="Clarity. Strategy. Results."
-        heading="Your Trusted Commercial Law Partners"
+        banner="Planning. Protection. Legacy."
+        heading="Securing Your Business Legacy"
         backgroundImage="bgBusiness.png"
       />
       <ImmigrationSupport
