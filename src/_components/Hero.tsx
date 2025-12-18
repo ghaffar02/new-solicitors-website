@@ -63,18 +63,20 @@ export default function Hero({
             zIndex: 2,
           }}
         >
-          <Typography
-            sx={{
-              fontSize: localFontSize.p2,
-              color: "#9A9A9A",
-              textTransform: "uppercase",
-              margin: "auto",
-              textAlign: "center",
-              marginY: "0px",
-            }}
-          >
-            {banner}
-          </Typography>
+          {banner && (
+            <Typography
+              sx={{
+                fontSize: localFontSize.p2,
+                color: "#9A9A9A",
+                textTransform: "uppercase",
+                margin: "auto",
+                textAlign: "center",
+                marginY: "0px",
+              }}
+            >
+              {banner}
+            </Typography>
+          )}
           <Typography
             sx={{
               fontSize: localFontSize.h1,
