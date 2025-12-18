@@ -16,7 +16,7 @@ const insightsData = [
     heading: "Resolving Legal Conflicts with Clarity and Confidence",
     description:
       "Disputes can be stressful, but the right legal approach can save time and money. Learn how experienced lawyers help clients reach fair settlements through strategy and negotiation.",
-    pathname: "/news-detail/news-detail/a-victim-entrapment-in-yorkshire",
+    pathname: "/news-detail/a-victim-entrapment-in-yorkshire",
   },
   {
     image: pngs.insightsAndLegalGuidance2,
