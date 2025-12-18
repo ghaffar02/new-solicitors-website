@@ -62,32 +62,32 @@ const Navbar: React.FC = () => {
       items: [
         {
           label: "Actions Against Public Bodies",
-          path: "/actions-against-public-bodies",
+          path: "/practice-area/actions-against-public-bodies",
         },
         {
           label: "Dispute Resolution (Civil)",
-          path: "/dispute-resolution-civil",
+          path: "/practice-area/dispute-resolution-civil",
         },
-        { label: "Family Law", path: "/family-law" },
+        { label: "Family Law", path: "/practice-area/family-law" },
         {
           label: "Immigration Law",
-          path: "/immigration-law",
+          path: "/practice-area/immigration-law",
         },
         {
           label: "Employment Law",
-          path: "/employment-law",
+          path: "/practice-area/employment-law",
         },
         {
           label: "Criminal Law",
-          path: "/criminal-law",
+          path: "/practice-area/criminal-law",
         },
         {
           label: "Probate and Estate Administration",
-          path: "/probate-and-estate-administration",
+          path: "/practice-area/probate-and-estate-administration",
         },
         {
           label: "Residential Conveyancing",
-          path: "/residential-conveyancing",
+          path: "/practice-area/residential-conveyancing",
         },
       ],
     },
@@ -96,27 +96,27 @@ const Navbar: React.FC = () => {
       items: [
         {
           label: "Business Mergers and Acquisitions",
-          path: "/business-mergers-and-acquisitions",
+          path: "/practice-area/business-mergers-and-acquisitions",
         },
         {
           label: "Commercial Law",
-          path: "/commercial-law",
+          path: "/practice-area/commercial-law",
         },
         {
           label: "Commercial Conveyancing",
-          path: "/commercial-conveyancing",
+          path: "/practice-area/commercial-conveyancing",
         },
         {
           label: "Dispute Resolution (Commercial)",
-          path: "/dispute-resolution-commercial",
+          path: "/practice-area/dispute-resolution-commercial",
         },
         {
           label: "Shariah Compliant Financing",
-          path: "/shariah-compliant-financing",
+          path: "/practice-area/shariah-compliant-financing",
         },
         {
           label: "Succession and Estate Planning",
-          path: "/succession-and-estate-planning",
+          path: "/practice-area/succession-and-estate-planning",
         },
       ],
     },

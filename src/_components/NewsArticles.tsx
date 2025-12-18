@@ -43,7 +43,7 @@ const boxData = [
     heading: "Yorkshire “Nightmare” Zebra Crossing – A Victim of Entrapment",
     description: `Conquest Law Solicitors have successfully challenged South Yorkshire Police’s (SYP) attempted prosecution of a client pursued for allegedly driving without reasonable consideration to others at a “Nightmare” zebra crossing in South Yorkshire.`,
     bgImage: "./newsArticles/bgBar.webp",
-    path: "/a-victim-entrapment-in-yorkshire",
+    path: "/news-detail/a-victim-entrapment-in-yorkshire",
   },
   {
     title: "Legal Advice",
@@ -92,7 +92,7 @@ const boxData = [
     heading: "Yorkshire “Nightmare” Zebra Crossing – A Victim of Entrapment",
     description: `Conquest Law Solicitors have successfully challenged South Yorkshire Police’s (SYP) attempted prosecution of a client pursued for allegedly driving without reasonable consideration to others at a “Nightmare” zebra crossing in South Yorkshire.`,
     bgImage: "./newsArticles/bgBar.webp",
-    path: "/a-victim-entrapment-in-yorkshire",
+    path: "/news-detail/a-victim-entrapment-in-yorkshire",
   },
   {
     title: "Legal Advice",

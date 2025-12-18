@@ -3,12 +3,14 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { localFontSize } from "@/app/utils/themes";
 import Image, { StaticImageData } from "next/image";
+import { useRouter } from "next/navigation";
 
 // Card props interface
 export interface InsightCardProps {
   image: StaticImageData;
   heading: string;
   description: string;
+  pathname?: string;
 }
 
 // InsightCard component
@@ -16,7 +18,10 @@ const InsightCard: React.FC<InsightCardProps> = ({
   image,
   heading,
   description,
+  pathname,
 }) => {
+  const router = useRouter();
+
   return (
     <Box
       sx={{
@@ -82,6 +87,15 @@ const InsightCard: React.FC<InsightCardProps> = ({
         </Typography>
         {/* Read More Button */}
         <Typography
+          onClick={() => {
+            if (pathname) {
+              // Remove leading slash if present, then construct /news/[pathname]
+              const slug = pathname.startsWith("/")
+                ? pathname.slice(1)
+                : pathname;
+              router.push(`/${slug}`);
+            }
+          }}
           component="span"
           sx={{
             color: "#074592",
@@ -89,11 +103,12 @@ const InsightCard: React.FC<InsightCardProps> = ({
             fontWeight: "500",
             borderBottom: "1px solid #074592",
             width: "fit-content",
-            cursor: "pointer",
+            cursor: pathname ? "pointer" : "default",
             marginTop: "auto",
             transition: "opacity 0.2s ease",
+            pointerEvents: pathname ? "auto" : "none",
             "&:hover": {
-              opacity: 0.7,
+              opacity: pathname ? 0.7 : 1,
             },
           }}
         >
