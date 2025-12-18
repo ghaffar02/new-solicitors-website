@@ -1,6 +1,6 @@
 import React from "react";
 import { Button as MuiButton, ButtonProps } from "@mui/material";
-import { globalFontSize } from "@/app/utils/themes";
+import { localFontSize } from "@/app/utils/themes";
 import Image from "next/image";
 
 const Button: React.FC<{
@@ -31,7 +31,7 @@ const Button: React.FC<{
         backgroundColor: "transparent",
         width: "178px",
         color: "#074592",
-        fontSize: globalFontSize.p2,
+        fontSize: localFontSize.p2,
         border: "2px solid #074592",
         fontWeight: "500",
         textTransform: "none",

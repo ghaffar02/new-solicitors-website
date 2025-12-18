@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { globalFontSize } from "@/app/utils/themes";
+import { localFontSize } from "@/app/utils/themes";
 import Image, { StaticImageData } from "next/image";
 
 interface ContactInfoBoxProps {
@@ -48,7 +48,7 @@ export function ContactInfoBox({ icon, title, subtitle }: ContactInfoBoxProps) {
                 component="li"
                 sx={{
                   color: "#9A9A9A",
-                  fontSize: globalFontSize.p2,
+                  fontSize: localFontSize.p2,
                   listStyle: "disc",
                 }}
               >
@@ -60,7 +60,7 @@ export function ContactInfoBox({ icon, title, subtitle }: ContactInfoBoxProps) {
           <Typography
             sx={{
               color: "#9A9A9A",
-              fontSize: globalFontSize.p2,
+              fontSize: localFontSize.p2,
             }}
           >
             {subtitle}

@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { Box, Divider, Typography } from "@mui/material";
 
-import { globalFontSize } from "@/app/utils/themes";
+import { localFontSize } from "@/app/utils/themes";
 import Button from "@/_components/Button";
 import svgs from "@/_assets/svgs";
 
@@ -43,7 +43,7 @@ function NewsUpdates() {
         <Box sx={{ maxWidth: "542px", width: "100%", margin: "0px auto" }}>
           <Typography
             sx={{
-              fontSize: globalFontSize.h2,
+              fontSize: localFontSize.h2,
               fontWeight: "600",
               textAlign: "center",
               fontFamily: "Playfair Display !important",
@@ -117,7 +117,7 @@ function NewsUpdates() {
                   <Typography
                     sx={{
                       fontWeight: "500",
-                      fontSize: globalFontSize.p4,
+                      fontSize: localFontSize.p4,
                       color: "#FFFFFF80",
                     }}
                   >
@@ -126,7 +126,7 @@ function NewsUpdates() {
                   <Typography
                     sx={{
                       fontWeight: "500",
-                      fontSize: globalFontSize.p1,
+                      fontSize: localFontSize.p1,
                       color: "#fff",
                       fontFamily: "Playfair Display !important",
                     }}
@@ -136,7 +136,7 @@ function NewsUpdates() {
                   <Typography
                     sx={{
                       fontWeight: "400",
-                      fontSize: globalFontSize.p3,
+                      fontSize: localFontSize.p3,
                       color: "#FFFFFF80",
                       ...(isLast && {
                         overflow: "hidden",
@@ -151,7 +151,7 @@ function NewsUpdates() {
                   </Typography>
                   <Button
                     sx={{
-                      fontSize: globalFontSize.p4,
+                      fontSize: localFontSize.p4,
                       color: "#fff",
                       width: "120px",
                       height: "auto",

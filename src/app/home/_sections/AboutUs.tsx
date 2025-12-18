@@ -5,7 +5,7 @@ import pngs from "@/_assets/webp";
 import svgs from "@/_assets/svgs";
 
 import Button from "@/_components/Button";
-import { globalFontSize } from "@/app/utils/themes";
+import { localFontSize } from "@/app/utils/themes";
 function AboutUs() {
   return (
     <Box
@@ -59,7 +59,7 @@ function AboutUs() {
         >
           <Typography
             sx={{
-              fontSize: globalFontSize.p1,
+              fontSize: localFontSize.p1,
               color: "#074592",
               fontWeight: "500",
               fontFamily: "Playfair Display !important",
@@ -69,7 +69,7 @@ function AboutUs() {
           </Typography>
           <Typography
             sx={{
-              fontSize: globalFontSize.h2,
+              fontSize: localFontSize.h2,
               color: "#565656",
               fontWeight: "600",
               fontFamily: "Playfair Display !important",
@@ -91,7 +91,7 @@ function AboutUs() {
             sx={{
               maxWidth: "494px",
               width: "100%",
-              fontSize: globalFontSize.p2,
+              fontSize: localFontSize.p2,
               fontWeight: "400",
               color: "rgba(0,0,0,.5)",
               margin: { xs: "20px auto", sm: "40px 0px" },
@@ -107,7 +107,7 @@ function AboutUs() {
               backgroundColor: "transparent",
               width: "178px",
               color: "#074592",
-              fontSize: globalFontSize.p2,
+              fontSize: localFontSize.p2,
               border: "2px solid #074592",
               fontWeight: "500",
               textTransform: "none",

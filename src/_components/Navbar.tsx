@@ -282,7 +282,7 @@ const Navbar: React.FC = () => {
                 lg: "10px 50px",
               },
               width: "100%",
-              maxWidth: { xs: "1200px", xxl: "1536px" },
+              maxWidth: { xs: "1200px", xxl: "1440px" },
               margin: "auto",
               flexWrap: "wrap",
               justifyContent: { xs: "flex-start", sm: "center" },

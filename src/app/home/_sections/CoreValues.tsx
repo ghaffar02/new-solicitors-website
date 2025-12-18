@@ -3,7 +3,7 @@ import React, { memo, useState } from "react";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import svgs from "@/_assets/svgs";
-import { globalFontSize } from "@/app/utils/themes";
+import { localFontSize } from "@/app/utils/themes";
 
 const coreValuesData = [
   {
@@ -101,7 +101,7 @@ function CoreValues() {
           {/* Title text changes color on hover */}
           <Typography
             sx={{
-              fontSize: globalFontSize.h3,
+              fontSize: localFontSize.h3,
               color: hoveredIndex === index ? "#ffffff" : "#fff",
               fontWeight: "500",
               transition: "color 0.3s ease-in-out",
@@ -114,7 +114,7 @@ function CoreValues() {
           </Typography>
           <Typography
             sx={{
-              fontSize: globalFontSize.p3,
+              fontSize: localFontSize.p3,
               color: hoveredIndex === index ? "#FFFFFF80" : "#FFFFFF80",
               fontWeight: "400",
               transition: "color 0.3s ease-in-out",

@@ -1,33 +1,19 @@
 import Navbar from "@/_components/Navbar";
 import DetailSection from "./_sections/DetailSection";
-import ContactUs from "@/_components/ContactUs";
 import Footer from "@/_components/Footer";
-// import { Box } from "@mui/material";
-// import { localColors } from "@/app/utils/themes";
+import Hero from "@/_components/Hero";
 
-export default function AVictimEntrapmentInYorkshire() {
+export default function AvictimEntrapmentInYorkshire() {
   return (
     <>
       <Navbar />
-      {/*  <Box
-        sx={{
-          width: "100%",
-          backgroundColor: localColors.sideColor,
-          paddingX: { xl: "60px" },
-        }}
-      >
-        <Box
-          sx={{
-            // maxWidth: "1536px",
-            width: "100%",
-            margin: "auto",
-            backgroundColor: "#ffffff",
-          }}
-        > */}
+      <Hero
+        banner="Advocacy, Legal Advice"
+        heading="Yorkshire “Nightmare” Zebra Crossing – A Victim of Entrapment"
+        date="May 02, 2025"
+        backgroundImage="bgAbout.png"
+      />
       <DetailSection />
-      {/* </Box>
-      </Box> */}
-      <ContactUs />
       <Footer />
     </>
   );

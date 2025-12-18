@@ -18,7 +18,7 @@ export default function DubaiCourtsOpensFirstOverseasHubInLondon() {
       >
         <Box
           sx={{
-            maxWidth: "1536px",
+            maxWidth: "1440px",
             width: "100%",
             margin: "auto",
             backgroundColor: "#ffffff",

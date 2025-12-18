@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { Box, Typography } from "@mui/material";
 import Button from "@/_components/Button";
-import { globalFontSize, localFontSize } from "@/app/utils/themes";
+import { localFontSize, localFontSize } from "@/app/utils/themes";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "@/_components/Navbar";
@@ -72,7 +72,7 @@ const HeroHome: React.FC = () => {
             data-aos-delay="100"
             sx={{
               color: "#9A9A9A",
-              fontSize: globalFontSize.p2,
+              fontSize: localFontSize.p2,
               fontWeight: "400",
               marginBottom: { xs: "16px", md: "24px" },
               textTransform: "uppercase",
@@ -139,7 +139,7 @@ const HeroHome: React.FC = () => {
                 color: "#FFFFFF",
                 border: "none",
                 padding: { xs: "14px 28px", md: "16px 36px" },
-                fontSize: globalFontSize.p3,
+                fontSize: localFontSize.p3,
                 fontWeight: "500",
                 borderRadius: "0px",
                 width: "auto",

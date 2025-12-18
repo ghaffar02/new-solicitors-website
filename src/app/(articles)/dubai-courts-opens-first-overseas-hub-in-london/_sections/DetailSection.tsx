@@ -5,7 +5,7 @@ import { Box, Grid } from "@mui/material";
 import DetailSectionImage from "../_components/DetailSectionImage";
 // import DetailSectionForm from "../_components/DetailSectionForm";
 // import SearchIcon from "@mui/icons-material/Search";
-// import { globalFontSize } from "@/app/utils/themes";
+// import { localFontSize } from "@/app/utils/themes";
 // import { Button } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -35,7 +35,7 @@ export default function DetailSection() {
       >
         <Grid
           sx={{
-            maxWidth: { xs: "1536px", xxl: "80vw" },
+            maxWidth: { xs: "1440px" },
             margin: "auto",
             rowGap: { xs: "30px", sm: "50px" },
             flexDirection: { xs: "column-reverse", md: "unset" },

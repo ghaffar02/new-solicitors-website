@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { globalFontSize } from "@/app/utils/themes";
+import { localFontSize } from "@/app/utils/themes";
 import Button from "@/_components/Button";
 import svgs from "@/_assets/svgs";
 import { useRouter } from "next/navigation";
@@ -194,7 +194,7 @@ function NewsArticles() {
       >
         <Box
           sx={{
-            maxWidth: { xs: "542px", xxl: "1536px" },
+            maxWidth: { xs: "542px", xxl: "1440px" },
             width: "100%",
             margin: "0px auto",
           }}
@@ -203,7 +203,7 @@ function NewsArticles() {
             data-aos="zoom-in"
             data-aos-duration="500"
             sx={{
-              fontSize: globalFontSize.h2,
+              fontSize: localFontSize.h2,
               fontWeight: "600",
               textAlign: "center",
               color: "#565656",
@@ -281,7 +281,7 @@ function NewsArticles() {
                   <Typography
                     sx={{
                       fontWeight: "500",
-                      fontSize: globalFontSize.p4,
+                      fontSize: localFontSize.p4,
                       color: hoveredIndex === index ? "#B3B3B3" : "#858483",
                       transition: "color 0.3s ease-in-out",
                       position: "relative",
@@ -294,7 +294,7 @@ function NewsArticles() {
                     className="heading-text"
                     sx={{
                       fontWeight: "500",
-                      fontSize: globalFontSize.p1,
+                      fontSize: localFontSize.p1,
                       color: hoveredIndex === index ? "#074592" : "#fff",
                       transition: "color 0.3s ease-in-out",
                       position: "relative",
@@ -311,7 +311,7 @@ function NewsArticles() {
                   <Typography
                     sx={{
                       fontWeight: "400",
-                      fontSize: globalFontSize.p3,
+                      fontSize: localFontSize.p3,
                       color: hoveredIndex === index ? "#B3B3B3" : "#858483",
                       transition: "color 0.3s ease-in-out",
                       position: "relative",
@@ -333,7 +333,7 @@ function NewsArticles() {
                   >
                     <Button
                       sx={{
-                        fontSize: globalFontSize.p4,
+                        fontSize: localFontSize.p4,
                         width: { xs: "120px", xxl: "150px" },
                         height: "auto",
                         border: "none",

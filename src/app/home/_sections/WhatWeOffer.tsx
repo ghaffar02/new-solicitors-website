@@ -203,7 +203,7 @@ function WhatWeOffer() {
       </Box>
       <Box
         sx={{
-          maxWidth: { xs: "1440px", xxl: "1536px" },
+          maxWidth: { xs: "1440px", xxl: "1440px" },
           width: "100%",
           margin: "auto",
           textAlign: "center",

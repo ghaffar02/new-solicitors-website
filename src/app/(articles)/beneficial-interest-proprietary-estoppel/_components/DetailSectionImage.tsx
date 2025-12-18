@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
-import { globalFontSize } from "@/app/utils/themes";
-// const globalFontSize = {
+import { localFontSize } from "@/app/utils/themes";
+// const localFontSize = {
 //   p2: "14px",
 //   h2: "32px",
 // };
@@ -48,7 +48,7 @@ export default function DetailSectionImage() {
                 fontWeight: "600",
                 backgroundColor: "#F1ECFF",
                 color: "#074592",
-                fontSize: globalFontSize.p2,
+                fontSize: localFontSize.p2,
                 textTransform: "capitalize",
               }}
             >
@@ -58,7 +58,7 @@ export default function DetailSectionImage() {
 
           <Typography
             sx={{
-              fontSize: globalFontSize.h2,
+              fontSize: localFontSize.h2,
               fontWeight: "700",
               color: "#ffffff",
               textTransform: "capitalize",
@@ -69,7 +69,7 @@ export default function DetailSectionImage() {
 
           <Typography
             sx={{
-              fontSize: globalFontSize.p2,
+              fontSize: localFontSize.p2,
               color: "#FFFFFF80",
               textTransform: "capitalize",
             }}
@@ -84,7 +84,7 @@ export default function DetailSectionImage() {
           Background: Turning a House into a Home
         </Typography>
         <Typography
-          sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+          sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
         >
           Our client had lived in a family home for almost 20 years and
           transformed it into her dream residence. She invested tens of
@@ -103,7 +103,7 @@ export default function DetailSectionImage() {
           Proprietary Estoppel Explained
         </Typography>
         <Typography
-          sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+          sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
         >
           Proprietary estoppel protects a person who has relied on a promise
           about rights in land and suffered a detriment as a result. There are
@@ -112,7 +112,7 @@ export default function DetailSectionImage() {
         <ol style={{ marginLeft: "30px", color: "#00000080" }}>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Assurance – A clear and unequivocal promise or representation
               about rights in the property.
@@ -120,14 +120,14 @@ export default function DetailSectionImage() {
           </li>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Reliance – The claimant acts on that assurance.
             </Typography>
           </li>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Detriment – The claimant suffers a loss or detriment by acting on
               the promise.
@@ -135,7 +135,7 @@ export default function DetailSectionImage() {
           </li>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Unconscionability – It would be unjust or unfair for the legal
               owner to renege on the promise.
@@ -144,7 +144,7 @@ export default function DetailSectionImage() {
         </ol>
 
         <Typography
-          sx={{ mt: 2, color: "#00000080", fontSize: globalFontSize.p2 }}
+          sx={{ mt: 2, color: "#00000080", fontSize: localFontSize.p2 }}
         >
           In our client’s case the assurances were explicit and repeated. She
           relied on them by moving in, treating the house as if it were her own
@@ -154,7 +154,7 @@ export default function DetailSectionImage() {
           demand full market value after reneging on those promises.
         </Typography>
         <Typography
-          sx={{ mt: 2, color: "#00000080", fontSize: globalFontSize.p2 }}
+          sx={{ mt: 2, color: "#00000080", fontSize: localFontSize.p2 }}
         >
           Once a court establishes these elements it can order a remedy
           proportionate to the claimant’s detriment. This may include granting a
@@ -165,7 +165,7 @@ export default function DetailSectionImage() {
           Resulting Trusts Explained
         </Typography>
         <Typography
-          sx={{ mt: 2, color: "#00000080", fontSize: globalFontSize.p2 }}
+          sx={{ mt: 2, color: "#00000080", fontSize: localFontSize.p2 }}
         >
           A resulting trust may arise when someone contributes to the purchase
           or improvement of property without being named on the title. The law
@@ -173,14 +173,14 @@ export default function DetailSectionImage() {
           rise to a beneficial interest equal to their contribution.
         </Typography>
         <Typography
-          sx={{ mt: 2, color: "#00000080", fontSize: globalFontSize.p2 }}
+          sx={{ mt: 2, color: "#00000080", fontSize: localFontSize.p2 }}
         >
           The legal test focuses on two aspects:
         </Typography>
         <ul style={{ marginLeft: "30px", color: "#00000080" }}>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Contribution – Direct financial payments towards acquisition or
               significant improvement costs.
@@ -188,7 +188,7 @@ export default function DetailSectionImage() {
           </li>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Intention – The absence of an intention to gift the contribution,
               often inferred in family arrangements where no payment terms were
@@ -198,7 +198,7 @@ export default function DetailSectionImage() {
         </ul>
 
         <Typography
-          sx={{ mt: 2, color: "#00000080", fontSize: globalFontSize.p2 }}
+          sx={{ mt: 2, color: "#00000080", fontSize: localFontSize.p2 }}
         >
           In our client’s situation her tens of thousands of pounds spent on
           improving the property supported a resulting trust claim. At the very
@@ -212,7 +212,7 @@ export default function DetailSectionImage() {
         <ul style={{ marginLeft: "30px", color: "#00000080" }}>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Initial Advice – We advised on both proprietary estoppel as the
               strongest claim and resulting trust as a supportive basis.
@@ -220,7 +220,7 @@ export default function DetailSectionImage() {
           </li>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Court Proceedings – We issued counter‑claims in the High Court
               asserting beneficial interest under both heads of equity.
@@ -228,7 +228,7 @@ export default function DetailSectionImage() {
           </li>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Mediation – Following the exchange of pleadings, the parties
               agreed to stay the proceedings and attend formal mediation.
@@ -236,7 +236,7 @@ export default function DetailSectionImage() {
           </li>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Settlement – Our client achieved 100 per cent ownership of the
               property while paying only a fraction of the initially demanded
@@ -246,7 +246,7 @@ export default function DetailSectionImage() {
         </ul>
 
         <Typography
-          sx={{ mt: 2, color: "#00000080", fontSize: globalFontSize.p2 }}
+          sx={{ mt: 2, color: "#00000080", fontSize: localFontSize.p2 }}
         >
           This result illustrates how equitable remedies can uphold informal
           family agreements and substantial financial outlays by those not on
@@ -259,7 +259,7 @@ export default function DetailSectionImage() {
         <ul style={{ marginLeft: "30px", color: "#00000080" }}>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Document Promises – Whenever possible record family agreements in
               writing to avoid disputes.
@@ -267,7 +267,7 @@ export default function DetailSectionImage() {
           </li>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Gather Evidence – Keep receipts, photographs of works and
               correspondence demonstrating reliance and detriment.
@@ -275,7 +275,7 @@ export default function DetailSectionImage() {
           </li>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Understand Remedies – Proprietary estoppel and resulting trusts
               offer different routes to beneficial interest. Proprietary
@@ -285,7 +285,7 @@ export default function DetailSectionImage() {
           </li>
           <li>
             <Typography
-              sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+              sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
             >
               Seek Early Advice – Prompt legal guidance can shape strategy,
               preserve evidence and, where appropriate, prompt mediation to
@@ -298,7 +298,7 @@ export default function DetailSectionImage() {
           Contact Our Specialist Litigation Team
         </Typography>
         <Typography
-          sx={{ mt: 1, color: "#00000080", fontSize: globalFontSize.p2 }}
+          sx={{ mt: 1, color: "#00000080", fontSize: localFontSize.p2 }}
         >
           If you are involved in complex probate or property disputes including
           beneficial interest claims under proprietary estoppel or resulting

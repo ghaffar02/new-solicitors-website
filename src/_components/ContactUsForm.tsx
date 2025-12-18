@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Box, Button as MuiButton, CircularProgress } from "@mui/material";
 import CustomInputField from "./CustomInputField";
-import { globalFontSize } from "@/app/utils/themes";
+import { localFontSize } from "@/app/utils/themes";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -152,7 +152,7 @@ export default function ContactUsForm() {
           sx={{
             backgroundColor: "#074592",
             color: "#FFFFFF",
-            fontSize: globalFontSize.p2,
+            fontSize: localFontSize.p2,
             fontWeight: "500",
             textTransform: "none",
             display: "flex",

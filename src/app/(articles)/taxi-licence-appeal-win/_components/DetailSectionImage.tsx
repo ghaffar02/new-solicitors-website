@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
-import { globalFontSize } from "@/app/utils/themes";
+import { localFontSize } from "@/app/utils/themes";
 
-// const globalFontSize = {
+// const localFontSize = {
 //   p2: "14px",
 //   h2: "32px",
 // };
@@ -53,7 +53,7 @@ export default function DetailSectionImage() {
                 fontWeight: "600",
                 backgroundColor: "#F1ECFF",
                 color: "#074592",
-                fontSize: globalFontSize.p2,
+                fontSize: localFontSize.p2,
                 textTransform: "capitalize",
               }}
             >
@@ -63,7 +63,7 @@ export default function DetailSectionImage() {
 
           <Typography
             sx={{
-              fontSize: globalFontSize.h2,
+              fontSize: localFontSize.h2,
               fontWeight: "700",
               color: "#ffffff",
               textTransform: "capitalize",
@@ -74,7 +74,7 @@ export default function DetailSectionImage() {
 
           <Typography
             sx={{
-              fontSize: globalFontSize.p2,
+              fontSize: localFontSize.p2,
               color: "#FFFFFF80",
               textTransform: "capitalize",
             }}
@@ -86,7 +86,7 @@ export default function DetailSectionImage() {
       <Typography
         sx={{
           paddingY: "40px",
-          fontSize: globalFontSize.p2,
+          fontSize: localFontSize.p2,
           color: "#00000080",
         }}
       >

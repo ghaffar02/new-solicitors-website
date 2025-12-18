@@ -5,7 +5,7 @@ import { Box, Grid } from "@mui/material";
 import DetailSectionImage from "../_components/DetailSectionImage";
 // import DetailSectionForm from "../_components/DetailSectionForm";
 // import SearchIcon from "@mui/icons-material/Search";
-// import { globalFontSize } from "@/app/utils/themes";
+// import { localFontSize } from "@/app/utils/themes";
 // import { Button } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -35,7 +35,7 @@ export default function DetailSection() {
       >
         <Grid
           sx={{
-            maxWidth: { xs: "1536px", xxl: "80vw" },
+            maxWidth: { xs: "1440px" },
             margin: "auto",
             rowGap: { xs: "30px", sm: "50px" },
             flexDirection: { xs: "column-reverse", md: "unset" },
@@ -94,7 +94,7 @@ export default function DetailSection() {
               <Box>
                 <Typography
                   sx={{
-                    fontSize: globalFontSize.p1,
+                    fontSize: localFontSize.p1,
                     color: "#074592",
                     fontWeight: "500",
                   }}
@@ -125,12 +125,12 @@ export default function DetailSection() {
                       }}
                     >
                       <Typography
-                        sx={{ fontSize: globalFontSize.p2, color: "#00000080" }}
+                        sx={{ fontSize: localFontSize.p2, color: "#00000080" }}
                       >
                         {item.title}
                       </Typography>
                       <Typography
-                        sx={{ fontSize: globalFontSize.p2, color: "#00000080" }}
+                        sx={{ fontSize: localFontSize.p2, color: "#00000080" }}
                       >
                         {item.number}
                       </Typography>
@@ -141,7 +141,7 @@ export default function DetailSection() {
               <Box>
                 <Typography
                   sx={{
-                    fontSize: globalFontSize.p1,
+                    fontSize: localFontSize.p1,
                     color: "#074592",
                     fontWeight: "500",
                   }}
@@ -163,7 +163,7 @@ export default function DetailSection() {
                       sx={{
                         backgroundColor: "#074592",
                         color: "#FFFFFF",
-                        fontSize: globalFontSize.p2,
+                        fontSize: localFontSize.p2,
                         borderRadius: "12px",
                         padding: "10px",
                         textTransform: "capitalize",

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { globalFontSize, sectionPadding } from "@/app/utils/themes";
+import { localFontSize, sectionPadding } from "@/app/utils/themes";
 import { Box, Typography } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,10 +10,16 @@ import Navbar from "./Navbar";
 interface HeroProps {
   heading: string;
   banner?: string;
+  date?: string;
   backgroundImage?: string;
 }
 
-export default function Hero({ heading, banner, backgroundImage }: HeroProps) {
+export default function Hero({
+  heading,
+  banner,
+  date,
+  backgroundImage,
+}: HeroProps) {
   useEffect(() => {
     AOS.init({ duration: 500, once: true });
     AOS.refresh();
@@ -26,7 +32,7 @@ export default function Hero({ heading, banner, backgroundImage }: HeroProps) {
           display: { xs: "flex", lg: "block" },
           alignItems: { xs: "center", lg: "unset" },
           width: "100%",
-          height: { xs: "400px", md: "550px", lg: "600px" },
+          height: { xs: "400px", md: "600px", lg: "600px", xl: "800px" },
           paddingTop: {
             sm: "80px",
             md: "120px",
@@ -59,7 +65,7 @@ export default function Hero({ heading, banner, backgroundImage }: HeroProps) {
         >
           <Typography
             sx={{
-              fontSize: globalFontSize.p2,
+              fontSize: localFontSize.p2,
               color: "#9A9A9A",
               textTransform: "uppercase",
               margin: "auto",
@@ -71,10 +77,10 @@ export default function Hero({ heading, banner, backgroundImage }: HeroProps) {
           </Typography>
           <Typography
             sx={{
-              fontSize: globalFontSize.h1,
+              fontSize: localFontSize.h1,
               color: "#FFFFFF",
               fontWeight: "700 !important",
-              lineHeight: `calc(${globalFontSize.h1} + 15px)`,
+              lineHeight: `calc(${localFontSize.h1} + 15px)`,
               textTransform: "capitalize",
               maxWidth: "780px",
               margin: "auto",
@@ -85,6 +91,20 @@ export default function Hero({ heading, banner, backgroundImage }: HeroProps) {
           >
             {heading}
           </Typography>
+          {date && (
+            <Typography
+              sx={{
+                fontSize: localFontSize.p4,
+                color: "#9A9A9A",
+                textTransform: "uppercase",
+                margin: "auto",
+                textAlign: "center",
+                marginY: "0px",
+              }}
+            >
+              {date}
+            </Typography>
+          )}
         </Box>
         <Box
           sx={{

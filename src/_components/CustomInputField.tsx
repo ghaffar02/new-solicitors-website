@@ -1,7 +1,7 @@
 "use client";
 import React, { forwardRef } from "react";
 import { TextField, Box, FormLabel } from "@mui/material";
-import { globalFontSize } from "@/app/utils/themes";
+import { localFontSize } from "@/app/utils/themes";
 
 interface CustomInputFieldProps {
   label?: string;
@@ -36,7 +36,7 @@ const CustomInputField = forwardRef<
           <FormLabel
             sx={{
               color: "#9A9A9A",
-              fontSize: globalFontSize.p1,
+              fontSize: localFontSize.p1,
               mb: "8px",
               display: "block",
             }}
@@ -56,7 +56,7 @@ const CustomInputField = forwardRef<
           InputProps={{
             sx: {
               color: "#9A9A9A",
-              fontSize: globalFontSize.p1,
+              fontSize: localFontSize.p1,
               "&::placeholder": {
                 color: "#9A9A9A",
                 opacity: 1,
@@ -66,7 +66,7 @@ const CustomInputField = forwardRef<
           inputProps={{
             sx: {
               color: "#9A9A9A",
-              fontSize: globalFontSize.p1,
+              fontSize: localFontSize.p1,
               "&::placeholder": {
                 color: "#9A9A9A",
                 opacity: 1,
@@ -75,7 +75,7 @@ const CustomInputField = forwardRef<
           }}
           sx={{
             "& .MuiInputBase-input": {
-              fontSize: globalFontSize.p1,
+              fontSize: localFontSize.p1,
               color: "#9A9A9A",
               padding: { xs: "0 0 20px 10px", md: "0 0 30px 10px" }, // top right bottom left
               "&::placeholder": {
@@ -88,7 +88,7 @@ const CustomInputField = forwardRef<
               paddingBottom: { xs: "20px", md: "30px" },
             },
             "& .MuiFormHelperText-root": {
-              fontSize: globalFontSize.p4,
+              fontSize: localFontSize.p4,
             },
             "& .MuiInput-underline": {
               "&:before": {

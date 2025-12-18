@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button as MuiButton } from "@mui/material";
 import CustomInputField from "@/_components/CustomInputField";
-import { globalFontSize } from "@/app/utils/themes";
+import { localFontSize } from "@/app/utils/themes";
 
 const formGap = {
   gap: { xs: "20px", md: "30px" },
@@ -54,7 +54,7 @@ export default function DetailSectionForm() {
           backgroundColor: "transparent",
           width: "100%",
           color: "#074592",
-          fontSize: globalFontSize.p2,
+          fontSize: localFontSize.p2,
           border: "2px solid #074592",
           fontWeight: "500",
           textTransform: "none",
