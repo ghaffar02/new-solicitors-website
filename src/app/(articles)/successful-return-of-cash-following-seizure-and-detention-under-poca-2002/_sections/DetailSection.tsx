@@ -1,14 +1,9 @@
 "use client";
 import React, { useEffect } from "react";
-import { Box, Grid } from "@mui/material";
-// import { InputBase, Typography } from "@mui/material";
-import DetailSectionImage from "../_components/DetailSectionImage";
-// import DetailSectionForm from "../_components/DetailSectionForm";
-// import SearchIcon from "@mui/icons-material/Search";
-// import { localFontSize } from "@/app/utils/themes";
-// import { Button } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { localFontSize, sectionPadding } from "@/app/utils/themes";
 
 export default function DetailSection() {
   useEffect(() => {
@@ -16,170 +11,69 @@ export default function DetailSection() {
     AOS.refresh();
   }, []);
 
-  // const advocacyData = [
-  //   { title: "Advocacy", number: "(01)" },
-  //   { title: "Legal Advice", number: "(03)" },
-  // ];
   return (
     <>
       <Box
         sx={{
-          padding: {
-            xs: "25px 20px",
-            sm: "50px 30px",
-            md: "75px 50px",
-            lg: "100px 100px",
-          },
-          marginTop: { xs: "76px", sm: "86px", md: "90px", lg: "93px" },
+          padding: sectionPadding,
         }}
       >
-        <Grid
+        <Box
           sx={{
-            maxWidth: { xs: "1440px" },
+            maxWidth: "1440px",
             margin: "auto",
-            rowGap: { xs: "30px", sm: "50px" },
-            flexDirection: { xs: "column-reverse", md: "unset" },
           }}
-          container
         >
-          <Grid xs={12} md={12}>
-            <DetailSectionImage />
-            {/* <DetailSectionForm /> */}
-          </Grid>
-          {/* <Grid
-            data-aos="fade-left"
-            data-aos-duration="500"
-            sx={{ paddingLeft: { md: "20px", lg: "30px", xl: "40px" } }}
-            xs={12}
-            md={4}
+          <Typography
+            sx={{
+              paddingY: "40px",
+              fontSize: localFontSize.p2,
+              color: "#00000080",
+            }}
           >
-             <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                width: "100%",
-                gap: { xs: "30px", md: "50px", lg: "80px" },
-              }}
-            >
-              <Box sx={{ width: "100%" }}>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    border: "1px solid #ccc",
-                    borderRadius: "50px",
-                    padding: "8px 16px",
-                    width: "100%",
-                    maxWidth: "420px",
-                    backgroundColor: "white",
-                    float: { xs: "right", md: "unset" },
-                    margin: { xs: "unset", md: "auto" },
-                  }}
-                >
-                  <InputBase
-                    placeholder="Search"
-                    sx={{
-                      flex: 1,
-                      fontSize: "16px",
-                      color: "#555",
-                      "&::placeholder": {
-                        color: "#999",
-                        opacity: 1,
-                      },
-                    }}
-                  />
-                  <SearchIcon sx={{ color: "#555" }} />
-                </Box>
-              </Box>
-              <Box>
-                <Typography
-                  sx={{
-                    fontSize: localFontSize.p1,
-                    color: "#074592",
-                    fontWeight: "500",
-                  }}
-                >
-                  Categories
-                </Typography>
-                <Box
-                  sx={{
-                    width: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    rowGap: "30px",
-                    paddingTop: { xs: "15px", md: "30px", lg: "50px" },
-                  }}
-                >
-                  {advocacyData.map((item, index) => (
-                    <Box
-                      key={index}
-                      sx={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                        borderBottom: "1px solid #00000080",
-                        paddingBottom: "5px",
-                        width: "100%",
-                        textWrap: "nowrap",
-                        columnGap: "20px",
-                      }}
-                    >
-                      <Typography
-                        sx={{ fontSize: localFontSize.p2, color: "#00000080" }}
-                      >
-                        {item.title}
-                      </Typography>
-                      <Typography
-                        sx={{ fontSize: localFontSize.p2, color: "#00000080" }}
-                      >
-                        {item.number}
-                      </Typography>
-                    </Box>
-                  ))}
-                </Box>
-              </Box>
-              <Box>
-                <Typography
-                  sx={{
-                    fontSize: localFontSize.p1,
-                    color: "#074592",
-                    fontWeight: "500",
-                  }}
-                >
-                  Tags
-                </Typography>
-                <Box
-                  sx={{
-                    width: "100%",
-                    display: "flex",
-                    gap: "30px",
-                    paddingTop: { xs: "15px", md: "30px", lg: "50px" },
-                  }}
-                >
-                  {["Advocacy", "Legal Advice"].map((label, index) => (
-                    <Button
-                      key={index}
-                      variant="contained"
-                      sx={{
-                        backgroundColor: "#074592",
-                        color: "#FFFFFF",
-                        fontSize: localFontSize.p2,
-                        borderRadius: "12px",
-                        padding: "10px",
-                        textTransform: "capitalize",
-                        "&:hover": {
-                          backgroundColor: "#082B60",
-                        },
-                      }}
-                    >
-                      {label}
-                    </Button>
-                  ))}
-                </Box>
-              </Box>
-            </Box> 
-          </Grid>*/}
-        </Grid>
+            <span data-aos="zoom-in" data-aos-duration="500">
+              Greater Manchester Police have agreed to return several thousand
+              pounds to our clients after it was seized at Manchester Airport
+              under section 295(8) of the Proceeds of Crime Act 2002 (“the
+              Act”). Following the initial seizure of the cash the police
+              successfully applied to the Magistrates’ Court for the cash to be
+              further detained pursuant to section 295(2) of the Act on the
+              basis “that there are reasonable grounds for suspecting that the
+              cash is recoverable property.”
+            </span>
+            <br />
+            <br />
+            <span data-aos="zoom-in" data-aos-duration="500">
+              A third party was travelling to Pakistan and was taking the money
+              on behalf of our clients when it was seized by the police. The
+              Applicant’s instructed ourselves following the detention of the
+              cash by the Magistrates’ Court to help them get their money back.
+            </span>
+            <br />
+            <br />
+            <span data-aos="zoom-in" data-aos-duration="500">
+              Following receipt of instructions our criminal team began
+              preparing the case on behalf of the Applicants. After the service
+              of numerous witness statements along with supporting
+              documentation, diligently and painstakingly compiled by our team,
+              we were able to demonstrate the legitimate provenance of the cash.
+              Therefore, the Police have agreed to return the entire sum of
+              money to our clients without the matter proceeding to a full
+              contested hearing. This has saved the Applicant’s a great deal of
+              expense and time.
+            </span>
+            <br />
+            <br />
+            <span data-aos="zoom-in" data-aos-duration="500">
+              These types of cases require fine attention to detail, and a
+              thorough review of all potential documentary evidence in order to
+              build a strong case. If you or anyone you know has matters arising
+              from the Proceeds of Crime Act 2002 such as confiscation then
+              contact a member of our criminal defence team on 01709 458786 to
+              receive expert legal advice.
+            </span>
+          </Typography>
+        </Box>
       </Box>
     </>
   );

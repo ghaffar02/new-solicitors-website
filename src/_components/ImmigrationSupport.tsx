@@ -156,7 +156,7 @@ function ImmigrationSupport({
     >
       <Box
         sx={{
-          maxWidth: { xs: "1440px" },
+          maxWidth: "1440px",
           margin: "auto",
           width: "100%",
         }}
