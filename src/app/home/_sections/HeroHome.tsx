@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { Box, Typography } from "@mui/material";
 import Button from "@/_components/Button";
-import { localFontSize, localFontSize } from "@/app/utils/themes";
+import { localFontSize } from "@/app/utils/themes";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "@/_components/Navbar";
