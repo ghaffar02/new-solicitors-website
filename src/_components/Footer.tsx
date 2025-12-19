@@ -21,7 +21,7 @@ export default function Footer() {
   const pageLinks = [
     { label: "Home", path: "/" },
     { label: "About Us", path: "/about-us" },
-    { label: "Practice Areas", path: "/practice-area" },
+    { label: "Practice Areas", path: "/practice-area/commercial-law" },
     { label: "News", path: "/news" },
     { label: "Contact Us", path: "/contact-us" },
   ];
