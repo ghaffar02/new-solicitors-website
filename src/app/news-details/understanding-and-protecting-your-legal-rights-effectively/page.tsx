@@ -3,16 +3,11 @@ import DetailSection from "./_sections/DetailSection";
 import Footer from "@/_components/Footer";
 import Hero from "@/_components/Hero";
 
-export default function DubaiCourtsOpensFirstOverseasHubInLondon() {
+export default function UnderstandingAndProtectingYourLegalRightsEffectively() {
   return (
     <>
       <Navbar />
-      <Hero
-        banner="Advocacy, Legal Advice"
-        heading="Dubai Courts Opens First Overseas Hub in London"
-        date="Aug 18, 2025"
-        backgroundImage="/bgAbout.png"
-      />
+      <Hero heading="Immigration Appeal" backgroundImage="/bgAbout.png" />
       <DetailSection />
       <Footer />
     </>

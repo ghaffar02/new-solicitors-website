@@ -3,16 +3,11 @@ import DetailSection from "./_sections/DetailSection";
 import Footer from "@/_components/Footer";
 import Hero from "@/_components/Hero";
 
-export default function AvictimEntrapmentInYorkshire() {
+export default function ResolvingLegalConflictsWithClarityAndConfidence() {
   return (
     <>
       <Navbar />
-      <Hero
-        banner="Advocacy, Legal Advice"
-        heading="Yorkshire “Nightmare” Zebra Crossing – A Victim of Entrapment"
-        date="May 02, 2025"
-        backgroundImage="/bgAbout.png"
-      />
+      <Hero heading="Business Dispute" backgroundImage="/bgAbout.png" />
       <DetailSection />
       <Footer />
     </>
