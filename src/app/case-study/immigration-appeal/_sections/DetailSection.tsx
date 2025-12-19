@@ -27,10 +27,11 @@ export default function DetailSection() {
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            A long-standing business partnership faced a serious internal
-            dispute due to disagreements over profit distribution, management
-            control, and future direction. The conflict threatened daily
-            operations and posed a risk of costly litigation.
+            Our client approached us after receiving an unexpected refusal of
+            their residency visa application. The refusal placed their future
+            plans at risk and caused significant uncertainty. The client sought
+            expert legal support to challenge the decision and secure lawful
+            residency.
           </Typography>
           <Typography
             sx={{
@@ -46,12 +47,12 @@ export default function DetailSection() {
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            Both partners held equal stakes in the business but had conflicting
-            interpretations of their partnership agreement. Communication had
-            broken down, trust was damaged, and legal action seemed inevitable.
-            The client needed a swift, strategic solution that protected their
-            financial interests while minimizing reputational and operational
-            damage.
+            The visa application was initially refused due to concerns raised by
+            the immigration authority regarding documentation and eligibility
+            criteria. The refusal letter cited insufficient evidence and
+            questioned whether the client fully met the residency requirements.
+            Without a successful appeal, the client faced the possibility of
+            leaving the country and restarting the application process.
           </Typography>
           <br />
           <Typography
@@ -68,12 +69,13 @@ export default function DetailSection() {
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            We conducted a detailed review of the partnership agreement,
-            financial records, and correspondence between the parties. Using a
-            negotiation-first strategy, we identified key leverage points and
-            potential areas of compromise. Our legal team facilitated structured
-            discussions, ensuring clarity, fairness, and legal precision at
-            every stage.
+            We conducted a thorough review of the refusal notice and identified
+            the key weaknesses in the original application. Our team gathered
+            additional supporting documents, prepared a strong legal argument
+            addressing each concern raised by the immigration authority, and
+            ensured full compliance with immigration laws and procedural
+            requirements. We also represented the client throughout the appeal
+            process, providing clear guidance and reassurance at every stage.
           </Typography>
           <br />
           <Typography
@@ -85,16 +87,15 @@ export default function DetailSection() {
               fontSize: localFontSize.h3,
             }}
           >
-            The Resolution
+            The Outcome
           </Typography>
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            Through skilled negotiation and careful drafting of revised terms,
-            the dispute was resolved without court intervention. A mutually
-            acceptable settlement was reached, redefining roles,
-            responsibilities, and profit-sharing arrangements. The agreement was
-            legally reinforced to prevent future conflicts.
+            The appeal was successful. The immigration authority overturned the
+            initial refusal and granted the client residency. This decision
+            allowed the client to remain in the country legally and continue
+            their personal and professional plans without disruption.
           </Typography>
           <br />
           <Typography
@@ -106,7 +107,7 @@ export default function DetailSection() {
               fontSize: localFontSize.h3,
             }}
           >
-            Outcome
+            Key Result
           </Typography>
           <ul style={{ marginLeft: "30px", color: "#00000080" }}>
             <li>
@@ -117,7 +118,7 @@ export default function DetailSection() {
                   fontSize: localFontSize.p2,
                 }}
               >
-                Avoided lengthy and expensive litigation
+                Initial visa refusal successfully challenged
               </Typography>
             </li>
             <li>
@@ -128,7 +129,7 @@ export default function DetailSection() {
                   fontSize: localFontSize.p2,
                 }}
               >
-                Preserved business continuity and professional relationships
+                Residency granted through a well-prepared appeal
               </Typography>
             </li>
             <li>
@@ -139,30 +140,10 @@ export default function DetailSection() {
                   fontSize: localFontSize.p2,
                 }}
               >
-                Achieved a fair, enforceable settlement for all parties
+                Client secured long-term legal status and peace of mind
               </Typography>
             </li>
           </ul>
-
-          <br />
-          <Typography
-            sx={{
-              mt: 4,
-              fontWeight: 500,
-              color: "#1A1A1A",
-              fontFamily: "Playfair Display !important",
-              fontSize: localFontSize.h3,
-            }}
-          >
-            Client Impact
-          </Typography>
-          <Typography
-            sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
-          >
-            The client regained stability, clarity, and confidence in their
-            business operations, allowing them to refocus on growth rather than
-            conflict.
-          </Typography>
         </Box>
       </Box>
     </>

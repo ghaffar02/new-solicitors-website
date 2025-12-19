@@ -27,10 +27,11 @@ export default function DetailSection() {
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            A long-standing business partnership faced a serious internal
-            dispute due to disagreements over profit distribution, management
-            control, and future direction. The conflict threatened daily
-            operations and posed a risk of costly litigation.
+            Our client was facing serious criminal charges that carried the risk
+            of severe legal consequences, including potential fines and
+            imprisonment. From the outset, the case required a meticulous review
+            of evidence, procedural accuracy, and a strong strategic defense to
+            protect the client’s rights and reputation.{" "}
           </Typography>
           <Typography
             sx={{
@@ -46,12 +47,11 @@ export default function DetailSection() {
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            Both partners held equal stakes in the business but had conflicting
-            interpretations of their partnership agreement. Communication had
-            broken down, trust was damaged, and legal action seemed inevitable.
-            The client needed a swift, strategic solution that protected their
-            financial interests while minimizing reputational and operational
-            damage.
+            The prosecution presented multiple claims supported by
+            circumstantial evidence. The client maintained their innocence, but
+            the complexity of the case demanded a detailed examination of police
+            procedures, evidence handling, and witness statements to identify
+            weaknesses in the prosecution’s argument.
           </Typography>
           <br />
           <Typography
@@ -68,12 +68,13 @@ export default function DetailSection() {
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            We conducted a detailed review of the partnership agreement,
-            financial records, and correspondence between the parties. Using a
-            negotiation-first strategy, we identified key leverage points and
-            potential areas of compromise. Our legal team facilitated structured
-            discussions, ensuring clarity, fairness, and legal precision at
-            every stage.
+            Our legal team conducted an in-depth investigation, carefully
+            reviewing all evidence and identifying critical inconsistencies in
+            the prosecution’s case. We challenged the admissibility of key
+            evidence, highlighted procedural errors, and presented compelling
+            counter-arguments supported by factual documentation and legal
+            precedents. Strategic motions were filed to question the reliability
+            and legality of the prosecution’s claims.
           </Typography>
           <br />
           <Typography
@@ -85,16 +86,16 @@ export default function DetailSection() {
               fontSize: localFontSize.h3,
             }}
           >
-            The Resolution
+            The Outcome
           </Typography>
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            Through skilled negotiation and careful drafting of revised terms,
-            the dispute was resolved without court intervention. A mutually
-            acceptable settlement was reached, redefining roles,
-            responsibilities, and profit-sharing arrangements. The agreement was
-            legally reinforced to prevent future conflicts.
+            As a result of our strong evidentiary presentation and strategic
+            defense, the court found insufficient grounds to proceed with the
+            case. The charges against our client were dismissed, bringing the
+            matter to a successful resolution without the need for a prolonged
+            trial.
           </Typography>
           <br />
           <Typography
@@ -106,62 +107,19 @@ export default function DetailSection() {
               fontSize: localFontSize.h3,
             }}
           >
-            Outcome
+            Conclusion
           </Typography>
-          <ul style={{ marginLeft: "30px", color: "#00000080" }}>
-            <li>
-              <Typography
-                sx={{
-                  mt: 1,
-                  color: "#00000080",
-                  fontSize: localFontSize.p2,
-                }}
-              >
-                Avoided lengthy and expensive litigation
-              </Typography>
-            </li>
-            <li>
-              <Typography
-                sx={{
-                  mt: 1,
-                  color: "#00000080",
-                  fontSize: localFontSize.p2,
-                }}
-              >
-                Preserved business continuity and professional relationships
-              </Typography>
-            </li>
-            <li>
-              <Typography
-                sx={{
-                  mt: 1,
-                  color: "#00000080",
-                  fontSize: localFontSize.p2,
-                }}
-              >
-                Achieved a fair, enforceable settlement for all parties
-              </Typography>
-            </li>
-          </ul>
-
-          <br />
           <Typography
             sx={{
-              mt: 4,
-              fontWeight: 500,
-              color: "#1A1A1A",
-              fontFamily: "Playfair Display !important",
-              fontSize: localFontSize.h3,
+              mt: 1,
+              color: "#00000080",
+              fontSize: localFontSize.p2,
             }}
           >
-            Client Impact
-          </Typography>
-          <Typography
-            sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
-          >
-            The client regained stability, clarity, and confidence in their
-            business operations, allowing them to refocus on growth rather than
-            conflict.
+            This case highlights our firm’s commitment to thorough preparation,
+            strategic thinking, and aggressive defense. By focusing on facts,
+            legal precision, and client advocacy, we consistently work to
+            achieve the best possible outcomes in criminal defense matters.{" "}
           </Typography>
         </Box>
       </Box>
