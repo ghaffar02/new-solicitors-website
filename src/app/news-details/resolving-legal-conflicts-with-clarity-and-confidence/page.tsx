@@ -7,7 +7,10 @@ export default function ResolvingLegalConflictsWithClarityAndConfidence() {
   return (
     <>
       <Navbar />
-      <Hero heading="Business Dispute" backgroundImage="/bgAbout.png" />
+      <Hero
+        heading="Resolving Legal Conflicts with Clarity and Confidence"
+        backgroundImage="/bgNewsDetails2.png"
+      />
       <DetailSection />
       <Footer />
     </>

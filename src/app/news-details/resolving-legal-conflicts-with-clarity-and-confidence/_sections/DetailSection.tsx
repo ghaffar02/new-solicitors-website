@@ -11,6 +11,20 @@ export default function DetailSection() {
     AOS.refresh();
   }, []);
 
+  const clearStrategyPoints = [
+    "The strengths and weaknesses of each party's case",
+    "Possible legal outcomes",
+    "Timeframes and costs involved",
+    "Opportunities for negotiation or settlement",
+  ];
+
+  const confidentRepresentationPoints = [
+    "Advocating firmly for client interests+",
+    "Communicating clearly with opposing parties",
+    "Remaining calm and strategic under pressure",
+    "Adapting quickly to changing circumstances",
+  ];
+
   return (
     <>
       <Box
@@ -27,10 +41,13 @@ export default function DetailSection() {
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            A long-standing business partnership faced a serious internal
-            dispute due to disagreements over profit distribution, management
-            control, and future direction. The conflict threatened daily
-            operations and posed a risk of costly litigation.
+            Legal conflicts can arise unexpectedly, affecting businesses,
+            partnerships, and individuals alike. When disputes occur, the
+            difference between prolonged stress and a successful resolution
+            often lies in how clearly the issue is understood and how
+            confidently it is handled. Resolving legal conflicts with clarity
+            and confidence is not just a goal—it is a disciplined approach that
+            leads to fair, timely, and effective outcomes.
           </Typography>
           <Typography
             sx={{
@@ -41,17 +58,21 @@ export default function DetailSection() {
               fontSize: localFontSize.h3,
             }}
           >
-            The Challenge
+            Understanding the Root of Legal Disputes
           </Typography>
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            Both partners held equal stakes in the business but had conflicting
-            interpretations of their partnership agreement. Communication had
-            broken down, trust was damaged, and legal action seemed inevitable.
-            The client needed a swift, strategic solution that protected their
-            financial interests while minimizing reputational and operational
-            damage.
+            Every legal conflict has an underlying cause. It may stem from
+            unclear contracts, miscommunication between parties, unmet
+            obligations, or differing interpretations of the law. Without
+            identifying the true source of the dispute, resolutions remain
+            temporary or ineffective.
+            <br />
+            <br />A structured legal approach begins with a thorough review of
+            facts, documentation, and legal responsibilities. This clarity
+            allows all parties to understand their position, potential risks,
+            and available options before moving forward.
           </Typography>
           <br />
           <Typography
@@ -63,88 +84,89 @@ export default function DetailSection() {
               fontFamily: "Playfair Display !important",
             }}
           >
-            Our Approach
+            The Importance of Clear Legal Strategy
           </Typography>
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            We conducted a detailed review of the partnership agreement,
-            financial records, and correspondence between the parties. Using a
-            negotiation-first strategy, we identified key leverage points and
-            potential areas of compromise. Our legal team facilitated structured
-            discussions, ensuring clarity, fairness, and legal precision at
-            every stage.
+            Clarity in legal matters means more than understanding the law—it
+            involves translating complex legal language into actionable
+            guidance. A clear strategy outlines:
           </Typography>
           <br />
-          <Typography
-            sx={{
-              mt: 4,
-              fontWeight: 500,
-              color: "#1A1A1A",
-              fontFamily: "Playfair Display !important",
-              fontSize: localFontSize.h3,
-            }}
-          >
-            The Resolution
-          </Typography>
-          <Typography
-            sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
-          >
-            Through skilled negotiation and careful drafting of revised terms,
-            the dispute was resolved without court intervention. A mutually
-            acceptable settlement was reached, redefining roles,
-            responsibilities, and profit-sharing arrangements. The agreement was
-            legally reinforced to prevent future conflicts.
-          </Typography>
-          <br />
-          <Typography
-            sx={{
-              mt: 4,
-              fontWeight: 500,
-              color: "#1A1A1A",
-              fontFamily: "Playfair Display !important",
-              fontSize: localFontSize.h3,
-            }}
-          >
-            Outcome
-          </Typography>
           <ul style={{ marginLeft: "30px", color: "#00000080" }}>
-            <li>
-              <Typography
-                sx={{
-                  mt: 1,
-                  color: "#00000080",
-                  fontSize: localFontSize.p2,
-                }}
-              >
-                Avoided lengthy and expensive litigation
-              </Typography>
-            </li>
-            <li>
-              <Typography
-                sx={{
-                  mt: 1,
-                  color: "#00000080",
-                  fontSize: localFontSize.p2,
-                }}
-              >
-                Preserved business continuity and professional relationships
-              </Typography>
-            </li>
-            <li>
-              <Typography
-                sx={{
-                  mt: 1,
-                  color: "#00000080",
-                  fontSize: localFontSize.p2,
-                }}
-              >
-                Achieved a fair, enforceable settlement for all parties
-              </Typography>
-            </li>
+            {clearStrategyPoints.map((point, index) => (
+              <li key={index}>
+                <Typography
+                  sx={{
+                    mt: 1,
+                    color: "#00000080",
+                    fontSize: localFontSize.p2,
+                  }}
+                >
+                  {point}
+                </Typography>
+              </li>
+            ))}
           </ul>
-
           <br />
+          <Typography
+            sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
+          >
+            When clients are informed and prepared, decision-making becomes more
+            confident and less reactive. This reduces uncertainty and helps
+            avoid unnecessary escalation.
+          </Typography>
+          {/* sdjfksfjsdfj   */}
+          <Typography
+            sx={{
+              mt: 4,
+              fontWeight: 500,
+              fontSize: localFontSize.h3,
+              color: "#1A1A1A",
+              fontFamily: "Playfair Display !important",
+            }}
+          >
+            Confidence Through Professional Representation
+          </Typography>
+          <Typography
+            sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
+          >
+            Confidence in resolving legal conflicts comes from experienced
+            representation. Skilled legal professionals combine legal knowledge
+            with practical insight, ensuring that clients feel supported at
+            every stage of the process.
+          </Typography>
+          <br />
+          <Typography
+            sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
+          >
+            Whether through negotiation, mediation, arbitration, or litigation,
+            confident representation means:
+          </Typography>
+          <br />
+          <ul style={{ marginLeft: "30px", color: "#00000080" }}>
+            {confidentRepresentationPoints.map((point, index) => (
+              <li key={index}>
+                <Typography
+                  sx={{
+                    mt: 1,
+                    color: "#00000080",
+                    fontSize: localFontSize.p2,
+                  }}
+                >
+                  {point}
+                </Typography>
+              </li>
+            ))}
+          </ul>
+          <br />
+          <Typography
+            sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
+          >
+            This approach builds trust and increases the likelihood of favorable
+            outcomes.
+          </Typography>
           <Typography
             sx={{
               mt: 4,
@@ -154,14 +176,47 @@ export default function DetailSection() {
               fontSize: localFontSize.h3,
             }}
           >
-            Client Impact
+            Alternative Dispute Resolution: A Smarter Path Forward
           </Typography>
+          <br />
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            The client regained stability, clarity, and confidence in their
-            business operations, allowing them to refocus on growth rather than
-            conflict.
+            Not all legal conflicts need to end in court. Alternative Dispute
+            Resolution (ADR) methods such as mediation and negotiation often
+            provide faster, more cost-effective solutions.
+            <br />
+            <br />
+            ADR encourages open dialogue, preserves professional relationships,
+            and allows parties greater control over the outcome. When handled
+            with clarity and confidence, these methods can resolve disputes
+            while minimizing emotional and financial strain.
+          </Typography>
+          {/* this s th break   */}
+          <Typography
+            sx={{
+              mt: 4,
+              fontWeight: 500,
+              color: "#1A1A1A",
+              fontFamily: "Playfair Display !important",
+              fontSize: localFontSize.h3,
+            }}
+          >
+            Moving Forward with Assurance{" "}
+          </Typography>
+          <br />
+          <Typography
+            sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
+          >
+            Legal disputes can be complex, but they do not have to be
+            overwhelming. With the right guidance, conflicts can be resolved
+            efficiently and decisively. Clarity brings understanding, confidence
+            drives action, and together they form the foundation of effective
+            legal resolution.
+            <br />
+            <br />
+            When legal challenges arise, a calm, informed, and confident
+            approach makes all the difference.
           </Typography>
         </Box>
       </Box>
