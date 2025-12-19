@@ -16,7 +16,8 @@ const insightsData = [
     heading: "Resolving Legal Conflicts with Clarity and Confidence",
     description:
       "Disputes can be stressful, but the right legal approach can save time and money. Learn how experienced lawyers help clients reach fair settlements through strategy and negotiation.",
-    pathname: "/news-detail/a-victim-entrapment-in-yorkshire",
+    pathname:
+      "/news-details/resolving-legal-conflicts-with-clarity-and-confidence",
   },
   {
     image: pngs.insightsAndLegalGuidance2,
@@ -24,35 +25,42 @@ const insightsData = [
     description:
       "Immigration matters require precision, patience, and professional support. Discover how our lawyers simplify complex immigration procedures, assist with appeals, and help you secure your legal status successfully.",
 
-    pathname: "/news-detail/a-victim-entrapment-in-yorkshire",
+    pathname:
+      "/news-details/navigating-immigration-laws-with-expert-legal-guidance",
   },
   {
     image: pngs.insightsAndLegalGuidance3,
     heading: "Understanding and Protecting Your Legal Rights Effectively",
     description:
       "Knowing your rights empowers you to face legal challenges with strength. Explore how our expert counsel ensures you stay informed, protected, and prepared in every situation—from disputes to defense.",
-    pathname: "/news-detail/a-victim-entrapment-in-yorkshire",
+    pathname:
+      "/news-details/understanding-and-protecting-your-legal-rights-effectively",
+  },
+  // same repearation
+  {
+    image: pngs.insightsAndLegalGuidance1,
+    heading: "Resolving Legal Conflicts with Clarity and Confidence",
+    description:
+      "Disputes can be stressful, but the right legal approach can save time and money. Learn how experienced lawyers help clients reach fair settlements through strategy and negotiation.",
+    pathname:
+      "/news-details/resolving-legal-conflicts-with-clarity-and-confidence",
   },
   {
-    image: pngs.insightsAndLegalGuidance4,
-    heading: "Current Trends Impacting Legal Developments",
+    image: pngs.insightsAndLegalGuidance2,
+    heading: "Navigating Immigration Laws with Expert Legal Guidance",
     description:
-      "Explore how emerging trends are influencing the legal landscape across different sectors. From technology to finance, we analyze key developments that could affect your business or personal affairs.",
-    pathname: "/news-detail/a-victim-entrapment-in-yorkshire",
+      "Immigration matters require precision, patience, and professional support. Discover how our lawyers simplify complex immigration procedures, assist with appeals, and help you secure your legal status successfully.",
+
+    pathname:
+      "/news-details/navigating-immigration-laws-with-expert-legal-guidance",
   },
   {
-    image: pngs.insightsAndLegalGuidance5,
-    heading: "In-Depth Case Studies and Client Success Stories",
+    image: pngs.insightsAndLegalGuidance3,
+    heading: "Understanding and Protecting Your Legal Rights Effectively",
     description:
-      "Dive into detailed case studies showcasing how our expertise has helped clients achieve successful outcomes. Learn about the challenges faced, strategies employed, and the results that made a difference.",
-    pathname: "/news-detail/a-victim-entrapment-in-yorkshire",
-  },
-  {
-    image: pngs.insightsAndLegalGuidance6,
-    heading: "Practical Legal Advice and Tips for Everyday Situations",
-    description:
-      "Access practical advice from our experienced attorneys on common legal issues. From contracts and compliance to dispute resolution, our tips are designed to empower you.",
-    pathname: "/news-detail/a-victim-entrapment-in-yorkshire",
+      "Knowing your rights empowers you to face legal challenges with strength. Explore how our expert counsel ensures you stay informed, protected, and prepared in every situation—from disputes to defense.",
+    pathname:
+      "/news-details/understanding-and-protecting-your-legal-rights-effectively",
   },
 ];
 
@@ -121,7 +129,6 @@ export default function InsightsAndLegalGuidance() {
     speed: 600,
     slidesToShow: 3,
     slidesToScroll: 1,
-    rows: 2,
     responsive: [
       {
         breakpoint: 1350,
