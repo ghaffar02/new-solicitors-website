@@ -7,6 +7,7 @@ import Image, { StaticImageData } from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Button from "./Button";
+import { useRouter } from "next/navigation";
 
 interface InfoSectionProps {
   banner: string;
@@ -29,6 +30,8 @@ const InfoSection: React.FC<InfoSectionProps> = ({
     AOS.init({ duration: 500, once: true });
     AOS.refresh();
   }, []);
+
+  const router = useRouter();
 
   return (
     <Box
@@ -113,6 +116,9 @@ const InfoSection: React.FC<InfoSectionProps> = ({
               {buttonText && (
                 <Box>
                   <Button
+                    onClick={() => {
+                      router.push("/about-us");
+                    }}
                     text={
                       <Box
                         sx={{

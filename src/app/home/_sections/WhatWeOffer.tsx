@@ -79,28 +79,28 @@ const personalCardsData = [
     heading: "Family Law",
     description:
       "We handle family matters with care, protecting your rights and your family",
-    route: "/family-law",
+    route: "/practice-area/family-law",
   },
   {
     icon: svgs.immigrationLaw,
     heading: "Immigration Law",
     description:
       "We simplify complex immigration cases, helping you achieve legal status and peace of mind.",
-    route: "/immigration-law",
+    route: "/practice-area/immigration-law",
   },
   {
     icon: svgs.employmentLaw,
     heading: "Employment Law",
     description:
       "We defend your workplace rights and ensure fair treatment for everyone.",
-    route: "/employment-law",
+    route: "/practice-area/employment-law",
   },
   {
     icon: svgs.criminalLaw,
     heading: "Criminal Law",
     description:
       "We provide strong legal defense to protect your freedom, privacy and reputation.",
-    route: "/criminal-law",
+    route: "/practice-area/criminal-law",
   },
 ];
 
@@ -111,28 +111,28 @@ const businessCardsData = [
     heading: "Commercial Law",
     description:
       "We provide comprehensive legal support for business transactions and commercial property matters.",
-    route: "/commercial-law",
+    route: "/practice-area/commercial-law",
   },
   {
     icon: svgs.Handshake,
     heading: "Business Mergers and Acquisitions",
     description:
       "Expert guidance through complex business sales, purchases, and merger transactions.",
-    route: "/business-mergers-and-acquisitions",
+    route: "/practice-area/business-mergers-and-acquisitions",
   },
   {
     icon: svgs.Searchfile,
     heading: "Commercial Conveyancing",
     description:
       "Professional assistance with commercial property purchases, sales, and lease agreements.",
-    route: "/commercial-conveyancing",
+    route: "/practice-area/commercial-conveyancing",
   },
   {
     icon: svgs.Law,
     heading: "Dispute Resolution (Commercial)",
     description:
       "Strategic legal representation for business disputes and commercial litigation matters.",
-    route: "/dispute-resolution-commercial",
+    route: "/practice-area/dispute-resolution-commercial",
   },
 ];
 

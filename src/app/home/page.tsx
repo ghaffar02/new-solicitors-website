@@ -30,7 +30,7 @@ export default function HomePage() {
         <CoreValues />
       </Box>
       <InfoSection
-        banner="lets get to"
+        banner="LETS GET TO"
         heading="know about us"
         description="At Conquest Law we aim to provide first class legal services to our clients, both individuals and businesses, at competitive rates. We will do whatever it takes in order to achieve our clients’ desired outcome."
         buttonText="Learn More"
