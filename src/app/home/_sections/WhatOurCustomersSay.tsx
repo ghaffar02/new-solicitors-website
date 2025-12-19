@@ -39,6 +39,10 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           height: "100%",
           textAlign: "center",
           maxWidth: "450px",
+          transition: "transform 0.3s ease-in-out",
+          "&:hover": {
+            transform: "scale(1.05)",
+          },
         }}
       >
         {/* Quote */}

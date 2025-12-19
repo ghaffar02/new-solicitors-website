@@ -75,7 +75,7 @@ function CoreValues() {
             padding: { lg: "20px" },
             textAlign: "center",
             borderRadius: "30px",
-            transition: "all .4s ease-in-out",
+            transition: "all 0.4s ease-in-out",
             backgroundColor: hoveredIndex === index ? "#084592" : "transparent",
             boxShadow:
               hoveredIndex === index ? "0px 4px 20px 0px #07459280" : "none",
@@ -83,6 +83,7 @@ function CoreValues() {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
+            transform: hoveredIndex === index ? "scale(1.05)" : "scale(1)",
           }}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}

@@ -8,18 +8,27 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CustomArrow from "@/_components/CustomArrow";
+import { useRouter } from "next/navigation";
 
 // Card props interface
 interface CaseCardProps {
   image: StaticImageData;
   heading: string;
   description: string;
+  route?: string;
+  onClick?: () => void;
 }
 
 // CaseCard component
-const CaseCard: React.FC<CaseCardProps> = ({ image, heading, description }) => {
+const CaseCard: React.FC<CaseCardProps> = ({
+  image,
+  heading,
+  description,
+  onClick,
+}) => {
   return (
     <Box
+      onClick={onClick}
       sx={{
         position: "relative",
         // width: "100%",
@@ -27,6 +36,11 @@ const CaseCard: React.FC<CaseCardProps> = ({ image, heading, description }) => {
         borderRadius: "0px",
         marginX: { xs: "5px", sm: "10px", md: "15px" },
         marginTop: { xs: "10px", sm: "0px" },
+        cursor: onClick ? "pointer" : "default",
+        transition: "transform 0.3s ease-in-out",
+        "&:hover": {
+          transform: "scale(1.05)",
+        },
       }}
     >
       {/* Background Image */}
@@ -109,41 +123,48 @@ const casesData = [
     heading: "Business Dispute",
     description:
       "Resolved a complex partnership conflict through skilled negotiation and legal precision.",
+    route: "/case-study/business-dispute",
   },
   {
     image: pngs.immigrationAppeal,
     heading: "Immigration Appeal",
     description:
       "Successfully secured residency after an initial visa refusal.",
+    route: "/case-study/immigration-appeal",
   },
   {
     image: pngs.criminalDefense,
     heading: "Criminal Defense",
     description:
       "Achieved case dismissal by presenting strong evidence and strategic defense.",
+    route: "/case-study/criminal-defense",
   },
   {
     image: pngs.businessDispute,
     heading: "Business Dispute",
     description:
       "Resolved a complex partnership conflict through skilled negotiation and legal precision.",
+    route: "/case-study/business-dispute",
   },
   {
     image: pngs.immigrationAppeal,
     heading: "Immigration Appeal",
     description:
       "Successfully secured residency after an initial visa refusal.",
+    route: "/case-study/immigration-appeal",
   },
   {
     image: pngs.criminalDefense,
     heading: "Criminal Defense",
     description:
       "Achieved case dismissal by presenting strong evidence and strategic defense.",
+    route: "/case-study/Criminal Defense",
   },
 ];
 
 export default function RealCasesRealResults() {
   const sliderRef = useRef<Slider>(null);
+  const router = useRouter();
 
   const handlePrev = () => {
     sliderRef.current?.slickPrev();
@@ -151,6 +172,10 @@ export default function RealCasesRealResults() {
 
   const handleNext = () => {
     sliderRef.current?.slickNext();
+  };
+
+  const handleCardClick = (route: string) => {
+    router.push(route);
   };
 
   const settings = {
@@ -269,6 +294,10 @@ export default function RealCasesRealResults() {
                 image={caseItem.image}
                 heading={caseItem.heading}
                 description={caseItem.description}
+                route={caseItem.route}
+                onClick={() =>
+                  caseItem.route && handleCardClick(caseItem.route)
+                }
               />
             </Box>
           ))}

@@ -28,6 +28,10 @@ const InsightCard: React.FC<InsightCardProps> = ({
         height: { xs: "540px", md: "560px", lg: "586px" },
         marginX: { xs: "5px", sm: "10px", md: "15px" },
         marginTop: { xs: "10px", sm: "0px" },
+        transition: "transform 0.3s ease-in-out",
+        "&:hover": {
+          transform: "scale(1.05)",
+        },
       }}
     >
       {/* Background Image */}
@@ -103,7 +107,7 @@ const InsightCard: React.FC<InsightCardProps> = ({
             fontWeight: "500",
             borderBottom: "1px solid #074592",
             width: "fit-content",
-            cursor: pathname ? "pointer" : "default",
+            cursor: "pointer",
             marginTop: "auto",
             transition: "opacity 0.2s ease",
             pointerEvents: pathname ? "auto" : "none",

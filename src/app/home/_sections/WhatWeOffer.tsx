@@ -46,6 +46,7 @@ const OfferCard: React.FC<OfferCardProps> = ({
         "&:hover": {
           borderColor: "#074592",
           transform: "scale(1.05)",
+          boxShadow: "0px 8px 24px rgba(7, 69, 146, 0.15)",
         },
       }}
     >

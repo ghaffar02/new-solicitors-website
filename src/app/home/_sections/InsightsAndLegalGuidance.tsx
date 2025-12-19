@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import CustomArrow from "@/_components/CustomArrow";
 import svgs from "@/_assets/svgs";
 import InsightCard from "@/_components/InsightCard";
+import { useRouter } from "next/navigation";
 
 // Insights data
 
@@ -62,6 +63,7 @@ const insightsData = [
 
 export default function InsightsAndLegalGuidance() {
   const sliderRef = useRef<Slider>(null);
+  const router = useRouter();
 
   const handlePrev = () => {
     sliderRef.current?.slickPrev();
@@ -194,6 +196,7 @@ export default function InsightsAndLegalGuidance() {
         </Box>
 
         <Button
+          onClick={() => router.push("/news")}
           text={
             <Box
               sx={{
