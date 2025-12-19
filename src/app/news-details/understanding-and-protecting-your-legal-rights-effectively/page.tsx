@@ -7,7 +7,10 @@ export default function UnderstandingAndProtectingYourLegalRightsEffectively() {
   return (
     <>
       <Navbar />
-      <Hero heading="Immigration Appeal" backgroundImage="/bgAbout.png" />
+      <Hero
+        heading="Understanding and Protecting Your Legal Rights Effectively"
+        backgroundImage="/bgNewsDetails2.png"
+      />
       <DetailSection />
       <Footer />
     </>
