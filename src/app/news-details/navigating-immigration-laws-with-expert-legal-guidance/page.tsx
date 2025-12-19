@@ -7,7 +7,10 @@ export default function NavigatingImmigrationLawsWithExpertLegalGuidance() {
   return (
     <>
       <Navbar />
-      <Hero heading="Criminal Defense" backgroundImage="/bgAbout.png" />
+      <Hero
+        heading="Navigating Immigration Laws with Expert Legal Guidance"
+        backgroundImage="/bgNewsDetails2.png"
+      />
       <DetailSection />
       <Footer />
     </>

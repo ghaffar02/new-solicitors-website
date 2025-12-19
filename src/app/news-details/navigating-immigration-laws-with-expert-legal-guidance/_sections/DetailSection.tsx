@@ -27,11 +27,13 @@ export default function DetailSection() {
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            Our client was facing serious criminal charges that carried the risk
-            of severe legal consequences, including potential fines and
-            imprisonment. From the outset, the case required a meticulous review
-            of evidence, procedural accuracy, and a strong strategic defense to
-            protect the client’s rights and reputation.{" "}
+            Immigration laws are constantly evolving, often shaped by political
+            decisions, international relations, and national security concerns.
+            For individuals, families, and businesses, understanding and
+            complying with these laws can be overwhelming. From visa
+            applications to permanent residency and citizenship matters, expert
+            legal guidance plays a critical role in ensuring a smooth and lawful
+            immigration journey.
           </Typography>
           <Typography
             sx={{
@@ -42,16 +44,17 @@ export default function DetailSection() {
               fontSize: localFontSize.h3,
             }}
           >
-            The Challenge
+            The Complexity of Modern Immigration Laws
           </Typography>
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            The prosecution presented multiple claims supported by
-            circumstantial evidence. The client maintained their innocence, but
-            the complexity of the case demanded a detailed examination of police
-            procedures, evidence handling, and witness statements to identify
-            weaknesses in the prosecution’s argument.
+            Immigration regulations are rarely straightforward. Each case is
+            influenced by multiple factors such as nationality, purpose of
+            travel, employment status, family ties, and current government
+            policies. Even a small error in documentation or timing can result
+            in delays, refusals, or legal complications. This complexity makes
+            professional legal support not just helpful, but often essential.
           </Typography>
           <br />
           <Typography
@@ -63,18 +66,22 @@ export default function DetailSection() {
               fontFamily: "Playfair Display !important",
             }}
           >
-            Our Approach
+            Why Expert Legal Guidance Matters
           </Typography>
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            Our legal team conducted an in-depth investigation, carefully
-            reviewing all evidence and identifying critical inconsistencies in
-            the prosecution’s case. We challenged the admissibility of key
-            evidence, highlighted procedural errors, and presented compelling
-            counter-arguments supported by factual documentation and legal
-            precedents. Strategic motions were filed to question the reliability
-            and legality of the prosecution’s claims.
+            An experienced immigration lawyer brings clarity to a complicated
+            process. They stay up to date with policy changes, legal precedents,
+            and procedural requirements that may not be easily accessible to the
+            general public. With expert guidance, clients can better understand
+            their rights, obligations, and the most suitable immigration
+            pathways available to them.
+            <br />
+            <br />
+            Legal professionals also anticipate potential risks and address them
+            proactively, helping clients avoid costly mistakes that could impact
+            their future plans.
           </Typography>
           <br />
           <Typography
@@ -86,16 +93,20 @@ export default function DetailSection() {
               fontSize: localFontSize.h3,
             }}
           >
-            The Outcome
+            Tailored Solutions for Every Immigration Need
           </Typography>
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            As a result of our strong evidentiary presentation and strategic
-            defense, the court found insufficient grounds to proceed with the
-            case. The charges against our client were dismissed, bringing the
-            matter to a successful resolution without the need for a prolonged
-            trial.
+            No two immigration cases are the same. Whether you are applying for
+            a work visa, sponsoring a family member, seeking asylum, or planning
+            to establish a business abroad, tailored legal advice ensures your
+            application aligns with your specific circumstances.
+            <br />
+            <br />
+            Immigration lawyers assess each case individually, recommend the
+            strongest options, and prepare strategies that maximize the
+            likelihood of success while remaining fully compliant with the law.
           </Typography>
           <br />
           <Typography
@@ -107,7 +118,7 @@ export default function DetailSection() {
               fontSize: localFontSize.h3,
             }}
           >
-            Conclusion
+            Support Through Every Stage of the Process
           </Typography>
           <Typography
             sx={{
@@ -116,10 +127,64 @@ export default function DetailSection() {
               fontSize: localFontSize.p2,
             }}
           >
-            This case highlights our firm’s commitment to thorough preparation,
-            strategic thinking, and aggressive defense. By focusing on facts,
-            legal precision, and client advocacy, we consistently work to
-            achieve the best possible outcomes in criminal defense matters.{" "}
+            From initial consultation to final decision, expert legal guidance
+            provides continuous support. Lawyers assist with document
+            preparation, application submissions, correspondence with
+            immigration authorities, and representation in appeals or hearings
+            if required. This end-to-end support offers peace of mind, allowing
+            clients to focus on their personal or professional goals.
+          </Typography>
+          <br />
+          <Typography
+            sx={{
+              mt: 4,
+              fontWeight: 500,
+              color: "#1A1A1A",
+              fontFamily: "Playfair Display !important",
+              fontSize: localFontSize.h3,
+            }}
+          >
+            Reducing Stress and Uncertainty
+          </Typography>
+          <Typography
+            sx={{
+              mt: 1,
+              color: "#00000080",
+              fontSize: localFontSize.p2,
+            }}
+          >
+            Immigration matters often involve tight deadlines, high stakes, and
+            emotional pressure. Professional legal guidance reduces uncertainty
+            by offering clear timelines, realistic expectations, and transparent
+            communication. Clients gain confidence knowing their case is being
+            handled by a knowledgeable professional who understands both the
+            legal and human aspects of immigration.
+          </Typography>
+          <br />
+          <Typography
+            sx={{
+              mt: 4,
+              fontWeight: 500,
+              color: "#1A1A1A",
+              fontFamily: "Playfair Display !important",
+              fontSize: localFontSize.h3,
+            }}
+          >
+            A Trusted Partner in Your Immigration Journey
+          </Typography>
+          <Typography
+            sx={{
+              mt: 1,
+              color: "#00000080",
+              fontSize: localFontSize.p2,
+            }}
+          >
+            Navigating immigration laws does not have to be a daunting
+            experience. With expert legal guidance, individuals and businesses
+            can move forward with confidence, knowing their applications are
+            accurate, compliant, and strategically prepared. A trusted
+            immigration lawyer is not just a legal advisor, but a long-term
+            partner in achieving your future plans across borders.
           </Typography>
         </Box>
       </Box>
