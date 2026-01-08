@@ -13,54 +13,47 @@ import InsightCard from "@/_components/InsightCard";
 const insightsData = [
   {
     image: pngs.insightsAndLegalGuidance1,
-    heading: "Resolving Legal Conflicts with Clarity and Confidence",
+    heading: "Bankruptcy Order Annulled",
     description:
-      "Disputes can be stressful, but the right legal approach can save time and money. Learn how experienced Solicitors help clients reach fair settlements through strategy and negotiation.",
-    pathname:
-      "/news-details/resolving-legal-conflicts-with-clarity-and-confidence",
+      "Our Litigation Team represented a client who succeeded in his Bankruptcy Annulment Application. The Applicant was made bankrupt.",
+    pathname: "/news-details/bankruptcy-order-annulled",
   },
   {
     image: pngs.insightsAndLegalGuidance2,
-    heading: "Navigating Immigration Laws with Expert Legal Guidance",
+    heading: "Taxi Licence Appeal Win",
     description:
-      "Immigration matters require precision, patience, and professional support. Discover how our Solicitors simplify complex immigration procedures, assist with appeals, and help you secure your legal status successfully.",
-
-    pathname:
-      "/news-details/navigating-immigration-laws-with-expert-legal-guidance",
+      "This morning our team represented a Rotherham private hire taxi driver who won his taxi licence appeal at.",
+    pathname: "/news-details/taxi-licence-appeal-win",
   },
   {
     image: pngs.insightsAndLegalGuidance3,
-    heading: "Understanding and Protecting Your Legal Rights Effectively",
+    heading:
+      "Successful return of cash following seizure and detention under POCA 2002",
     description:
-      "Knowing your rights empowers you to face legal challenges with strength. Explore how our expert counsel ensures you stay informed, protected, and prepared in every situation—from disputes to defense.",
+      "Greater Manchester Police have agreed to return several thousand pounds to our clients after it was seized at.",
     pathname:
-      "/news-details/understanding-and-protecting-your-legal-rights-effectively",
-  },
-  // same repearation
-  {
-    image: pngs.insightsAndLegalGuidance1,
-    heading: "Resolving Legal Conflicts with Clarity and Confidence",
-    description:
-      "Disputes can be stressful, but the right legal approach can save time and money. Learn how experienced Solicitors help clients reach fair settlements through strategy and negotiation.",
-    pathname:
-      "/news-details/resolving-legal-conflicts-with-clarity-and-confidence",
-  },
-  {
-    image: pngs.insightsAndLegalGuidance2,
-    heading: "Navigating Immigration Laws with Expert Legal Guidance",
-    description:
-      "Immigration matters require precision, patience, and professional support. Discover how our Solicitors simplify complex immigration procedures, assist with appeals, and help you secure your legal status successfully.",
-
-    pathname:
-      "/news-details/navigating-immigration-laws-with-expert-legal-guidance",
+      "/news-details/successful-return-of-cash-following-seizure-and-detention-under-poca-2002",
   },
   {
     image: pngs.insightsAndLegalGuidance3,
-    heading: "Understanding and Protecting Your Legal Rights Effectively",
+    heading: "Yorkshire “Nightmare” Zebra Crossing – A Victim of Entrapment",
+    description: `Conquest Law Solicitors have successfully challenged South Yorkshire Police’s (SYP) attempted prosecution of a client pursued for allegedly driving without reasonable consideration to others at a “Nightmare” zebra crossing in South Yorkshire.`,
+    pathname: "/news-details/a-victim-entrapment-in-yorkshire",
+  },
+  {
+    image: pngs.insightsAndLegalGuidance3,
+    heading:
+      "Beneficial Interest Claim – Proprietary Estoppel & Resulting Trust",
     description:
-      "Knowing your rights empowers you to face legal challenges with strength. Explore how our expert counsel ensures you stay informed, protected, and prepared in every situation—from disputes to defense.",
-    pathname:
-      "/news-details/understanding-and-protecting-your-legal-rights-effectively",
+      "Successfully secured full property ownership for a client through claims of proprietary estoppel and resulting trust after decades of investment in a family home.",
+    pathname: "/news-details/beneficial-interest-proprietary-estoppel",
+  },
+  {
+    image: pngs.insightsAndLegalGuidance3,
+    heading: "Dubai Courts Opens First Overseas Hub in London",
+    description:
+      "Dubai Courts opens first international hub in London, offering integrated services with Dubai Chambers to support global investors, entrepreneurs & businesses.",
+    pathname: "/news-details/dubai-courts-opens-first-overseas-hub-in-london",
   },
 ];
 

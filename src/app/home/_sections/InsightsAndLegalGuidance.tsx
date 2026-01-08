@@ -20,14 +20,14 @@ const insightsData = [
     heading: "Bankruptcy Order Annulled",
     description:
       "Our Litigation Team represented a client who succeeded in his Bankruptcy Annulment Application. The Applicant was made bankrupt.",
-    path: "/bankruptcy-order-annulled",
+    pathname: "/news-details/bankruptcy-order-annulled",
   },
   {
     image: pngs.insightsAndLegalGuidance2,
     heading: "Taxi Licence Appeal Win",
     description:
       "This morning our team represented a Rotherham private hire taxi driver who won his taxi licence appeal at.",
-    path: "/taxi-licence-appeal-win",
+    pathname: "/news-details/taxi-licence-appeal-win",
   },
   {
     image: pngs.insightsAndLegalGuidance3,
@@ -35,13 +35,14 @@ const insightsData = [
       "Successful return of cash following seizure and detention under POCA 2002",
     description:
       "Greater Manchester Police have agreed to return several thousand pounds to our clients after it was seized at.",
-    path: "/successful-return-of-cash-following-seizure-and-detention-under-poca-2002",
+    pathname:
+      "/news-details/successful-return-of-cash-following-seizure-and-detention-under-poca-2002",
   },
   {
     image: pngs.insightsAndLegalGuidance3,
     heading: "Yorkshire “Nightmare” Zebra Crossing – A Victim of Entrapment",
     description: `Conquest Law Solicitors have successfully challenged South Yorkshire Police’s (SYP) attempted prosecution of a client pursued for allegedly driving without reasonable consideration to others at a “Nightmare” zebra crossing in South Yorkshire.`,
-    path: "/a-victim-entrapment-in-yorkshire",
+    pathname: "/news-details/a-victim-entrapment-in-yorkshire",
   },
   {
     image: pngs.insightsAndLegalGuidance3,
@@ -49,14 +50,14 @@ const insightsData = [
       "Beneficial Interest Claim – Proprietary Estoppel & Resulting Trust",
     description:
       "Successfully secured full property ownership for a client through claims of proprietary estoppel and resulting trust after decades of investment in a family home.",
-    path: "/beneficial-interest-proprietary-estoppel",
+    pathname: "/news-details/beneficial-interest-proprietary-estoppel",
   },
   {
     image: pngs.insightsAndLegalGuidance3,
     heading: "Dubai Courts Opens First Overseas Hub in London",
     description:
       "Dubai Courts opens first international hub in London, offering integrated services with Dubai Chambers to support global investors, entrepreneurs & businesses.",
-    path: "/dubai-courts-opens-first-overseas-hub-in-london",
+    pathname: "/news-details/dubai-courts-opens-first-overseas-hub-in-london",
   },
 ];
 
@@ -163,6 +164,7 @@ export default function InsightsAndLegalGuidance() {
                 image={insight.image}
                 heading={insight.heading}
                 description={insight.description}
+                pathname={insight.pathname}
               />
             </Box>
           ))}
