@@ -213,7 +213,7 @@ export default function WhatOurCustomersSay() {
                 textTransform: "capitalize",
               }}
             >
-              what our customers say
+              what our clients say
             </Typography>
             <Typography
               sx={{
