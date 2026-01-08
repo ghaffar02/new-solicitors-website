@@ -71,7 +71,7 @@ export default function DetailSection() {
           <Typography
             sx={{ mt: 1, color: "#9A9A9A", fontSize: localFontSize.p2 }}
           >
-            An experienced immigration lawyer brings clarity to a complicated
+            An experienced immigration Solicitor brings clarity to a complicated
             process. They stay up to date with policy changes, legal precedents,
             and procedural requirements that may not be easily accessible to the
             general public. With expert guidance, clients can better understand
@@ -104,7 +104,7 @@ export default function DetailSection() {
             application aligns with your specific circumstances.
             <br />
             <br />
-            Immigration lawyers assess each case individually, recommend the
+            Immigration Solicitors assess each case individually, recommend the
             strongest options, and prepare strategies that maximize the
             likelihood of success while remaining fully compliant with the law.
           </Typography>
@@ -128,7 +128,7 @@ export default function DetailSection() {
             }}
           >
             From initial consultation to final decision, expert legal guidance
-            provides continuous support. Lawyers assist with document
+            provides continuous support. Solicitors assist with document
             preparation, application submissions, correspondence with
             immigration authorities, and representation in appeals or hearings
             if required. This end-to-end support offers peace of mind, allowing
@@ -183,7 +183,7 @@ export default function DetailSection() {
             experience. With expert legal guidance, individuals and businesses
             can move forward with confidence, knowing their applications are
             accurate, compliant, and strategically prepared. A trusted
-            immigration lawyer is not just a legal advisor, but a long-term
+            immigration Solicitor is not just a legal advisor, but a long-term
             partner in achieving your future plans across borders.
           </Typography>
         </Box>

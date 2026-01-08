@@ -11,7 +11,7 @@ const coreValuesData = [
     lightIcon: svgs.expertLawyers,
 
     alt: "handshake",
-    title: "expert lawyers",
+    title: "expert solicitors",
     description:
       "Our team brings years of experience, expertise, and dedication to every case.",
   },

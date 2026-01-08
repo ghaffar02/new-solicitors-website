@@ -60,7 +60,7 @@ export default function DetailSection() {
             matter, a workplace issue, a property dispute, or a personal legal
             concern, knowing your rights empowers you to make informed decisions
             and avoid costly mistakes. Legal awareness is not just for
-            lawyers—it is a vital tool for individuals and businesses alike.
+            Solicitors it is a vital tool for individuals and businesses alike.
           </Typography>
           <Typography
             sx={{
@@ -255,8 +255,8 @@ export default function DetailSection() {
             Legal professionals play a crucial role in protecting your rights.
             They provide expert advice, represent your interests, and ensure
             that legal processes are followed correctly. Whether through
-            negotiation, mediation, or litigation, a lawyer helps you navigate
-            the legal system with confidence.
+            negotiation, mediation, or litigation, a solicitor helps you
+            navigate the legal system with confidence.
             <br />
             <br />
             Having professional legal support ensures that your rights are not

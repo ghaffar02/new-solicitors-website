@@ -7,15 +7,13 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
-import svgs from "@/_assets/svgs";
-import Image from "next/image";
 
 interface FormData {
   name: string;
   phone: string;
   email: string;
-  message: string;
   subject: string;
+  message: string;
 }
 
 export default function ContactUsForm() {
@@ -31,8 +29,8 @@ export default function ContactUsForm() {
       name: "",
       phone: "",
       email: "",
-      message: "",
       subject: "",
+      message: "",
     },
   });
 
@@ -72,9 +70,12 @@ export default function ContactUsForm() {
         display: "flex",
         gap: formGap.gap,
         flexDirection: "column",
+        padding: { xs: "20px", md: "40px" },
+        borderRadius: "20px",
+        backgroundColor: "#ffffff",
+        boxShadow: "0px 4px 50.3px 0px #00000040",
       }}
     >
-      {/* Form Fields */}
       <Box
         sx={{
           display: "flex",
@@ -83,6 +84,7 @@ export default function ContactUsForm() {
         }}
       >
         <CustomInputField
+          label="Name"
           inputLabel="Your Name"
           inputType="text"
           {...register("name", { required: "Name is required" })}
@@ -90,20 +92,8 @@ export default function ContactUsForm() {
           helperText={errors.name?.message}
         />
         <CustomInputField
-          inputLabel="Email Address"
-          inputType="email"
-          {...register("email", {
-            required: "Email is required",
-            pattern: {
-              value: /^\S+@\S+\.\S+$/,
-              message: "Invalid email address",
-            },
-          })}
-          error={!!errors.email}
-          helperText={errors.email?.message}
-        />
-        <CustomInputField
-          inputLabel="Phone Number"
+          label="Phone"
+          inputLabel="Your Phone"
           inputType="text"
           {...register("phone", {
             required: "Phone is required",
@@ -122,18 +112,24 @@ export default function ContactUsForm() {
           display: "flex",
           gap: formGap.gap,
           flexDirection: { xs: "column", md: "row" },
-          alignItems: { md: "flex-end" },
         }}
       >
         <CustomInputField
-          inputLabel="Message"
-          inputType="text"
-          multiline
-          {...register("message", { required: "Message is required" })}
-          error={!!errors.message}
-          helperText={errors.message?.message}
+          label="Email"
+          inputLabel="Your Email"
+          inputType="email"
+          {...register("email", {
+            required: "Email is required",
+            pattern: {
+              value: /^\S+@\S+\.\S+$/,
+              message: "Invalid email address",
+            },
+          })}
+          error={!!errors.email}
+          helperText={errors.email?.message}
         />
         <CustomInputField
+          label="Subject"
           inputLabel="Subject"
           inputType="text"
           {...register("subject", { required: "Subject is required" })}
@@ -142,41 +138,45 @@ export default function ContactUsForm() {
         />
       </Box>
 
-      {/* Send Button */}
-      <Box
-        sx={{ display: "flex", justifyContent: "center", marginTop: "10px" }}
+      <CustomInputField
+        label="Message"
+        inputLabel="Message"
+        inputType="text"
+        rows={6}
+        multiline
+        {...register("message", { required: "Message is required" })}
+        error={!!errors.message}
+        helperText={errors.message?.message}
+      />
+
+      <MuiButton
+        type="submit"
+        sx={{
+          backgroundColor: "transparent",
+          width: "100%",
+          color: "#074592",
+          fontSize: localFontSize.p2,
+          border: "2px solid #074592",
+          fontWeight: "500",
+          textTransform: "none",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "15px",
+          borderRadius: "10px",
+          height: {
+            xs: "55px",
+            md: "62px",
+            lg: "65px",
+          },
+        }}
       >
-        <MuiButton
-          type="submit"
-          disabled={loading}
-          sx={{
-            backgroundColor: "#074592",
-            color: "#FFFFFF",
-            fontSize: localFontSize.p2,
-            fontWeight: "500",
-            textTransform: "none",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "8px",
-            padding: { xs: "12px 24px", md: "15px 30px" },
-            borderRadius: "0px",
-            minWidth: { xs: "150px", md: "180px" },
-            "&:hover": {
-              backgroundColor: "#0A2D5E",
-            },
-          }}
-        >
-          {loading ? (
-            <CircularProgress size={24} sx={{ color: "#FFFFFF" }} />
-          ) : (
-            <>
-              Send
-              <Image src={svgs.arrowWhite} alt="arrow" height={20} width={20} />
-            </>
-          )}
-        </MuiButton>
-      </Box>
+        {loading ? (
+          <CircularProgress size={24} sx={{ color: "#074592" }} />
+        ) : (
+          "Submit"
+        )}
+      </MuiButton>
     </Box>
   );
 }

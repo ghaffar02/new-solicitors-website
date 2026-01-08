@@ -6,7 +6,7 @@ import Footer from "@/_components/Footer";
 import InfoSection from "@/_components/InfoSection";
 import pngs from "@/_assets/webp";
 import WhatWeOffer from "./_sections/WhatWeOffer";
-import RealCasesRealResults from "./_sections/RealCasesRealResults";
+// import RealCasesRealResults from "./_sections/RealCasesRealResults";
 import InsightsAndLegalGuidance from "./_sections/InsightsAndLegalGuidance";
 import WhatOurCustomersSay from "./_sections/WhatOurCustomersSay";
 
@@ -38,7 +38,7 @@ export default function HomePage() {
         image={pngs.Suit}
       />
       <WhatWeOffer />
-      <RealCasesRealResults />
+      {/* <RealCasesRealResults /> */}
       <InsightsAndLegalGuidance />
       <WhatOurCustomersSay />
       <ContactUs />

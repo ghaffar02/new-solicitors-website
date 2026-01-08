@@ -287,7 +287,7 @@ function ImmigrationSupport({
               >
                 <Image
                   src={image}
-                  alt="lawyer"
+                  alt="solicitor"
                   style={{
                     height: "100%",
                     width: "100%",

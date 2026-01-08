@@ -15,7 +15,7 @@ const insightsData = [
     image: pngs.insightsAndLegalGuidance1,
     heading: "Resolving Legal Conflicts with Clarity and Confidence",
     description:
-      "Disputes can be stressful, but the right legal approach can save time and money. Learn how experienced lawyers help clients reach fair settlements through strategy and negotiation.",
+      "Disputes can be stressful, but the right legal approach can save time and money. Learn how experienced Solicitors help clients reach fair settlements through strategy and negotiation.",
     pathname:
       "/news-details/resolving-legal-conflicts-with-clarity-and-confidence",
   },
@@ -23,7 +23,7 @@ const insightsData = [
     image: pngs.insightsAndLegalGuidance2,
     heading: "Navigating Immigration Laws with Expert Legal Guidance",
     description:
-      "Immigration matters require precision, patience, and professional support. Discover how our lawyers simplify complex immigration procedures, assist with appeals, and help you secure your legal status successfully.",
+      "Immigration matters require precision, patience, and professional support. Discover how our Solicitors simplify complex immigration procedures, assist with appeals, and help you secure your legal status successfully.",
 
     pathname:
       "/news-details/navigating-immigration-laws-with-expert-legal-guidance",
@@ -41,7 +41,7 @@ const insightsData = [
     image: pngs.insightsAndLegalGuidance1,
     heading: "Resolving Legal Conflicts with Clarity and Confidence",
     description:
-      "Disputes can be stressful, but the right legal approach can save time and money. Learn how experienced lawyers help clients reach fair settlements through strategy and negotiation.",
+      "Disputes can be stressful, but the right legal approach can save time and money. Learn how experienced Solicitors help clients reach fair settlements through strategy and negotiation.",
     pathname:
       "/news-details/resolving-legal-conflicts-with-clarity-and-confidence",
   },
@@ -49,7 +49,7 @@ const insightsData = [
     image: pngs.insightsAndLegalGuidance2,
     heading: "Navigating Immigration Laws with Expert Legal Guidance",
     description:
-      "Immigration matters require precision, patience, and professional support. Discover how our lawyers simplify complex immigration procedures, assist with appeals, and help you secure your legal status successfully.",
+      "Immigration matters require precision, patience, and professional support. Discover how our Solicitors simplify complex immigration procedures, assist with appeals, and help you secure your legal status successfully.",
 
     pathname:
       "/news-details/navigating-immigration-laws-with-expert-legal-guidance",

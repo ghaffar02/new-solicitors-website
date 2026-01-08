@@ -147,7 +147,7 @@ const Navbar: React.FC = () => {
               justifyContent: "space-between",
               alignItems: "center",
               flexDirection: { xs: "row-reverse", md: "row" },
-              height: { xs: "80px", md: "90px" },
+              height: { xs: "80px", md: "110px", lg: "130px" },
 
               maxWidth: "1440px",
               margin: "auto",
@@ -214,7 +214,7 @@ const Navbar: React.FC = () => {
             sx={{
               position: "absolute",
               height: "auto",
-              width: { md: "60px" },
+              width: { md: "80px", lg: "100px" },
               // width: { xs: "50px", md: "90px", lg: "100px", xxl: "120px" },
               display: { xs: "none", md: "block" },
               left: "50%",
@@ -253,12 +253,12 @@ const Navbar: React.FC = () => {
           zIndex: "999",
 
           transform: isDrawerOpen ? "translateX(0)" : "translateX(-150%)",
+          backgroundColor: "#000000CC",
+          backdropFilter: "blur(10px)",
         }}
       >
         <Box
           sx={{
-            backgroundColor: "#000000CC",
-            backdropFilter: "blur(10px)",
             padding: isDrawerOpen ? { xs: "40px 20px", md: "50px" } : "0",
             height: "100%",
             width: "100vw",

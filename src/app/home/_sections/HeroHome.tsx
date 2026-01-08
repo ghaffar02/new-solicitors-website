@@ -94,7 +94,7 @@ const HeroHome: React.FC = () => {
               maxWidth: "1000px",
             }}
           >
-            Compassionate Lawyers, Powerful Advocates
+            Compassionate Solicitors, Powerful Advocates
           </Typography>
 
           {/* Description */}

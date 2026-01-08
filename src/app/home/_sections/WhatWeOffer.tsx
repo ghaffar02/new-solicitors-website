@@ -40,7 +40,7 @@ const OfferCard: React.FC<OfferCardProps> = ({
         alignItems: "center",
         textAlign: "center",
         gap: "16px",
-        height: "100%",
+        height: { xs: "246px", sm: "252px", md: "268px", lg: "285px" },
         cursor: "pointer",
         transition: "all 0.3s ease-in-out",
         "&:hover": {
@@ -57,6 +57,12 @@ const OfferCard: React.FC<OfferCardProps> = ({
           fontSize: localFontSize.h3,
           fontWeight: "600",
           fontFamily: "'PlayfairDisplay', serif !important",
+          // ellipsis
+          display: "-webkit-box",
+          WebkitBoxOrient: "vertical",
+          WebkitLineClamp: 2,
+          overflow: "hidden",
+          textOverflow: "ellipsis",
         }}
       >
         {heading}
@@ -65,6 +71,12 @@ const OfferCard: React.FC<OfferCardProps> = ({
         sx={{
           color: "#9A9A9A",
           fontSize: localFontSize.p4,
+          // ellipsis
+          display: "-webkit-box",
+          WebkitBoxOrient: "vertical",
+          WebkitLineClamp: 3,
+          overflow: "hidden",
+          textOverflow: "ellipsis",
         }}
       >
         {description}

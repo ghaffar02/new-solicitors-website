@@ -128,7 +128,7 @@ const testimonialsData = [
   {
     image: pngs.customer2,
     quote:
-      "Their lawyers handled my immigration appeal with care and precision. I felt confident knowing my case was in experienced hands. I highly recommend their services.",
+      "Their Solicitors handled my immigration appeal with care and precision. I felt confident knowing my case was in experienced hands. I highly recommend their services.",
     name: "James Patel",
     title: "Software Engineer",
   },
