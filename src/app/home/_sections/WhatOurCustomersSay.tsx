@@ -1,58 +1,110 @@
 "use client";
-import React, { useRef } from "react";
-import { Box, Typography } from "@mui/material";
+import React, { useRef, useEffect, useState } from "react";
+import { Box, Typography, Rating } from "@mui/material";
 import { localFontSize, sectionPadding } from "@/app/utils/themes";
-import pngs from "@/_assets/webp";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CustomArrow from "@/_components/CustomArrow";
 
+// Google Review interface
+interface GoogleReview {
+  authorName: string;
+  authorUri?: string;
+  authorPhotoUri?: string;
+  rating: number;
+  dateISO: string;
+  text: string;
+}
+
+// API Response interface
+interface ReviewsResponse {
+  rating: number;
+  userRatingCount: number;
+  reviews: GoogleReview[];
+}
+
 // Testimonial Card props interface
 interface TestimonialCardProps {
-  image: StaticImageData;
-  quote: string;
-  name: string;
-  title: string;
+  review: GoogleReview;
 }
 
 // TestimonialCard component
-const TestimonialCard: React.FC<TestimonialCardProps> = ({
-  image,
-  quote,
-  name,
-  title,
-}) => {
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ review }) => {
+  const [imageError, setImageError] = useState(false);
+
+  const formatDate = (dateISO: string) => {
+    try {
+      return new Date(dateISO).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+      });
+    } catch {
+      return "";
+    }
+  };
+
+  const truncateText = (text: string, maxLength: number = 200) => {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength) + "...";
+  };
+
   return (
     <Box sx={{ margin: "auto", width: "fit-content" }}>
       <Box
         sx={{
           background: "#FFFFFF",
-          borderRadius: "0px",
-          padding: "10px",
+          borderRadius: "8px",
+          padding: "20px",
           marginX: { xs: "5px", sm: "10px", md: "15px" },
           marginTop: { xs: "10px", sm: "0px" },
           display: "flex",
           flexDirection: "column",
           gap: "20px",
           height: "100%",
-          textAlign: "center",
+          textAlign: "left",
           maxWidth: "450px",
+          minHeight: "300px",
+          boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
           transition: "transform 0.3s ease-in-out",
           "&:hover": {
-            transform: "scale(1.05)",
+            transform: "scale(1.02)",
           },
         }}
       >
+        {/* Rating */}
+        <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <Rating
+            value={review.rating}
+            readOnly
+            size="small"
+            sx={{
+              "& .MuiRating-iconFilled": {
+                color: "#FFD700",
+              },
+            }}
+          />
+          <Typography
+            sx={{
+              color: "#666",
+              fontSize: "14px",
+            }}
+          >
+            {formatDate(review.dateISO)}
+          </Typography>
+        </Box>
+
         {/* Quote */}
         <Typography
           sx={{
-            color: "#9A9A9A",
+            color: "#333",
             fontSize: localFontSize.p4,
+            lineHeight: 1.6,
+            flex: 1,
           }}
         >
-          {quote}
+          &ldquo;{truncateText(review.text)}&rdquo;
         </Typography>
 
         {/* Customer Info */}
@@ -60,54 +112,70 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           sx={{
             display: "flex",
             alignItems: "center",
-            gap: "16px",
-            justifyContent: "center",
+            gap: "12px",
           }}
         >
           {/* Profile Picture */}
           <Box
             sx={{
-              width: { xs: "60px", md: "70px" },
-              height: { xs: "60px", md: "70px" },
+              width: "50px",
+              height: "50px",
               borderRadius: "50%",
               overflow: "hidden",
               flexShrink: 0,
+              backgroundColor: "#f0f0f0",
             }}
           >
-            <Image
-              src={image}
-              alt={name}
-              style={{
-                objectFit: "cover",
-                width: "100%",
-                height: "100%",
-              }}
-            />
+            {review.authorPhotoUri && !imageError ? (
+              <Image
+                src={review.authorPhotoUri}
+                alt={review.authorName}
+                width={50}
+                height={50}
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "100%",
+                }}
+                onError={() => setImageError(true)}
+              />
+            ) : (
+              <Box
+                sx={{
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "#074592",
+                  color: "white",
+                  fontSize: "18px",
+                  fontWeight: "bold",
+                }}
+              >
+                {review.authorName.charAt(0).toUpperCase()}
+              </Box>
+            )}
           </Box>
 
-          {/* Name and Title */}
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "4px",
-            }}
-          >
+          {/* Name */}
+          <Box>
             <Typography
               sx={{
                 color: "#1A1A1A",
-                fontSize: localFontSize.p1,
+                fontSize: localFontSize.p3,
+                fontWeight: "600",
               }}
             >
-              {name}
+              {review.authorName}
             </Typography>
             <Typography
               sx={{
                 color: "#074592",
-                fontSize: localFontSize.p4,
+                fontSize: "12px",
               }}
             >
-              {title}
+              Google Review
             </Typography>
           </Box>
         </Box>
@@ -116,33 +184,32 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   );
 };
 
-// Testimonials data
-const testimonialsData = [
-  {
-    image: pngs.customer1,
-    quote:
-      "The team was incredibly supportive and professional throughout my case. They explained every step clearly and achieved a result better than I expected. Truly grateful for their dedication.",
-    name: "Sarah Thompson",
-    title: "Small Business Owner",
-  },
-  {
-    image: pngs.customer2,
-    quote:
-      "Their Solicitors handled my immigration appeal with care and precision. I felt confident knowing my case was in experienced hands. I highly recommend their services.",
-    name: "James Patel",
-    title: "Software Engineer",
-  },
-  {
-    image: pngs.customer3,
-    quote:
-      "Exceptional service from start to finish. They genuinely cared about my situation and fought hard to protect my rights. I wouldn't hesitate to work with them again.",
-    name: "Emily Carter",
-    title: "Marketing Manager",
-  },
-];
-
 export default function WhatOurCustomersSay() {
   const sliderRef = useRef<Slider>(null);
+  const [reviews, setReviews] = useState<GoogleReview[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  // Fetch Google reviews
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const response = await fetch("/api/places-reviews");
+        if (!response.ok) {
+          throw new Error("Failed to fetch reviews");
+        }
+        const data: ReviewsResponse = await response.json();
+        setReviews(data.reviews || []);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : "Failed to load reviews");
+        console.error("Error fetching reviews:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchReviews();
+  }, []);
 
   const handlePrev = () => {
     sliderRef.current?.slickPrev();
@@ -176,6 +243,60 @@ export default function WhatOurCustomersSay() {
       },
     ],
   };
+
+  // Loading state
+  if (loading) {
+    return (
+      <Box
+        sx={{
+          background: "#fff",
+          padding: sectionPadding,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "400px",
+        }}
+      >
+        <Typography>Loading reviews...</Typography>
+      </Box>
+    );
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <Box
+        sx={{
+          background: "#fff",
+          padding: sectionPadding,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "400px",
+        }}
+      >
+        <Typography color="error">Error loading reviews: {error}</Typography>
+      </Box>
+    );
+  }
+
+  // No reviews state
+  if (reviews.length === 0) {
+    return (
+      <Box
+        sx={{
+          background: "#fff",
+          padding: sectionPadding,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "400px",
+        }}
+      >
+        <Typography>No reviews available</Typography>
+      </Box>
+    );
+  }
   return (
     <Box
       sx={{
@@ -252,16 +373,10 @@ export default function WhatOurCustomersSay() {
         </Box>
 
         {/* Cards Grid */}
-
         <Slider ref={sliderRef} {...settings}>
-          {testimonialsData.map((testimonial, index) => (
+          {reviews.map((review, index) => (
             <Box sx={{}} key={index}>
-              <TestimonialCard
-                image={testimonial.image}
-                quote={testimonial.quote}
-                name={testimonial.name}
-                title={testimonial.title}
-              />
+              <TestimonialCard review={review} />
             </Box>
           ))}
         </Slider>
