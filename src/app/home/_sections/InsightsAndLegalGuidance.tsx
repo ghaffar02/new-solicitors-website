@@ -16,21 +16,21 @@ import { useRouter } from "next/navigation";
 // Insights data
 const insightsData = [
   {
-    image: pngs.insightsAndLegalGuidance1,
+    image: pngs.bankruptcyOrderAnnulled,
     heading: "Bankruptcy Order Annulled",
     description:
       "Our Litigation Team represented a client who succeeded in his Bankruptcy Annulment Application. The Applicant was made bankrupt.",
     pathname: "/news-details/bankruptcy-order-annulled",
   },
   {
-    image: pngs.insightsAndLegalGuidance2,
+    image: pngs.taxiLicenceAppealWin,
     heading: "Taxi Licence Appeal Win",
     description:
       "This morning our team represented a Rotherham private hire taxi driver who won his taxi licence appeal at.",
     pathname: "/news-details/taxi-licence-appeal-win",
   },
   {
-    image: pngs.insightsAndLegalGuidance3,
+    image: pngs.successfulReturnOfCash,
     heading:
       "Successful return of cash following seizure and detention under POCA 2002",
     description:
@@ -39,13 +39,13 @@ const insightsData = [
       "/news-details/successful-return-of-cash-following-seizure-and-detention-under-poca-2002",
   },
   {
-    image: pngs.insightsAndLegalGuidance3,
+    image: pngs.yorkshireZebraCrossing,
     heading: "Yorkshire “Nightmare” Zebra Crossing – A Victim of Entrapment",
     description: `Conquest Law Solicitors have successfully challenged South Yorkshire Police’s (SYP) attempted prosecution of a client pursued for allegedly driving without reasonable consideration to others at a “Nightmare” zebra crossing in South Yorkshire.`,
     pathname: "/news-details/a-victim-entrapment-in-yorkshire",
   },
   {
-    image: pngs.insightsAndLegalGuidance3,
+    image: pngs.beneficialInterestClaim,
     heading:
       "Beneficial Interest Claim – Proprietary Estoppel & Resulting Trust",
     description:
@@ -53,7 +53,7 @@ const insightsData = [
     pathname: "/news-details/beneficial-interest-proprietary-estoppel",
   },
   {
-    image: pngs.insightsAndLegalGuidance3,
+    image: pngs.dubaiCourtsLondonOverseas,
     heading: "Dubai Courts Opens First Overseas Hub in London",
     description:
       "Dubai Courts opens first international hub in London, offering integrated services with Dubai Chambers to support global investors, entrepreneurs & businesses.",

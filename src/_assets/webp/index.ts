@@ -28,6 +28,13 @@ import ourMission from "./ourMission.png";
 import CommercialLaw from "./commercialLaw.png";
 import ImmigrationLaw from "./immigrationLaw.png";
 
+import bankruptcyOrderAnnulled from "./insightsAndLegalGuidance/bankruptcyOrderAnnulled.jpg";
+import beneficialInterestClaim from "./insightsAndLegalGuidance/beneficialInterestClaim.webp";
+import dubaiCourtsLondonOverseas from "./insightsAndLegalGuidance/dubaiCourtsLondonOverseas.jpeg";
+import successfulReturnOfCash from "./insightsAndLegalGuidance/successfulReturnOfCash.jpg";
+import taxiLicenceAppealWin from "./insightsAndLegalGuidance/taxiLicenceAppealWin.jpg";
+import yorkshireZebraCrossing from "./insightsAndLegalGuidance/yorkshireZebraCrossing.jpeg";
+
 const pngs = {
   Suit,
   Client1,
@@ -57,6 +64,13 @@ const pngs = {
   ourMission,
   CommercialLaw,
   ImmigrationLaw,
+
+  bankruptcyOrderAnnulled,
+  beneficialInterestClaim,
+  dubaiCourtsLondonOverseas,
+  successfulReturnOfCash,
+  taxiLicenceAppealWin,
+  yorkshireZebraCrossing,
 };
 
 export default pngs;
